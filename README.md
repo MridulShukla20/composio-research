@@ -4,7 +4,7 @@ Take-home for Composio's AI Product Ops Intern role. An agent researches 100 app
 (auth, access, API surface, MCP, buildability), a verification loop tries to break
 its answers, and a human-labelled sample measures accuracy.
 
-**Live case study:** https://YOUR_USERNAME.github.io/composio-research/
+**Live case study:** https://mridulshukla20.github.io/composio-research/
 
 ## Result
 
