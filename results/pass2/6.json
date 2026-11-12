@@ -1,0 +1,114 @@
+{
+ "record": {
+  "id": 6,
+  "name": "Podio",
+  "category": "CRM and Sales",
+  "one_liner": "Work management and collaboration platform providing customizable workspaces, apps, and CRM tools.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "You have to sign in or sign up with Podio and find your API keys in your account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers workspaces, apps, items, tasks, files, comments, and webhooks via standard API areas.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.podio.com/authentication",
+    "quote": "The Podio API uses the OAuth2 protocol for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.podio.com/index/faq",
+    "quote": "The Podio API is available to use for both paid and free Podio accounts."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.podio.com/index/faq",
+    "quote": "You can find full reference documentation right here on this site under API Areas."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods",
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.podio.com/authentication",
+    "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.podio.com/index/faq",
+    "quote": "The Podio API is available to use for both paid and free Podio accounts.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.podio.com/index/faq",
+    "quote": "You can find full reference documentation right here on this site under API Areas.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 confirmed; token method not documented.",
+    "suggested": "oauth2 only"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API free for both paid and free accounts.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "No official or community MCP found.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Claims align with evidence; no blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

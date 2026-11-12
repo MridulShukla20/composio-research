@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_liner": "An enterprise collaboration and communication suite with robust open APIs.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up on the Lark Developer platform and obtain credentials for free.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Extensive API coverage for messaging, docs, calendar, contacts, drive, and more.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/larksuite/lark-openapi-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list",
+    "quote": "Authorization | string | Yes | tenant_access_token"
+   },
+   {
+    "field": "access",
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+    "quote": "Unlimited: Core features including Authentication and Authorization, Event Subscription, and Contacts are free to use"
+   },
+   {
+    "field": "api",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool"
+   },
+   {
+    "field": "verdict",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Lark (Larksuite) (open.larksuite.com) API authentication developer documentation",
+   "access": "Lark (Larksuite) (open.larksuite.com) API access pricing plan get API key developer account",
+   "mcp": "Lark (Larksuite) (open.larksuite.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://open.larksuite.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/user_info/get"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/user_info/get"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukzN4UjL5cDO14SO3gTN"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=srSnUC8sioY"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/tenant-v2"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.verdent.ai/guides/lark-mcp-vs-lark-cli-ai-dev-workflow"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/larksuite/lark-openapi-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.typingmind.com/mcp/feishu-lark"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://skywork.ai/skypage/en/unlocking-lark-ai-deep-dive/1979062202294116352"
+   }
+  ],
+  "pages_read": [
+   "https://open.larksuite.com",
+   "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list",
+   "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/user_info/get"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 16.7
+ }
+}

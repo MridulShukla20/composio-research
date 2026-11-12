@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 54,
+  "name": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "An AI-powered web scraping and data extraction platform with built-in proxies and browser rendering.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up on the platform and generate API tokens directly from their dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The API covers web page scraping, structured data extraction, scraper management, and account usage.",
+  "mcp": "official",
+  "mcp_url": "https://docs.mrscraper.com",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "The MrScraper API uses API token authentication to secure all endpoints."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "API tokens are managed directly from your MrScraper dashboard."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.mrscraper.com",
+    "quote": "The MrScraper MCP server source code is available on GitHub for local setup"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "MrScraper (docs.mrscraper.com) API authentication developer documentation",
+   "access": "MrScraper (docs.mrscraper.com) API access pricing plan get API key developer account",
+   "mcp": "MrScraper (docs.mrscraper.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.mrscraper.com/docs/api/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.mrscraper.com/docs/api/overview"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.mrscraper.com/docs/api/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.mrscraper.com/docs/api/overview"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.mrscraper.com"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://hermes-agent.nousresearch.com/marketplace/mrscraper"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.mrscraper.com/docs/api/authentication"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.codehype.ai/blog/mrscraper-ai-web-scraping-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.mrscraper.com"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://composio.dev/toolkits/mrscraper"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.ai/mrscraper"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.mrscraper.com"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://discuss.ai.google.dev/t/mcp-store-listing-request-mrscraper-web-scraping-and-google-search-for-agents/196361"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://scrapfly.io/blog/posts/what-is-mcp-understanding-the-model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://docs.mrscraper.com/docs/api/authentication",
+   "https://docs.mrscraper.com/docs/api/overview"
+  ],
+  "pages_unreadable": [
+   "https://docs.mrscraper.com"
+  ],
+  "model_attempts": 1,
+  "seconds": 29.2
+ }
+}

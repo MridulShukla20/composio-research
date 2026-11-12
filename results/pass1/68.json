@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 68,
+  "name": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "A cloud-hosted multi-cloud database service with programmatic management capabilities.",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free tier account and generate service accounts or API keys in the Atlas UI.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Atlas Administration API and CLI cover administration, infrastructure deployment, clusters, users, and projects.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "We recommend you use service accounts instead of API (Application Programming Interface) keys to authenticate to the Atlas Administration API."
+   },
+   {
+    "field": "access",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "In Atlas, go to the Applications page."
+   },
+   {
+    "field": "api",
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "quote": "The Official MongoDB MCP Server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "MongoDB Atlas (mongodb.com/docs/atlas/api) API authentication developer documentation",
+   "access": "MongoDB Atlas (mongodb.com/docs/atlas/api) API access pricing plan get API key developer account",
+   "mcp": "MongoDB Atlas (mongodb.com/docs/atlas/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://mongodb.com/docs/atlas/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.beyondtrust.com/entitle/docs/configuring-mongodb-atlas-api-key"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.google.com/url?opi=89978449&q=CAESpQEBxCJF1y18y2nIglzhi6ptZuTqlgeA74-3ubm6jw4LOYg52B5fV_rIIekpICBh_SREE48OnFZqXrsaSO7aC_rM069SINmNQOZTzuOtJs1-Ce4F2OSRowkbBZ5750Vs-m5pZj5yVDWyls7AsZrOcoGhLvsfSnEEBtlgBcd64u1LtxiRa4AsUrN9lKw2bu7tSYd1JegEXY7t772IHPC3CcfwGCJ7Oks&sa=U&uoh=3&ved=2ahUKEwj0ofnQmoKYAxUEqpUCHb84CGoQFnoECBAQAg&usg=AOvVaw2NyJQC_Ida71TWbzUVdJNC"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.google.com/url?opi=89978449&q=CAESlQEBxCJF14dUk-qUOx4gQpgVltfy-NEZibidwgiVtxWxWOwAc9gsvmnE5JKkynunmDUfYQjsR7_4AEOIMovMQiggUQKrm8jQDimXBzW9cd_J1RYjORaQ5wqSBWva88WhaLm4Bw6Y0YZtMDJADE_jJPLOnfuBZAAUBNZI19s3NKIYW3wbxfQ7_Qa-owDUjiCpUSQQ0B3UGQ&sa=U&uoh=3&ved=2ahUKEwj0ofnQmoKYAxUEqpUCHb84CGoQFnoECAkQAg&usg=AOvVaw1iGCpocmLjhNO8zvMD5Eyp"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.google.com/url?opi=89978449&q=CAESmQEBxCJF1-rfRn6SX-7iCUdK5C_qJ9IZRUmInQsQIi1ZKeANkwqeyUGmg0PpnuJmUpMDYxcF3pn2mabqM-Uxx2B1kmQjyvFpxCmcvBMCPgRc1CErJqdlFwpldq9imVmoKA09GVvYNoVcjxvVoZ7dT7F_YlPETvML_WSV8jaCwVvmbIyKTFTGG9-NDQ2RD6PUdcC7TBxAJkaXr6c&sa=U&uoh=3&ved=2ahUKEwj0ofnQmoKYAxUEqpUCHb84CGoQFnoECAsQAg&usg=AOvVaw3vx15yAeMfnipNIsouBybW"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.google.com/url?opi=89978449&q=CAEShQEBxCJF1-eVbz8tZodQxcejjGBkbOYR3h2PhBVnpR0Szg0oD6LpJ5Q6NaGV8Fj-U0B1IqHtG9wpoQH2bQAaVFh7S2uV_hxmsct_lYmQffALFnDn0d-ms8SyPfN1xW2kZIwK8gqomBcgkqcpEVePco1Y6NVlyizBvEFwVRi0jOm5SP2tOhNt&sa=U&uoh=3&ved=2ahUKEwj0ofnQmoKYAxUEqpUCHb84CGoQFnoECAcQAg&usg=AOvVaw2Vj5q4JHHy6s_qVFHbRnfg"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.beyondtrust.com/entitle/docs/configuring-mongodb-atlas-api-key"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://aiapiplaybook.com/blog/getting-started-with-the-atlascloud-api-a-developer-s-first-30-minutes"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://oneuptime.com/blog/post/2026-03-31-mongodb-how-to-use-atlas-administration-api-for-automation/view"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.mongodb.com/docs/mcp-server/overview"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://hub.docker.com/r/mongodb/mongodb-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://mongodb.com/docs/atlas/api",
+   "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+   "https://docs.beyondtrust.com/entitle/docs/configuring-mongodb-atlas-api-key"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.0
+ }
+}

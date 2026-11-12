@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 33,
+  "name": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage LinkedIn marketing campaigns, target professional audiences, and report campaign performance.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Developers must create a developer application, select products, and apply for API access which requires approval.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers advertising campaign management, reporting, community management, lead sync, matched audiences, and conversions.",
+  "mcp": "community",
+  "mcp_url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "API access requires explicit developer application and product approval from LinkedIn.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "The LinkedIn API uses OAuth 2.0 for user authorization and API authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "Most permissions and partner programs require explicit approval from LinkedIn."
+   },
+   {
+    "field": "api",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp",
+    "quote": "An MCP (Model Context Protocol) server that enables Claude AI to access and analyze your LinkedIn Ads data."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "LinkedIn Ads (learn.microsoft.com/linkedin/marketing) API authentication developer documentation",
+   "access": "LinkedIn Ads (learn.microsoft.com/linkedin/marketing) API access pricing plan get API key developer account",
+   "mcp": "LinkedIn Ads (learn.microsoft.com/linkedin/marketing) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://learn.microsoft.com/linkedin/marketing"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes?view=li-lms-2026-10"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes?view=li-lms-2026-10"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing?view=li-lms-2026-10"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.getphyllo.com/post/how-much-does-the-linkedin-api-cost-iv"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.blotato.com/blog/linkedin-api-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes?view=li-lms-2026-10"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.outstand.so/blog/linkedin-api-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://paidsync.ai/linkedin-ads-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://speedworksocial.com/linkedin-ads-claude"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://about.ads.microsoft.com/en/solutions/technology/mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://learn.microsoft.com/linkedin/marketing",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes?view=li-lms-2026-10",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 21.4
+ }
+}

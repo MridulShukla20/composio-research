@@ -1,0 +1,145 @@
+{
+ "record": {
+  "id": 67,
+  "name": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Snowflake is a cloud-based data platform that provides data storage, processing, and analytics solutions.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can obtain credentials by signing up for a Snowflake trial account or using existing organizational credentials.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST and SQL APIs cover database querying, execution, DDL, DML statements, and administrative actions.",
+  "mcp": "official",
+  "mcp_url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "Snowflake requires a paid enterprise or trial account to maintain active production API usage.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "quote": "Using key pair authentication, Using OAuth, Using a programmatic access token (PAT), Using workload identity federation"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.snowflake.com",
+    "quote": "Getting a Trial Account Snowflake in 20 Minutes"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+    "quote": "Snowflake’s managed Model Context Protocol (MCP) servers in public preview"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Snowflake (docs.snowflake.com) API authentication developer documentation",
+   "access": "Snowflake (docs.snowflake.com) API access pricing plan get API key developer account",
+   "mcp": "Snowflake (docs.snowflake.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.snowflake.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.snowflake.com/en/developer-guide/node-js/nodejs-driver-authenticate"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apitracker.io/a/snowflake"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/sgriffin-magnoliacap/mcp-snowflake-server-readonly"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp-connectors"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents"
+   }
+  ],
+  "pages_read": [
+   "https://docs.snowflake.com",
+   "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 13.3
+ }
+}

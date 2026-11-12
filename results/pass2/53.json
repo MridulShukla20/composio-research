@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 53,
+  "name": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Ahrefs provides SEO and marketing data for keyword research, backlink analysis, rank tracking, and site audits.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "paid_plan",
+  "access_note": "Ahrefs API access is available on eligible paid plans via API keys generated in account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers keywords, backlinks, rank tracking, brand visibility, and site audits.",
+  "mcp": "official",
+  "mcp_url": "https://ahrefs.com/api",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "To send requests to Ahrefs API, you'll need an API key."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans."
+   },
+   {
+    "field": "api",
+    "url": "https://ahrefs.com/api",
+    "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms."
+   },
+   {
+    "field": "mcp",
+    "url": "https://ahrefs.com/api",
+    "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights."
+   },
+   {
+    "field": "verdict",
+    "url": "https://ahrefs.com/api",
+    "quote": "Access Ahrefs marketing and search data through our APIs and developer tools"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "To send requests to Ahrefs API, you'll need an API key.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://ahrefs.com/api",
+    "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://ahrefs.com/api",
+    "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://ahrefs.com/api",
+    "quote": "Access Ahrefs marketing and search data through our APIs and developer tools",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs mention only API key, no OAuth2.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Official docs state API is on eligible paid plans.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Vendor site provides official API documentation.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Docs confirm API access to Ahrefs data.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

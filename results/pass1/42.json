@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 42,
+  "name": "WooCommerce",
+  "category": "Ecommerce",
+  "one_liner": "An open-source e-commerce platform built on WordPress for managing online stores and products.",
+  "auth_methods": [
+   "basic",
+   "other"
+  ],
+  "primary_auth": "basic",
+  "access": "not_applicable",
+  "access_note": "WooCommerce is an open-source WordPress plugin; API credentials are generated directly in the WordPress dashboard.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers core e-commerce objects including products, orders, customers, and inventory.",
+  "mcp": "official",
+  "mcp_url": "https://developer.woocommerce.com/docs/features/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service"
+   },
+   {
+    "field": "access",
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "This documentation is about the free, core WooCommerce plugin"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api",
+    "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API. This allows WC data to be created, read, updated, and dele"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.woocommerce.com/docs/features/mcp",
+    "quote": "The MCP integration uses a multi-layered architecture to bridge between MCP clients and WordPress"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "WooCommerce (woocommerce.com/document/woocommerce-rest-api) API authentication developer documentation",
+   "access": "WooCommerce (woocommerce.com/document/woocommerce-rest-api) API access pricing plan get API key developer account",
+   "mcp": "WooCommerce (woocommerce.com/document/woocommerce-rest-api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://woocommerce.com/document/woocommerce-rest-api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://woocommerce.com/document/multi-location-inventory-management/rest-api"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://woocommerce.com/document/multi-location-inventory-management/rest-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=rPKMKwdRpr0"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/woocommerce"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://woocommerce.com/document/woocommerce-rest-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://wpengine.com/blog/woocommerce-api-key-guide"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=lMpg0Rewqfs"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/techspawn/woocommerce-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/woocommerce-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://developer.woocommerce.com/docs/features/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://ask-ai-data-connector.com/woocommerce-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://woocommerce.com/document/woocommerce-rest-api",
+   "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "https://woocommerce.com/document/multi-location-inventory-management/rest-api"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.8
+ }
+}

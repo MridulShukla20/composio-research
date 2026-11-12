@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "auth_methods": [
+   "none"
+  ],
+  "primary_auth": "none",
+  "access": "not_applicable",
+  "access_note": "Sherlock is an open-source command-line tool that requires no installation credentials or accounts.",
+  "api_styles": [
+   "none"
+  ],
+  "api_breadth": "none",
+  "api_note": "Sherlock has no official hosted public API, though community wrappers exist on platforms like Apify.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/topics/sherlock",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "no_public_api",
+  "blocker_note": "Sherlock is an open-source CLI tool rather than a managed API service, so integration requires wrapping the CLI or using third-party actors.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "quote": "it does not require API keys or login credentials for the sites it checks"
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "quote": "No account/API keys needed – Sherlock uses direct web requests"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "quote": "There is no official Sherlock API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/topics/sherlock",
+    "quote": "The OSINT toolkit for AI agents: Agent Skill, MCP server and CLI."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Sherlock (github.com/sherlock-project/sherlock) API authentication developer documentation",
+   "access": "Sherlock (github.com/sherlock-project/sherlock) API access pricing plan get API key developer account",
+   "mcp": "Sherlock (github.com/sherlock-project/sherlock) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://github.com/sherlock-project/sherlock"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://github.com/sherlock-project/sherlock/discussions/1254"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=ZHFrQ38xEGY"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/sherlock-project/sherlock"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apify.com/misceres/sherlock"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://apify.com/misceres/sherlock"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://sherlockeye.io/blog/sherlock-github-osint"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://tavily.com/knowledge/company/YKuwkHj0LaG8"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.nuget.org/packages/Sherlock.MCP.Server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/topics/sherlock"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/sherlock-project/sherlock/discussions/1254"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mitmedialab/sherlock-project"
+   }
+  ],
+  "pages_read": [
+   "https://github.com/sherlock-project/sherlock",
+   "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+   "https://github.com/sherlock-project/sherlock/discussions/1254"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.2
+ }
+}

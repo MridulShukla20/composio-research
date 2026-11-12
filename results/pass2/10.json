@@ -1,0 +1,119 @@
+{
+ "record": {
+  "id": 10,
+  "name": "DealCloud",
+  "category": "CRM and Sales",
+  "one_liner": "DealCloud is a CRM, deal management, and business development platform for financial services and professional firms.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "partner_or_sales_gated",
+  "access_note": "DealCloud is an enterprise product; API credentials and site access are provisioned by your firm or through sales.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers user management, schema, data records, backups, publications, and relationship intelligence.",
+  "mcp": "official",
+  "mcp_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "Access requires an enterprise customer contract and administrator provisioning, with no self-serve developer signup.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://api.docs.dealcloud.com/docs",
+    "quote": "Authentication – Provides tokens for use with all other APIs."
+   },
+   {
+    "field": "access",
+    "url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "quote": "Once user permissions are set, click the User icon at the top-right of your DealCloud screen and select Profile."
+   },
+   {
+    "field": "api",
+    "url": "https://api.docs.dealcloud.com/docs",
+    "quote": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints."
+   },
+   {
+    "field": "mcp",
+    "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+    "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://api.docs.dealcloud.com/docs",
+    "quote": "Authentication – Provides tokens for use with all other APIs.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "quote": "Once user permissions are set, click the User icon at the top-right of your DealCloud screen and select Profile.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://api.docs.dealcloud.com/docs",
+    "quote": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+    "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs mention token auth only; no explicit oauth2 or api_key.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "API key enabled via UI, not sales‑gated.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP getting‑started page confirms.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Access is self‑service, not partner/sales gated.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 7,
+  "name": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_liner": "Top-rated Sales CRM Software with AI automation and extensive developer APIs.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Zoho CRM account and create credentials via the Zoho Developer Console.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Zoho CRM provides comprehensive REST APIs covering record operations, metadata, bulk processing, and query capabilities.",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+    "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api",
+    "quote": "API access is included on every Zoho CRM plan, including the permanent free tier"
+   },
+   {
+    "field": "api",
+    "url": "https://apitracker.io/a/zoho-crm",
+    "quote": "Zoho CRM V8 documents RESTful record operations, metadata, bulk processing, notifications and query APIs."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Zoho CRM (zoho.com/crm) API authentication developer documentation",
+   "access": "Zoho CRM (zoho.com/crm) API access pricing plan get API key developer account",
+   "mcp": "Zoho CRM (zoho.com/crm) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://zoho.com/crm"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://zilltech.net/blog/zoho-api-documentation-a-complete-guide-to-building-custom-integrations"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/zoho-crm"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.bickertmanagement.com/blogs/post/zoho-api-deep-dive-2026-crm-v8-books-v3-oauth-real-integration-tutorials"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.folk.app/articles/zoho-crm-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/junnaisystems/zoho-crm-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.zoho.com/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://zoho.com/crm",
+   "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.4
+ }
+}

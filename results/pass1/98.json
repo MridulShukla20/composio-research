@@ -1,0 +1,152 @@
+{
+ "record": {
+  "id": 98,
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Command line tool for the Mermaid library to generate SVG/PNG/PDF files from diagram definitions",
+  "auth_methods": [
+   "none"
+  ],
+  "primary_auth": "none",
+  "access": "not_applicable",
+  "access_note": "It is an open-source command-line tool with no credentials or hosted API required.",
+  "api_styles": [
+   "other"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Provides a CLI and a basic Node.js library wrapper for rendering diagrams locally.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/andrewginns/mermaid-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Command line tool for the Mermaid library"
+   },
+   {
+    "field": "auth",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid."
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "License: MIT License"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It's possible to call `mermaid-cli` via a Node.JS API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/andrewginns/mermaid-mcp-server",
+    "quote": "The server internally calls `npx @mermaid-js/mermaid-cli` as a subprocess"
+   },
+   {
+    "field": "verdict",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "npm install -g @mermaid-js/mermaid-cli"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Mermaid CLI (github.com/mermaid-js/mermaid-cli) API authentication developer documentation",
+   "access": "Mermaid CLI (github.com/mermaid-js/mermaid-cli) API access pricing plan get API key developer account",
+   "mcp": "Mermaid CLI (github.com/mermaid-js/mermaid-cli) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://github.com/mermaid-js/mermaid-cli"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://github.com/topics/mermaid-cli"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://github.com/mermaid-js/mermaid-cli/issues"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.npmjs.com/package/@mermaid-js/mermaid-cli/v/11.17.0"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://mermaid.ai/open-source/config/mermaidCLI.html"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://formulae.brew.sh/formula/mermaid-cli"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://context7.com/mermaid-js/mermaid-cli"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/mermaid-js/mermaid-cli"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://context7.com/mermaid-js/mermaid-cli"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/topics/mermaid-cli"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/mermaid-js/mermaid-cli/issues"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/andrewginns/mermaid-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/hustcc/mcp-mermaid"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mermaid.ai/docs/ai/mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.npmjs.com/package/@rtuin/mcp-mermaid-validator"
+   }
+  ],
+  "pages_read": [
+   "https://github.com/mermaid-js/mermaid-cli",
+   "https://github.com/topics/mermaid-cli",
+   "https://github.com/mermaid-js/mermaid-cli/issues"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.6
+ }
+}

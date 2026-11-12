@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 71,
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "Connected workspace for notes, docs, wikis, and project management with a powerful API and MCP server.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Notion account and immediately create personal access tokens or OAuth integrations in the Developer portal.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers pages, databases, data sources, views, comments, user profiles, file uploads, and content queries.",
+  "mcp": "official",
+  "mcp_url": "https://developers.notion.com/guides/mcp/overview",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.notion.com",
+    "quote": "You need a Notion account and a terminal."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.notion.com/reference/intro",
+    "quote": "Send requests over HTTPS to https://api.notion.com."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "quote": "Notion MCP is a remote MCP server hosted by Notion."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Notion (developers.notion.com) API authentication developer documentation",
+   "access": "Notion (developers.notion.com) API access pricing plan get API key developer account",
+   "mcp": "Notion (developers.notion.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.notion.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.notion.com/guides/get-started/authorization"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.notion.com/reference/intro"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.notion.com/guides/get-started/authorization"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.notion.com/reference/intro"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.notion.com/guides/notion-api/quick-start"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.notion.com/guides/connections-and-tokens/overview"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=fzCgCCvzs6c"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developers.notion.com/guides/notion-api/quick-start"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.trycaddi.com/integrations/notion/api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.notion.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://npmjs.com/package/notion-mcp-server?ref=pkgstats.com"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.notion.com/guides/mcp/overview"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/ContexaAI/Notion-MCP-Server-SSE"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.notion.com/blog/notions-hosted-mcp-server-an-inside-look"
+   }
+  ],
+  "pages_read": [
+   "https://developers.notion.com",
+   "https://developers.notion.com/guides/get-started/authorization",
+   "https://developers.notion.com/reference/intro"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.1
+ }
+}

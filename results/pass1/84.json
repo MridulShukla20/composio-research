@@ -1,0 +1,137 @@
+{
+ "record": {
+  "id": 84,
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "Paygent is billing infrastructure and usage-based monetization for AI products and agents.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can create an account and obtain their API key through self-service.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers agents, billing events, usage indicators, pricing plans, orders, and automated invoices.",
+  "mcp": "official",
+  "mcp_url": "https://docs.withpaygent.com/_mcp/server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.nmi.com/reference/authentication",
+    "quote": "Authentication across our APIs is done via secure API keys."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "1. Create an account and get your API key"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "connect to the MCP server at https://docs.withpaygent.com/_mcp/server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Paygent Connect (paygent (NMI-powered)) API authentication developer documentation",
+   "access": "Paygent Connect (paygent (NMI-powered)) API access pricing plan get API key developer account",
+   "mcp": "Paygent Connect (paygent (NMI-powered)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.nmi.com/reference/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.nmi.com/developers/sdks-apis"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.nmi.com/reference/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.nmi.com/developers/sdks-apis"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.nmi.com/reference/getting-started"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.nmi.com/docs/payment-component"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://tavily.com/knowledge/company/lS8UCcaOeQZE"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.linkedin.com/company/withpaygentai"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.nmi.com/docs/getting-your-api-keys"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.contentful.com/blog/model-context-protocol-introduction"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://theaiengineer.substack.com/p/what-is-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.pigment.com/blog/what-is-mcp-model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://docs.nmi.com/reference/authentication",
+   "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+   "https://www.nmi.com/developers/sdks-apis"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.3
+ }
+}

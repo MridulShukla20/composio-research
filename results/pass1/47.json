@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 47,
+  "name": "Ecwid",
+  "category": "Ecommerce",
+  "one_liner": "Ecwid is an ecommerce platform that enables businesses to build online stores and integrate with APIs for managing products, orders, and customers.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for Ecwid and get a custom app with access tokens for self-serve testing.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers products, categories, orders, customers, discount coupons, payment and shipping methods.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "After signing up with Ecwid and getting a custom app, you already have two tokens"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/apis/ecwid/rest-api",
+    "quote": "JSON REST API for managing Ecwid store data including products, categories, orders, customers"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Ecwid (api-docs.ecwid.com) API authentication developer documentation",
+   "access": "Ecwid (api-docs.ecwid.com) API access pricing plan get API key developer account",
+   "mcp": "Ecwid (api-docs.ecwid.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://api-docs.ecwid.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.ecwid.com/api-reference/rest-api/customers/create-customer"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://api2cart.com/api-technology/ecwid-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.ecwid.com/api-reference/rest-api/customers/create-customer"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/Ecwid/ecwid-api-docs"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/apis/ecwid/rest-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/plans/ecwid/ecwid-plans-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/ecwid"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/connect-ecwid-to-claude-handle-customers-reviews-and-marketing"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://apitracker.io/a/ecwid"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://scalar.com/learn/mcp/mcp-api-documentation"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/model-context-protocol-mcp-from-apis-to-ai-ready-interfaces/ba-p/14433238"
+   }
+  ],
+  "pages_read": [
+   "https://api-docs.ecwid.com",
+   "https://docs.ecwid.com/api-reference/rest-api/customers/create-customer",
+   "https://docs.ecwid.com/get-started/make-your-first-api-request"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.3
+ }
+}

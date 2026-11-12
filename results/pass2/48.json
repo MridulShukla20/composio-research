@@ -1,0 +1,100 @@
+{
+ "record": {
+  "id": 48,
+  "name": "Gumroad",
+  "category": "Ecommerce",
+  "one_liner": "An e-commerce platform allowing creators to sell products, memberships, and digital downloads.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Gumroad account and generate an access token or create an OAuth application in advanced settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers products, variant categories, offer codes, custom fields, user profiles, sales notifications, and license verification.",
+  "mcp": "community",
+  "mcp_url": "https://mcpmarket.com/server/gumroad",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://gumroad.com/api",
+    "quote": "The Gumroad OAuth API is based around REST."
+   },
+   {
+    "field": "access",
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "First, sign in to your Gumroad account. Then, go to advanced settings."
+   },
+   {
+    "field": "api",
+    "url": "https://gumroad.com/api",
+    "quote": "Gumroad's OAuth 2.0 API lets you see information about your products"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://gumroad.com/api",
+    "quote": "The Gumroad OAuth API is based around REST.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "First, sign in to your Gumroad account. Then, go to advanced settings.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://gumroad.com/api",
+    "quote": "Gumroad's OAuth 2.0 API lets you see information about your products",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth primary and token header usage",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free account can create token via advanced settings",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "No evidence provided for community MCP listing",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Auth and free self‑serve access confirmed; no blocker identified",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

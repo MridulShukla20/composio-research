@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 63,
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Netlify is a hosting and serverless backend platform for the web that provides an API for atomic site deploys, DNS, form submissions, and serverless functions.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate personal access tokens or configure OAuth2 applications directly from the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Netlify REST API provides broad coverage for managing sites, deploys, domains, form submissions, environment variables, and functions.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/netlify/netlify-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more."
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Netlify uses OAuth2 for authentication. All requests must use HTTPS."
+   },
+   {
+    "field": "access",
+    "url": "https://www.netlify.com/pricing",
+    "quote": "Includes usage credits for production deploys, compute, form submissions, bandwidth, and web requests."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/netlify/netlify-mcp",
+    "quote": "The Netlify MCP Server acts as a bridge, providing API access, CLI tools, prompts, and more for your agents."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Netlify uses OAuth2 for authentication. All requests must use HTTPS.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.netlify.com/pricing",
+    "quote": "Includes usage credits for production deploys, compute, form submissions, bandwidth, and web requests.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/netlify/netlify-mcp",
+    "quote": "The Netlify MCP Server acts as a bridge, providing API access, CLI tools, prompts, and more for your agents.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state Netlify uses OAuth2 and offers personal access tokens.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Pricing page shows credits but no explicit free self‑serve sign‑up info.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repo exists for Netlify MCP.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Docs confirm API reference is publicly available, no blockers mentioned.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

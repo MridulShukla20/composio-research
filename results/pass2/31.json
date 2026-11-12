@@ -1,0 +1,121 @@
+{
+ "record": {
+  "id": 31,
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Developers obtain credentials via self-serve sign-up along with a developer token that requires access level reviews.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Google Ads API provides comprehensive programmatic access to campaigns, reporting, budgets, and ad management.",
+  "mcp": "official",
+  "mcp_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Production usage requires moving beyond test account access through Google's API access review process.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.google.com/google-ads/api/rest/auth",
+    "quote": "The Google Ads API uses OAuth 2.0 for authorizing API requests."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "quote": "Google Ads API developer tokens have an access level determining production account access"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Build an application to interact directly with the Google Ads platform or write programmatic scripts."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.google.com/google-ads/api/rest/auth",
+    "quote": "The Google Ads API uses OAuth 2.0 for authorizing API requests.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "quote": "Google Ads API developer tokens have an access level determining production account access",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Build an application to interact directly with the Google Ads platform or write programmatic scripts.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Evidence confirms OAuth2 only; no other auth methods shown.",
+    "suggested": "auth_methods=['oauth2']"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Developer token requires access‑level review.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP server documentation exists.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Production needs token approval beyond test access.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

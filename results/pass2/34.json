@@ -1,0 +1,125 @@
+{
+ "record": {
+  "id": 34,
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one marketing, sales, and CRM platform providing tools for agencies and businesses.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid subscription plans such as Starter, Unlimited, and Agency Pro.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Our API includes REST endpoints for contacts, messaging, workflows, calendars, payments, webhooks, and more.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/AustinMander/ghl-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel supports: Private Integration Tokens for internal or single-location integrations OAuth 2.0 for public integrations"
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel provides API access across all subscription plans, including Starter, Unlimited, and Agency Pro."
+   },
+   {
+    "field": "api",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Our API includes REST endpoints for contacts, messaging, workflows, calendars, payments, webhooks, and more."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/AustinMander/ghl-mcp",
+    "quote": "ghl-mcp is a Model Context Protocol server for GoHighLevel API v2."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel supports: Private Integration Tokens for internal or single-location integrations OAuth 2.0 for public integrations",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel provides API access across all subscription plans, including Starter, Unlimited, and Agency Pro.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Our API includes REST endpoints for contacts, messaging, workflows, calendars, payments, webhooks, and more.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/AustinMander/ghl-mcp",
+    "quote": "ghl-mcp is a Model Context Protocol server for GoHighLevel API v2.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Doc lists OAuth2 and private tokens, matching oauth2 and token methods.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Doc states API access across Starter, Unlimited, Agency Pro plans.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "GitHub repo provides community MCP server for GoHighLevel API v2.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have supporting evidence, no blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

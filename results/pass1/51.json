@@ -1,0 +1,147 @@
+{
+ "record": {
+  "id": 51,
+  "name": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides comprehensive SEO, SERP, keyword, backlink, and marketing data via a REST API and official MCP server.",
+  "auth_methods": [
+   "basic"
+  ],
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "access_note": "Create a free account and obtain API credentials (login and password) from the API Access dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers a wide suite of SEO, SERP, keyword data, backlinks, on-page, and domain analytics APIs.",
+  "mcp": "official",
+  "mcp_url": "https://dataforseo.com/model-context-protocol",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service."
+   },
+   {
+    "field": "mcp",
+    "url": "https://dataforseo.com/model-context-protocol",
+    "quote": "The DataForSEO MCP server is designed to support AI-driven applications across different industries and use cases."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "DataForSEO (docs.dataforseo.com) API authentication developer documentation",
+   "access": "DataForSEO (docs.dataforseo.com) API access pricing plan get API key developer account",
+   "mcp": "DataForSEO (docs.dataforseo.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.dataforseo.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.dataforseo.com/v3/auth"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.dataforseo.com/v3/auth"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=xGipqUzNLfQ"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=pYuxQLTCT0I"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.facebook.com/fb-answers/dataforseo-api-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://apiserpent.com/blog/dataforseo-pricing-explained"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://dataforseo.com/dataforseo-alternatives"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://dataforseo.com/model-context-protocol"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://dataforseo.com/update/dataforseo-mcp-server-launch"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://dataforseo.com/seo-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://docs.dataforseo.com",
+   "https://docs.dataforseo.com/v3/auth",
+   "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.9
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "record": {
+  "id": 16,
+  "name": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_liner": "Help desk and customer support software featuring ticketing, live chat, call center, and AI tools.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a free trial and generate API keys directly in the admin panel.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers tickets, messages, knowledge base entries, reports, and management workflows.",
+  "mcp": "official",
+  "mcp_url": "https://support.liveagent.com/150554-AI-features",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://support.liveagent.com/741982-API-key",
+    "quote": "API key is an identity of your LiveAgent"
+   },
+   {
+    "field": "access",
+    "url": "https://www.liveagent.com/pricing",
+    "quote": "Start with a 30-day free trial."
+   },
+   {
+    "field": "api",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "You can find whole LiveAgent API documentation within your LiveAgent account"
+   },
+   {
+    "field": "mcp",
+    "url": "https://support.liveagent.com/150554-AI-features",
+    "quote": "LiveAgent exposes a built-in MCP server (Model Context Protocol)"
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "Consider registering a new free Trial"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: API key is an identity of your LiveAgent... which you can use to build your own "
+   },
+   {
+    "code": "quote_not_found",
+    "field": "api",
+    "detail": "quote not in cited source: The Live Agent API exposes the full LiveAgent support workflow... through a cons"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://support.liveagent.com/741982-API-key",
+    "quote": "API key is an identity of your LiveAgent",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.liveagent.com/pricing",
+    "quote": "Start with a 30-day free trial.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "You can find whole LiveAgent API documentation within your LiveAgent account",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://support.liveagent.com/150554-AI-features",
+    "quote": "LiveAgent exposes a built-in MCP server (Model Context Protocol)",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "Consider registering a new free Trial",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs confirm API key authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Trial confirmed, but no evidence of self‑service key generation.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Docs state LiveAgent has a built‑in MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Only trial mention; no proof of no blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

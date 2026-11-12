@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 80,
+  "name": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Harvest provides time tracking and project management software with streamlined invoicing and reporting.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate personal access tokens or register an OAuth2 application directly from their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers clients, projects, tasks, time entries, expenses, invoices, estimates, users, and reports.",
+  "mcp": "community",
+  "mcp_url": "https://mcpservers.org/servers/ianaleck/harvest-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API."
+   },
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations."
+   },
+   {
+    "field": "access",
+    "url": "https://www.timecamp.com/blog/harvest-pricing",
+    "quote": "Harvest now starts with a free plan ($0) for one person and two projects"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/apis/harvest/api-v2",
+    "quote": "REST API for managing clients, projects, tasks, time entries, expenses, invoices, estimates, and users in Harvest."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/ianaleck/harvest-mcp-server",
+    "quote": "Unofficial Model Context Protocol (MCP) server for seamless integration with the Harvest time tracking API"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Harvest (harvestapp.com (help.getharvest.com/api-v2)) API authentication developer documentation",
+   "access": "Harvest (harvestapp.com (help.getharvest.com/api-v2)) API access pricing plan get API key developer account",
+   "mcp": "Harvest (harvestapp.com (help.getharvest.com/api-v2)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://help.getharvest.com/api-v2"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/harvest/api-v2"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://help.getharvest.com/api-v2/users-api/users/users"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.timecamp.com/blog/harvest-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://help.getharvest.com/api-v2/estimates-api/estimates/estimates"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://tavily.com/knowledge/company/gjsI0QuSp6b9"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/ianaleck/harvest-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/taiste/harvest-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.getharvest.com/api-v2"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.getharvest.com/api-v2/reports-api/reports/saved-and-generated-reports"
+   }
+  ],
+  "pages_read": [
+   "https://help.getharvest.com/api-v2",
+   "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+   "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.7
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "auth_methods": [
+   "none"
+  ],
+  "primary_auth": "none",
+  "access": "not_applicable",
+  "access_note": "Sherlock is an open-source command-line tool that requires no installation credentials or accounts.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "There is a community-developed Django REST Framework API wrapper project.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/Burnsedia/sherlock-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "not_a_hosted_api",
+  "blocker_note": "Sherlock is primarily an open-source CLI tool rather than a managed API service.",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Hunt down social media accounts by username across 400+ social networks"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/sherlock-project/api",
+    "quote": "Api for sherlock module"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "api_styles",
+   "api_breadth",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "evidence_missing",
+    "field": "auth",
+    "detail": "no evidence given for auth"
+   },
+   {
+    "code": "evidence_missing",
+    "field": "access",
+    "detail": "no evidence given for access"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Hunt down social media accounts by username across 400+ social networks",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/sherlock-project/api",
+    "quote": "Api for sherlock module",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Sherlock is a CLI tool; no authentication required.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Open‑source command‑line utility, no account or credential needed.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Community repo https://github.com/Burnsedia/sherlock-mcp exists.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Sherlock is not a hosted API; it's a CLI, so caveats apply.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

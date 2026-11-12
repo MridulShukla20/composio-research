@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 57,
+  "name": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Web data platform providing proxies, web scrapers, structured datasets, and MCP tools for AI agents",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up on Bright Data's website to receive free credits and instant self-serve API access.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers data extraction, scrapers, web unlockers, datasets, search APIs, and browser automation.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/brightdata/brightdata-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "5,000 free credits per month, no credit card required. See the free tier."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API, proxies"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "quote": "The Bright Data MCP server gives AI agents and assistants real-time access to public web data"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "5,000 free credits per month, no credit card required. See the free tier.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API, proxies",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "quote": "The Bright Data MCP server gives AI agents and assistants real-time access to public web data",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Token auth not mentioned; only API key and basic auth shown.",
+    "suggested": "api_key, basic"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free tier provides 5,000 credits, no credit card required.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "Docs confirm MCP existence but no GitHub repo link provided.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence of any blocker; free tier and auth available.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 4,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

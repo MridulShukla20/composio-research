@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 62,
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Frontend cloud platform for deploying and scaling web applications and serverless functions.",
+  "auth_methods": [
+   "token",
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free hobby plan and generate personal access tokens directly in their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers deployments, projects, domains, DNS, certs, billing, and infrastructure configuration.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.vercel.com",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header"
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "quote": "You create and manage them on the Account Tokens page, under the Settings area of your account"
+   },
+   {
+    "field": "api",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "All endpoints live under the URL and follow the REST architecture."
+   },
+   {
+    "field": "mcp",
+    "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "quote": "Vercel MCP is Vercel's official MCP server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Vercel (vercel.com/docs/rest-api) API authentication developer documentation",
+   "access": "Vercel (vercel.com/docs/rest-api) API access pricing plan get API key developer account",
+   "mcp": "Vercel (vercel.com/docs/rest-api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://vercel.com/docs/rest-api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://vercel.com/docs/accounts/access-tokens"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://vercel.com/docs"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://vercel.com/docs/rest-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://vercel.com/docs/accounts/access-tokens"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://vercel.com/docs"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://vercel.com/docs/cli/api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://marketplace.apilayer.com/vercel-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://vercel.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://vercel.com/ai-gateway"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://vercel.com/docs/accounts/access-tokens"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/vercel-mcp-vs-api"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://vercel.com/docs/agent-resources/vercel-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpcursor.com/server/vercel-api-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://vercel.com/docs/mcp/deploy-mcp-servers-to-vercel"
+   }
+  ],
+  "pages_read": [
+   "https://vercel.com/docs/rest-api",
+   "https://vercel.com/docs/accounts/access-tokens",
+   "https://vercel.com/docs"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.5
+ }
+}

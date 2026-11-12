@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 55,
+  "name": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Cloud platform and marketplace for web scraping, browser automation, and AI tools with a REST API and official MCP server.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Sign up on the Apify console to get a free plan with monthly credits and an API token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and account settings.",
+  "mcp": "official",
+  "mcp_url": "https://docs.apify.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.apify.com/api/v2",
+    "quote": "(Recommended) Add the token to your request's Authorization header as Bearer"
+   },
+   {
+    "field": "access",
+    "url": "https://apify.com/pricing",
+    "quote": "Free $0 $5 to spend in Apify Store or on your own Actors"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.apify.com",
+    "quote": "Apify API documentation: Endpoints to manage Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and your account."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.apify.com/mcp",
+    "quote": "The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Apify (docs.apify.com) API authentication developer documentation",
+   "access": "Apify (docs.apify.com) API access pricing plan get API key developer account",
+   "mcp": "Apify (docs.apify.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.apify.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.apify.com/integrations/api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.apify.com/api/v2"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.apify.com/integrations/api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.apify.com/api/v2"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apify.com/jacksu/public-api-docs-readiness-agent/api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://use-apify.com/docs/what-is-apify/apify-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://scrapegraphai.com/blog/apify-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apify.com/pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=kHluWNkxvh0"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/apify-mcp-vs-api"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/apify-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.apify.com/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/apify/apify-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://docs.apify.com",
+   "https://docs.apify.com/integrations/api",
+   "https://docs.apify.com/api/v2"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.3
+ }
+}

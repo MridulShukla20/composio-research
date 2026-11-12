@@ -1,0 +1,127 @@
+{
+ "record": {
+  "id": 20,
+  "name": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service and helpdesk platform for customer interactions and support.",
+  "auth_methods": [
+   "basic",
+   "token"
+  ],
+  "primary_auth": "basic",
+  "access": "partner_or_sales_gated",
+  "access_note": "Gladly requires contacting sales or a CSM to purchase and set up an account and sandbox environment.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers core helpdesk objects like customer profiles, agent status, answers, and conversations.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/m190/usefulapi-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "An active commercial enterprise relationship with Gladly is required to access the platform and API tokens.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Gladly API uses token-based Basic Authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "If you do not have a sandbox environment and are interested in purchasing one, please contact your Gladly CSM"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Clients can access the REST API via HTTPS at your organization's Gladly domain"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/m190/usefulapi-mcp",
+    "quote": "Gladly | support | 20 | API token | servers/gladly/"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "mcp",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "note_suggests_gate",
+    "field": "access",
+    "detail": "access=paid_plan but the notes mention a sales or contract gate"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Gladly API uses token-based Basic Authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "If you do not have a sandbox environment and are interested in purchasing one, please contact your Gladly CSM",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Clients can access the REST API via HTTPS at your organization's Gladly domain",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/m190/usefulapi-mcp",
+    "quote": "Gladly | support | 20 | API token | servers/gladly/",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state token‑based Basic Authentication, confirming basic and token methods.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs require contacting a CSM to obtain a sandbox, indicating sales gating.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party GitHub repo lists Gladly under community‑maintained MCP collection.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access is sales‑gated, making commercial relationship a blocker, matching claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

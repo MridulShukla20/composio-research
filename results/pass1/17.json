@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 17,
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "one_liner": "Plain is an API-first customer support platform for modern tech companies.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up for an account on the website to get access.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers the complete product functionality via a GraphQL API.",
+  "mcp": "official",
+  "mcp_url": "https://www.plain.com/docs/getting-started",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.plain.com/docs/graphql/authentication",
+    "quote": "To call the API as a user in your workspace, use an OAuth app."
+   },
+   {
+    "field": "access",
+    "url": "https://www.plain.com/blog/ai-customer-support-api-first-platforms-2025",
+    "quote": "Pricing: Foundation is $45/user/month (billed annually), with unlimited free viewer seats"
+   },
+   {
+    "field": "api",
+    "url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "An overview of Plain's GraphQL API and the data model behind it."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.plain.com/docs/getting-started",
+    "quote": "Plain’s Model Context Protocol (MCP) server"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Plain (plain.com) API authentication developer documentation",
+   "access": "Plain (plain.com) API access pricing plan get API key developer account",
+   "mcp": "Plain (plain.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://www.plain.com/docs/graphql/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.plain.com/docs/graphql/customers"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.plain.com/docs/graphql/introduction"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.plain.com/docs/graphql/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.plain.com/docs/graphql/customers"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.plain.com/docs/graphql/introduction"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://plainframework.com/docs"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/plain"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.plain.com/blog/api-first-support-platforms"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.plain.com/blog/ai-customer-support-api-first-platforms-2025"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.plain.com/llms.txt"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.plain.com/docs/getting-started"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.merge.dev/blog/model-context-protocol"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://cloud.google.com/discover/what-is-model-context-protocol"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://unito.io/blog/mcp-definition"
+   }
+  ],
+  "pages_read": [
+   "https://www.plain.com/docs/graphql/authentication",
+   "https://www.plain.com/docs/graphql/customers",
+   "https://www.plain.com/docs/graphql/introduction"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.9
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "headline": [
+  "<b>Most apps have two auth doors, and OAuth2 is the one that matters for a toolkit.</b> OAuth2 is the primary method for 60 of 100 apps, and 61 offer OAuth2 next to a simpler key or token: a key for your own account, OAuth for apps that serve other people's accounts. The exception is Data, SEO and Scraping, where 0 of 10 apps lead with OAuth2. Data vendors hand out keys.",
+  "<b>Access looks easy on paper, and the paper is optimistic.</b> The agent rated 79 apps self-serve. Access was its weakest field in the hand-checked sample (14 of 19 correct after verification), and three of the five remaining misses called an app self-serve when the vendor requires review or an application (Meta Ads, Threads, Consensus). Treat 79 as an upper bound.",
+  "<b>Gating clusters by category.</b> Developer and infra platforms are the easy end: 10 of 10 self-serve and 10 of 10 with an official MCP server. Marketing and ads is where vendor review lives (3 of the 4 approval cases). Paid plans and sales gates are spread thinly across the other categories, with helpdesk and ecommerce having the most.",
+  "<b>Blockers split three ways, and each needs a different response.</b> 19 apps have a named blocker: 6 need a sales or partner conversation, 6 need a paid plan, 6 need app review, and 1 is not a hosted API at all. That is outreach, budget and paperwork. No single blocker dominates.",
+  "<b>A vendor-published MCP server is now the norm.</b> The agent found one for 71 of 100 apps, and only 4 have none of any kind. This was the most accurate field after verification (19 of 20 in the sample).",
+  "<b>The agent never says no.</b> It returned 81 yes, 19 yes-with-caveats and 0 no. The human reviewer marked PitchBook as no, because its API needs a standalone contract. Read the verdict column as how much friction, not whether.",
+  "<b>Where the next human hour should go.</b> 75 apps look like easy wins, but only 19 of 100 passed every check. 36 are flagged needs-human. Start there, and start with the access field."
+ ],
+ "human_needed": [
+  "Wrote the rulebook: the fixed list of allowed values for every field and what each value means.",
+  "Hand-labelled 20 randomly sampled apps against vendor docs. A second AI reviewer (Claude, with live web search) compared answers after each label, so the key is human-labelled with AI-assisted review, not a fully independent human check.",
+  "Read one full pass-1 record by eye (PitchBook). The four failure types the verifier targets came from that reading.",
+  "Adjudicated the 11 disagreements left after pass 2: 8 were agent errors, 2 were ambiguous under the rulebook (both Smartsheet), and 1 was the api-key versus token grey zone.",
+  "Fixed setup problems the agent could not: a consumer-type Composio key that had to be replaced with a project key, a Windows policy that blocked pip, and a spacing error that briefly left the secrets file unprotected before anything was committed.",
+  "Re-ran one app (LiveAgent) that failed when the model's free quota stalled."
+ ],
+ "limitations": [
+  "The sample is small: 78 hand-checked answers across 20 apps. The gain from 80.8% to 85.9% is 4 answers, and one or two apps could erase it.",
+  "The labeller had seen the agent's summary lines before labelling, and for two apps (Stripe, PitchBook) had seen more. Scores excluding those two are shown separately.",
+  "The audit checks that evidence exists and comes from a vendor-owned page. It cannot tell that evidence is incomplete. That is why Meta Ads, Threads and Consensus kept a wrong access answer through pass 2: each had a real vendor quote about signing up that did not mention the review step behind it.",
+  "Verification broke one correct answer. Jira's MCP went from official to community because the vendor-GitHub check looks for the app name in the account name, and 'jira' is not in 'atlassian'. The bug was left unfixed so the reported score is not tuned against the answer key.",
+  "Name collisions defeat the vendor-page check. Consensus (consensus.app, research search) shares its name with goconsensus.com (sales demos), whose detailed API pages would pass as official.",
+  "One access label cannot hold both 'a developer can get test credentials' and 'a customer's plan allows API use'. Smartsheet and Ecwid differ on exactly this.",
+  "Evidence pages are not dated. Clay's own community answers say there is no public API; its developer docs, published later in 2026, describe one. Both were true when written.",
+  "Primary auth depends on who you are building for. It is reliable when the vendor says which method third-party apps must use (Jira, Front, Cloudflare) and a judgement call when both are offered without ranking (Vercel, Lark, HubSpot).",
+  "The second-model skeptic errs towards doubt. It questioned at least one claim in 75 of 100 apps, including correct ones, which pushes trust ratings down.",
+  "No browser-automation check was built. Pages that need JavaScript to render were read only through the fetch tool.",
+  "Both models ran on free tiers, and the researcher is a small, fast model. Daily quota limits caused one failed app and several long pauses."
+ ]
+}

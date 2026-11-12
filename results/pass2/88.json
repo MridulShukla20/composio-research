@@ -1,0 +1,123 @@
+{
+ "record": {
+  "id": 88,
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "A fully unified spend platform offering corporate cards, expense management, reimbursements, travel, and bill pay.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Sign in to the Brex dashboard as an admin, navigate to Developer settings, and create a user token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers accounting, budgets, expenses, payments, team management, transactions, travel, and webhooks.",
+  "mcp": "community",
+  "mcp_url": "https://mcp.so/servers/mcp-brex-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.brex.com/guides/authentication",
+    "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard"
+   },
+   {
+    "field": "access",
+    "url": "https://www.brex.com/journal/press/brex-announces-api-and-zapier-partnership-to-automate-payments-transactions-and-more",
+    "quote": "This new open API is available to all Brex customers, free of charge."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.brex.com",
+    "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification"
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcp.so/servers/mcp-brex-server",
+    "quote": "Brex MCP Server is a Model Context Protocol server that provides AI assistants read-only access"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.brex.com",
+    "quote": "Using the Brex API, you can power your internal tools and create custom workflows."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.brex.com/guides/authentication",
+    "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.brex.com/journal/press/brex-announces-api-and-zapier-partnership-to-automate-payments-transactions-and-more",
+    "quote": "This new open API is available to all Brex customers, free of charge.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.brex.com",
+    "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcp.so/servers/mcp-brex-server",
+    "quote": "Brex MCP Server is a Model Context Protocol server that provides AI assistants read-only access",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.brex.com",
+    "quote": "Using the Brex API, you can power your internal tools and create custom workflows.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state token generation and header usage, confirming token auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Press release says API free for all customers; token created via dashboard self‑service.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party page lists Brex MCP server as community‑hosted read‑only access.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Developer site confirms API usable for internal tools, no blockers mentioned.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

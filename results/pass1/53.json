@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 53,
+  "name": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Ahrefs provides SEO and marketing data for keyword research, backlink analysis, rank tracking, and site audits.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "paid_plan",
+  "access_note": "Ahrefs API access is available on eligible paid plans via API keys generated in account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers keywords, backlinks, rank tracking, brand visibility, and site audits.",
+  "mcp": "official",
+  "mcp_url": "https://ahrefs.com/api",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "To send requests to Ahrefs API, you'll need an API key."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans."
+   },
+   {
+    "field": "api",
+    "url": "https://ahrefs.com/api",
+    "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms."
+   },
+   {
+    "field": "mcp",
+    "url": "https://ahrefs.com/api",
+    "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights."
+   },
+   {
+    "field": "verdict",
+    "url": "https://ahrefs.com/api",
+    "quote": "Access Ahrefs marketing and search data through our APIs and developer tools"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Ahrefs (ahrefs.com/api) API authentication developer documentation",
+   "access": "Ahrefs (ahrefs.com/api) API access pricing plan get API key developer account",
+   "mcp": "Ahrefs (ahrefs.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://ahrefs.com/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.ahrefs.com"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://mindcloud.co/docs/universal/rest/ahrefs/latest"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/ahrefs"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/ahrefs"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.ahrefs.com"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://seobotai.com/blog/ahrefs-api-alternatives"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://ryandoser.com/ahrefs-api-pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://ahrefs.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/fastmcp-me/ahrefs-mcp-server-ahrefs/blob/main/README.md"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/ahrefs-mcp-vs-api"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/ahrefs"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://chatbotkit.com/connections/ahrefs.com/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://ahrefs.com/api",
+   "https://docs.ahrefs.com"
+  ],
+  "pages_unreadable": [
+   "https://docs.ahrefs.com/en/api/docs/introduction"
+  ],
+  "model_attempts": 1,
+  "seconds": 13.3
+ }
+}

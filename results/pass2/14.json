@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 14,
+  "name": "Front",
+  "category": "Support and Helpdesk",
+  "one_liner": "Shared inbox and customer operations platform for customer support and sales teams.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account to access a developer environment.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Core API covers conversations, channels, contacts, messages, and automation.",
+  "mcp": "official",
+  "mcp_url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://dev.frontapp.com/reference/introduction",
+    "quote": "Front supports OAuth2.0 as well as API Tokens."
+   },
+   {
+    "field": "access",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs."
+   },
+   {
+    "field": "api",
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "quote": "The Core API allows you as a Front developer to access core data and actions within Front."
+   },
+   {
+    "field": "mcp",
+    "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+    "quote": "We're excited to announce the beta release of the Front MCP server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You can create a developer account by signing up here."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://dev.frontapp.com/reference/introduction",
+    "quote": "Front supports OAuth2.0 as well as API Tokens.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "quote": "The Core API allows you as a Front developer to access core data and actions within Front.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+    "quote": "We're excited to announce the beta release of the Front MCP server",
+    "official": true,
+    "quote_check": "other_url"
+   },
+   {
+    "field": "verdict",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You can create a developer account by signing up here.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth2 and API tokens are available.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free developer environment is provided on sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official community post announces Front MCP beta.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence of blockers; sign‑up works.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

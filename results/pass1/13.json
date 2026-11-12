@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 13,
+  "name": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Freshdesk is a cloud-based customer support platform that provides ticketing, helpdesk solutions, and customer service automation.",
+  "auth_methods": [
+   "api_key",
+   "basic"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free trial or account and obtain an API key directly from their profile settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers tickets, contacts, companies, solutions, SLAs, business hours, and more.",
+  "mcp": "community",
+  "mcp_url": "https://mcpservers.org/servers/Enreign/freshdeck-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+    "quote": "Copy-paste this as required to authenticate third-party solutions."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.freshdesk.com/api",
+    "quote": "For all trial users, there is a default API limit of 50 calls/minute."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.freshdesk.com/api",
+    "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/Enreign/freshdeck-mcp",
+    "quote": "FRESHDESK_API_KEY=your_api_key_here"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.freshdesk.com/api",
+    "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Freshdesk (freshdesk.com) API authentication developer documentation",
+   "access": "Freshdesk (freshdesk.com) API access pricing plan get API key developer account",
+   "mcp": "Freshdesk (freshdesk.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.freshdesk.com/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://tavily.com/knowledge/company/wMGQ4XLenM3f"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://tavily.com/knowledge/company/wMGQ4XLenM3f"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.freshdesk.com/api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://tavily.com/knowledge/company/01XlDF2rOcto"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://api.freshservice.com"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://tavily.com/knowledge/company/wMGQ4XLenM3f"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developers.freshdesk.com/api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://tavily.com/knowledge/company/01XlDF2rOcto"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/Enreign/freshdeck-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpcursor.com/server/freshdesk-mcp-server-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/cyx-darren/freshdesk-kb-mcp-v1.2"
+   }
+  ],
+  "pages_read": [
+   "https://developers.freshdesk.com/api",
+   "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+   "https://tavily.com/knowledge/company/wMGQ4XLenM3f"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.3
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "record": {
+  "id": 74,
+  "name": "Jira",
+  "category": "Productivity and Project Management",
+  "one_liner": "Issue tracking and project management tool for teams",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free cloud account and generate API tokens or OAuth apps via the Atlassian developer console.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Jira platform REST API covers issues, projects, users, workflows, boards, and agile features extensively.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/hackdonalds/jira-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+    "quote": "OAuth 2.0 apps (integrations) created in the developer console can use OAuth 2.0 authorization code grants"
+   },
+   {
+    "field": "access",
+    "url": "https://community.atlassian.com/forums/discussion/2955396/use-rest-api-with-jira-instance-on-free-plan",
+    "quote": "Yes, you can use the REST API in Jira's free plan."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+    "quote": "The Jira Cloud platform REST API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/hackdonalds/jira-mcp",
+    "quote": "A Model Context Protocol (MCP) server that provides tools for interacting with JIRA APIs."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods",
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+    "quote": "OAuth 2.0 apps (integrations) created in the developer console can use OAuth 2.0 authorization code grants",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://community.atlassian.com/forums/discussion/2955396/use-rest-api-with-jira-instance-on-free-plan",
+    "quote": "Yes, you can use the REST API in Jira's free plan.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+    "quote": "The Jira Cloud platform REST API",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/hackdonalds/jira-mcp",
+    "quote": "A Model Context Protocol (MCP) server that provides tools for interacting with JIRA APIs.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs list both OAuth2 and basic auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free cloud plan permits API tokens/OAuth apps.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party repo provides a Jira MCP implementation.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims are met; no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "record": {
+  "id": 84,
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "Paygent is billing infrastructure and usage-based monetization for AI products and agents.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can create an account and obtain their API key through self-service.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers agents, billing events, usage indicators, pricing plans, orders, and automated invoices.",
+  "mcp": "official",
+  "mcp_url": "https://docs.withpaygent.com/_mcp/server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "access",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "1. Create an account and get your API key"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "connect to the MCP server at https://docs.withpaygent.com/_mcp/server."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "evidence_missing",
+    "field": "auth",
+    "detail": "no evidence given for auth"
+   },
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "access",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "1. Create an account and get your API key",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+    "quote": "connect to the MCP server at https://docs.withpaygent.com/_mcp/server.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs say obtain API key, implying API‑key authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs state you can create an account and get API key yourself.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs reference connecting to MCP server at given URL.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All required features present; no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

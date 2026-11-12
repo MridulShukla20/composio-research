@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 91,
+  "name": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "An AI-powered research and notebook assistant by Google for generating insights and summaries from documents.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "Requires a paid enterprise subscription with a minimum license requirement.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers notebook management tasks, sources, and sharing via Google Cloud REST endpoints.",
+  "mcp": "community",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires the Gemini Notebook Enterprise product which involves a paid subscription and licensing minimums.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.google.com/notebook/docs/authentication",
+    "quote": "The Gemini Notebook API uses OAuth 2.0 to authenticate requests on behalf of a Google user."
+   },
+   {
+    "field": "access",
+    "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084?page=2",
+    "quote": "The NotebookLM API requires Google Cloud’s NotebookLM Enterprise product which requires identity/auth setup and buying a subscription"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Create a notebook Retrieve a notebook List recently viewed notebooks Delete a notebook Share a notebook"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.kortex-notebooklm.com/blog/gemini-notebook-api",
+    "quote": "Through third-party servers, since Google doesn’t offer one of its own."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "NotebookLM (cloud.google.com/gemini (Enterprise API)) API authentication developer documentation",
+   "access": "NotebookLM (cloud.google.com/gemini (Enterprise API)) API access pricing plan get API key developer account",
+   "mcp": "NotebookLM (cloud.google.com/gemini (Enterprise API)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://cloud.google.com/gemini"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.google.com/notebook/docs/authentication"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.kortex-notebooklm.com/blog/gemini-notebook-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084?page=2"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.google.com/notebook/docs/authentication"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.kortex-notebooklm.com/blog/gemini-notebook-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.cloudzero.com/blog/gemini-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://techjacksolutions.com/ai-tools/google-gemini"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=Cl4XKgz6EJQ&vl=en"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.kortex-notebooklm.com/blog/gemini-notebook-api"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.google.com/g/answer/17106276?hl=en"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://codelabs.developers.google.com/google-workspace-ge"
+   }
+  ],
+  "pages_read": [
+   "https://cloud.google.com/gemini",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "https://developers.google.com/notebook/docs/authentication"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 17.4
+ }
+}

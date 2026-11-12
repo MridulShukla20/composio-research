@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 33,
+  "name": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage LinkedIn marketing campaigns, target professional audiences, and report campaign performance.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Developers must create a developer application, select products, and apply for API access which requires approval.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers advertising campaign management, reporting, community management, lead sync, matched audiences, and conversions.",
+  "mcp": "community",
+  "mcp_url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "API access requires explicit developer application and product approval from LinkedIn.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "The LinkedIn API uses OAuth 2.0 for user authorization and API authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "Most permissions and partner programs require explicit approval from LinkedIn."
+   },
+   {
+    "field": "api",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp",
+    "quote": "An MCP (Model Context Protocol) server that enables Claude AI to access and analyze your LinkedIn Ads data."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "The LinkedIn API uses OAuth 2.0 for user authorization and API authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "quote": "Most permissions and partner programs require explicit approval from LinkedIn.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.",
+    "official": true,
+    "quote_check": "other_url"
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/danielpopamd/linkedin-ads-mcp",
+    "quote": "An MCP (Model Context Protocol) server that enables Claude AI to access and analyze your LinkedIn Ads data.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state LinkedIn API uses OAuth 2.0.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs note most permissions need explicit LinkedIn approval.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party site lists a community MCP server for LinkedIn Ads.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access requires developer application and approval per docs.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

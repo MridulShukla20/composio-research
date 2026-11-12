@@ -1,0 +1,121 @@
+{
+ "record": {
+  "id": 79,
+  "name": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "A cloud-based platform for work management, project collaboration, and task automation.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access requires a Business, Enterprise, or Advanced Work Management plan.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Smartsheet API covers sheets, folders, users, and more.",
+  "mcp": "official",
+  "mcp_url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "The Smartsheet API requires specific paid plans (Business, Enterprise, or Advanced Work Management).",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "quote": "The API authenticates using access tokens (API keys)."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "Required plan: Business, Enterprise, or Advanced Work Management"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+    "quote": "The Smartsheet MCP Server is an open, protocol-based integration layer built on Anthropic's Model Context Protocol standard."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_trial but main_blocker=paid_plan"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "quote": "The API authenticates using access tokens (API keys).",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+    "quote": "The Smartsheet MCP Server is an open, protocol-based integration layer built on Anthropic's Model Context Protocol standard.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs state authentication uses API key tokens, not OAuth2.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Required plan listed as Business, Enterprise, or Advanced Work Management.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official Smartsheet page describes the MCP Server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Paid‑plan requirement is the main blocker, matching claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

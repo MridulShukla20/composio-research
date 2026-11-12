@@ -1,0 +1,135 @@
+{
+ "record": {
+  "id": 83,
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Cryptocurrency exchange platform providing spot, futures, and brokerage trading APIs.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "other",
+   "none"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up on Binance and generate API keys or set up OAuth2 through the developer portal.",
+  "api_styles": [
+   "other",
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers spot trading, futures, margin trading, account management, brokerage operations, and market data via REST and WebSockets.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/nirholas/Binance-MCP",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.binance.com/en",
+    "quote": "Send the user to Binance for consentGET  ?response_type=code"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.binance.us",
+    "quote": "Log into Binance.US with your account details"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.binance.com/en",
+    "quote": "Pick a product, follow the documentation, and integrate with our REST and WebSocket APIs."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/nirholas/Binance-MCP",
+    "quote": "Binance-MCP/"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.binance.com/en/docs",
+    "quote": "Public endpoint — no API key needed"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "api_styles"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.binance.com/en",
+    "quote": "Send the user to Binance for consentGET  ?response_type=code",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.binance.us",
+    "quote": "Log into Binance.US with your account details",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.binance.com/en",
+    "quote": "Pick a product, follow the documentation, and integrate with our REST and WebSocket APIs.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/nirholas/Binance-MCP",
+    "quote": "Binance-MCP/",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.binance.com/en/docs",
+    "quote": "Public endpoint — no API key needed",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 and API key shown; no evidence for \"other\" or \"none\" methods.",
+    "suggested": "oauth2, api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs show developers can create API keys themselves, implying free self‑service.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party GitHub repo confirms community‑maintained MCP.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Public endpoint example shows API usable without restrictions.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

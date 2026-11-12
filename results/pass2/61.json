@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 61,
+  "name": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "GitHub REST API for creating integrations, retrieving repository data, and automating developer workflows",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free GitHub account and generate personal access tokens or configure OAuth apps self-serve.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers repositories, issues, pull requests, actions, users, organizations, and nearly all platform features across hundreds of endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token. For example, create a personal access token or a GitHub App user access token."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.github.com/rest",
+    "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+    "quote": "The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token. For example, create a personal access token or a GitHub App user access token.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.github.com/rest",
+    "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+    "quote": "The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Evidence only shows token auth, no mention of OAuth2 as primary method.",
+    "suggested": "primary_auth=token"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Evidence mentions creating a token but does not confirm free self‑service sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs state GitHub provides an MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Partial evidence; auth and access claims not fully substantiated.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

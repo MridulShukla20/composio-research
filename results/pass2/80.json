@@ -1,0 +1,137 @@
+{
+ "record": {
+  "id": 80,
+  "name": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Harvest provides time tracking and project management software with streamlined invoicing and reporting.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a trial and generate personal access tokens or register an OAuth2 application directly from their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers clients, projects, tasks, time entries, expenses, invoices, estimates, users, and reports.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/ianaleck/harvest-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API."
+   },
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations."
+   },
+   {
+    "field": "access",
+    "url": "https://www.getharvest.com/blog/harvest-vs-clockify",
+    "quote": "Harvest offers a simple pricing model with a 30-day free trial to explore its features."
+   },
+   {
+    "field": "api",
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "Clients API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ianaleck/harvest-mcp-server",
+    "quote": "Complete Harvest API v2 Coverage - 40+ tools covering all major endpoints"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+    "quote": "Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.getharvest.com/blog/harvest-vs-clockify",
+    "quote": "Harvest offers a simple pricing model with a 30-day free trial to explore its features.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "Clients API",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ianaleck/harvest-mcp-server",
+    "quote": "Complete Harvest API v2 Coverage - 40+ tools covering all major endpoints",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs highlight token as quickest, not OAuth2 as primary.",
+    "suggested": "primary_auth=token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "30‑day free trial and self‑service token/OAuth2 creation.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party repo provides community MCP implementation.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Auth primary method claim mismatches docs, but no other blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 4,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

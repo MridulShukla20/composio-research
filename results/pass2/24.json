@@ -1,0 +1,130 @@
+{
+ "record": {
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_liner": "An enterprise collaboration and communication suite with robust open APIs.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up on the Lark Developer platform and obtain credentials for free.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Extensive API coverage for messaging, docs, calendar, contacts, drive, and more.",
+  "mcp": "official",
+  "mcp_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/advanced-configuration",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list",
+    "quote": "Authorization | string | Yes | tenant_access_token"
+   },
+   {
+    "field": "access",
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+    "quote": "Unlimited: Core features including Authentication and Authorization, Event Subscription, and Contacts are free to use"
+   },
+   {
+    "field": "api",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more."
+   },
+   {
+    "field": "mcp",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/advanced-configuration",
+    "quote": "MCP tools support two transmission modes: 1. stdio mode"
+   },
+   {
+    "field": "verdict",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/drive-v1/file-version/list",
+    "quote": "Authorization | string | Yes | tenant_access_token",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+    "quote": "Unlimited: Core features including Authentication and Authorization, Event Subscription, and Contacts are free to use",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/advanced-configuration",
+    "quote": "MCP tools support two transmission modes: 1. stdio mode",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://open.larksuite.com",
+    "quote": "Extend Lark with custom bots, web apps, blocks, powerful open APIs, and more.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs show bearer token usage, not explicit OAuth2 primary auth",
+    "suggested": "primary_auth=token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Core features are free regardless of Lark plan",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP integration documentation is provided",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Only marketing tagline, no concrete usability evidence",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

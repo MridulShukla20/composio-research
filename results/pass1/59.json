@@ -1,0 +1,137 @@
+{
+ "record": {
+  "id": 59,
+  "name": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Aggregate B2B contact and company enrichment API powered by 30+ data vendors",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "partner_or_sales_gated",
+  "access_note": "Contact the team (support@waterfall.io) for API access and pricing.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers prospector, search, contact and company enrichment, phone lookup, email verification, job changes, and account reporting endpoints.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "API access requires contacting sales or support for credentials rather than direct self-serve sign-up.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Send your API key in the x-api-key header"
+   },
+   {
+    "field": "access",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Contact the team (support@waterfall.io) for API access and pricing."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "quote": "The Waterfall API is available at https://api.waterfall.io."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Waterfall.io (waterfall.io (contact/company intel)) API authentication developer documentation",
+   "access": "Waterfall.io (waterfall.io (contact/company intel)) API access pricing plan get API key developer account",
+   "mcp": "Waterfall.io (waterfall.io (contact/company intel)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.waterfall.io/v1/introduction"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.waterfall.io"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://waterfall.mintlify.app/v1/authentication"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://waterfall.mintlify.app/v1/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.waterfall.io/v1/introduction"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apify.com/ryanclinton/waterfall-contact-enrichment"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.waterfall.io"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://sec-api.io/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.waterfall.io"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/operations/waterfall-enrichment-tools"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://getwaterfall.org/docs"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.blackhillsinfosec.com/model-context-protocol"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.builder.io/blog/model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://docs.waterfall.io/v1/introduction",
+   "https://www.waterfall.io",
+   "https://waterfall.mintlify.app/v1/authentication"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.6
+ }
+}

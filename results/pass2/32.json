@@ -1,0 +1,125 @@
+{
+ "record": {
+  "id": 32,
+  "name": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create, manage and optimize ad campaigns across Meta technologies including Facebook and Instagram.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers sign up at Meta for Developers, create a developer app, and add the Marketing API product at no cost.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers ads, ad sets, campaigns, creatives, custom audiences, insights, and catalogs via the Graph and Marketing APIs.",
+  "mcp": "official",
+  "mcp_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Production apps require app review to unlock standard tier rate limits and permissions.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+    "quote": "Every Marketing API call requires an access token as a parameter."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+    "quote": "Automatically granted when you add the Marketing API product to your app."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "quote": "This is a full list of root nodes for the Facebook Marketing API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+    "quote": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: The ads MCP server is a Meta-hosted Model Context Protocol server that lets you "
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+    "quote": "Every Marketing API call requires an access token as a parameter.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+    "quote": "Automatically granted when you add the Marketing API product to your app.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "quote": "This is a full list of root nodes for the Facebook Marketing API",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+    "quote": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads",
+    "official": true,
+    "quote_check": "missing"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs require OAuth2 access token; token is the OAuth2 token.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Adding Marketing API product grants free access; no cost mentioned.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official Meta page describes Ads MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "App review needed for full tier limits; matches claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

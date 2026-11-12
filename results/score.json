@@ -1,0 +1,915 @@
+{
+ "apps_in_key": 20,
+ "fields": [
+  "primary_auth",
+  "access",
+  "mcp",
+  "verdict"
+ ],
+ "views": {
+  "strict": {
+   "pass1": {
+    "fields": {
+     "primary_auth": {
+      "n": 19,
+      "correct": 18
+     },
+     "access": {
+      "n": 19,
+      "correct": 12
+     },
+     "mcp": {
+      "n": 20,
+      "correct": 18
+     },
+     "verdict": {
+      "n": 20,
+      "correct": 15
+     }
+    },
+    "n": 78,
+    "correct": 63,
+    "accuracy": 0.8077
+   },
+   "pass2": {
+    "fields": {
+     "primary_auth": {
+      "n": 19,
+      "correct": 18
+     },
+     "access": {
+      "n": 19,
+      "correct": 14
+     },
+     "mcp": {
+      "n": 20,
+      "correct": 19
+     },
+     "verdict": {
+      "n": 20,
+      "correct": 16
+     }
+    },
+    "n": 78,
+    "correct": 67,
+    "accuracy": 0.859
+   }
+  },
+  "lenient_auth": {
+   "pass1": {
+    "fields": {
+     "primary_auth": {
+      "n": 19,
+      "correct": 19
+     },
+     "access": {
+      "n": 19,
+      "correct": 12
+     },
+     "mcp": {
+      "n": 20,
+      "correct": 18
+     },
+     "verdict": {
+      "n": 20,
+      "correct": 15
+     }
+    },
+    "n": 78,
+    "correct": 64,
+    "accuracy": 0.8205
+   },
+   "pass2": {
+    "fields": {
+     "primary_auth": {
+      "n": 19,
+      "correct": 19
+     },
+     "access": {
+      "n": 19,
+      "correct": 14
+     },
+     "mcp": {
+      "n": 20,
+      "correct": 19
+     },
+     "verdict": {
+      "n": 20,
+      "correct": 16
+     }
+    },
+    "n": 78,
+    "correct": 68,
+    "accuracy": 0.8718
+   }
+  },
+  "strict_blind_only": {
+   "pass1": {
+    "fields": {
+     "primary_auth": {
+      "n": 18,
+      "correct": 17
+     },
+     "access": {
+      "n": 18,
+      "correct": 12
+     },
+     "mcp": {
+      "n": 19,
+      "correct": 17
+     },
+     "verdict": {
+      "n": 19,
+      "correct": 15
+     }
+    },
+    "n": 74,
+    "correct": 61,
+    "accuracy": 0.8243
+   },
+   "pass2": {
+    "fields": {
+     "primary_auth": {
+      "n": 18,
+      "correct": 17
+     },
+     "access": {
+      "n": 18,
+      "correct": 13
+     },
+     "mcp": {
+      "n": 19,
+      "correct": 18
+     },
+     "verdict": {
+      "n": 19,
+      "correct": 16
+     }
+    },
+    "n": 74,
+    "correct": 64,
+    "accuracy": 0.8649
+   }
+  }
+ },
+ "misses": [
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "field": "access",
+   "human": "approval_required",
+   "pass1": "self_serve_free",
+   "pass2": "self_serve_free",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 39,
+   "name": "Threads (Meta)",
+   "field": "access",
+   "human": "approval_required",
+   "pass1": "self_serve_free",
+   "pass2": "self_serve_free",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 42,
+   "name": "WooCommerce",
+   "field": "access",
+   "human": "self_serve_free",
+   "pass1": "not_applicable",
+   "pass2": "not_applicable",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 47,
+   "name": "Ecwid",
+   "field": "access",
+   "human": "paid_plan",
+   "pass1": "self_serve_free",
+   "pass2": "paid_plan",
+   "pass1_ok": false,
+   "pass2_ok": true,
+   "grey_zone": false
+  },
+  {
+   "id": 47,
+   "name": "Ecwid",
+   "field": "mcp",
+   "human": "community",
+   "pass1": "none_found",
+   "pass2": "community",
+   "pass1_ok": false,
+   "pass2_ok": true,
+   "grey_zone": false
+  },
+  {
+   "id": 47,
+   "name": "Ecwid",
+   "field": "verdict",
+   "human": "yes_with_caveats",
+   "pass1": "yes",
+   "pass2": "yes_with_caveats",
+   "pass1_ok": false,
+   "pass2_ok": true,
+   "grey_zone": false
+  },
+  {
+   "id": 60,
+   "name": "Clay",
+   "field": "verdict",
+   "human": "yes_with_caveats",
+   "pass1": "yes",
+   "pass2": "yes",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 74,
+   "name": "Jira",
+   "field": "mcp",
+   "human": "official",
+   "pass1": "official",
+   "pass2": "community",
+   "pass1_ok": true,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "field": "access",
+   "human": "self_serve_free",
+   "pass1": "self_serve_trial",
+   "pass2": "paid_plan",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "field": "mcp",
+   "human": "official",
+   "pass1": "community",
+   "pass2": "official",
+   "pass1_ok": false,
+   "pass2_ok": true,
+   "grey_zone": false
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "field": "verdict",
+   "human": "yes",
+   "pass1": "yes_with_caveats",
+   "pass2": "yes_with_caveats",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 90,
+   "name": "PitchBook",
+   "field": "access",
+   "human": "partner_or_sales_gated",
+   "pass1": "paid_plan",
+   "pass2": "partner_or_sales_gated",
+   "pass1_ok": false,
+   "pass2_ok": true,
+   "grey_zone": false
+  },
+  {
+   "id": 90,
+   "name": "PitchBook",
+   "field": "verdict",
+   "human": "no",
+   "pass1": "yes_with_caveats",
+   "pass2": "yes_with_caveats",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 94,
+   "name": "Consensus",
+   "field": "access",
+   "human": "approval_required",
+   "pass1": "self_serve_free",
+   "pass2": "self_serve_free",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 94,
+   "name": "Consensus",
+   "field": "verdict",
+   "human": "yes_with_caveats",
+   "pass1": "yes",
+   "pass2": "yes",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": false
+  },
+  {
+   "id": 99,
+   "name": "YouTube Transcript",
+   "field": "primary_auth",
+   "human": "api_key",
+   "pass1": "token",
+   "pass2": "token",
+   "pass1_ok": false,
+   "pass2_ok": false,
+   "grey_zone": true
+  }
+ ],
+ "per_app": [
+  {
+   "id": 1,
+   "name": "Salesforce",
+   "note": "",
+   "evidence_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 2,
+   "name": "HubSpot",
+   "note": "",
+   "evidence_url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "needs_human"
+  },
+  {
+   "id": 14,
+   "name": "Front",
+   "note": "",
+   "evidence_url": "https://dev.frontapp.com/docs/welcome",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 15,
+   "name": "Pylon",
+   "note": "could not confirm which plans include API access",
+   "evidence_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "fields": {
+    "primary_auth": {
+     "human": "token",
+     "pass1": "token",
+     "pass2": "token"
+    },
+    "access": {
+     "human": "unknown",
+     "pass1": "paid_plan",
+     "pass2": "paid_plan"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes_with_caveats",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 23,
+   "name": "Zoho Cliq",
+   "note": "",
+   "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 24,
+   "name": "Lark (Larksuite)",
+   "note": "tenant token vs OAuth user token, both exist",
+   "evidence_url": "https://open.larksuite.com/",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "note": "App Review needed to manage other people's ad accounts",
+   "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "approval_required",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes_with_caveats",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 39,
+   "name": "Threads (Meta)",
+   "note": "App Review needed for non-tester users; MCP servers found are all third-party",
+   "evidence_url": "https://developers.facebook.com/docs/threads/get-started",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "approval_required",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "community",
+     "pass1": "community",
+     "pass2": "community"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes_with_caveats",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 42,
+   "name": "WooCommerce",
+   "note": "auth: API key pair sent via Basic auth",
+   "evidence_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+   "fields": {
+    "primary_auth": {
+     "human": "basic",
+     "pass1": "basic",
+     "pass2": "basic"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "not_applicable",
+     "pass2": "not_applicable"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 47,
+   "name": "Ecwid",
+   "note": "API needs a paid plan (Venture or above); MCP servers found are third-party platforms only",
+   "evidence_url": "https://api-docs.ecwid.com/reference/access-ecwid-api",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "paid_plan",
+     "pass1": "self_serve_free",
+     "pass2": "paid_plan"
+    },
+    "mcp": {
+     "human": "community",
+     "pass1": "none_found",
+     "pass2": "community"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 51,
+   "name": "DataForSEO",
+   "note": "",
+   "evidence_url": "https://docs.dataforseo.com/v3/auth/",
+   "fields": {
+    "primary_auth": {
+     "human": "basic",
+     "pass1": "basic",
+     "pass2": "basic"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 60,
+   "name": "Clay",
+   "note": "Public API is new (2026) and narrow: read tables and run functions, no table writes; older pages say no public API",
+   "evidence_url": "https://developers.clay.com/public-api/authentication",
+   "fields": {
+    "primary_auth": {
+     "human": "api_key",
+     "pass1": "api_key",
+     "pass2": "api_key"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "needs_human"
+  },
+  {
+   "id": 62,
+   "name": "Vercel",
+   "note": "access token for own account; OAuth for published integrations",
+   "evidence_url": "https://vercel.com/docs/accounts/access-tokens",
+   "fields": {
+    "primary_auth": {
+     "human": "token",
+     "pass1": "token",
+     "pass2": "token"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 64,
+   "name": "Cloudflare",
+   "note": "",
+   "evidence_url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+   "fields": {
+    "primary_auth": {
+     "human": "token",
+     "pass1": "token",
+     "pass2": "token"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 74,
+   "name": "Jira",
+   "note": "",
+   "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication-for-apps/",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "community"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "note": "developer sandbox for building; normal accounts need a paid licence for tokens",
+   "evidence_url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+   "fields": {
+    "primary_auth": {
+     "human": "oauth2",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_trial",
+     "pass2": "paid_plan"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "community",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes_with_caveats",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "needs_human"
+  },
+  {
+   "id": 81,
+   "name": "Stripe",
+   "note": "",
+   "evidence_url": "https://docs.stripe.com/api/authentication",
+   "fields": {
+    "primary_auth": {
+     "human": "api_key",
+     "pass1": "api_key",
+     "pass2": "api_key"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  },
+  {
+   "id": 90,
+   "name": "PitchBook",
+   "note": "not blind; API needs standalone contract via Direct Data team",
+   "evidence_url": "https://pitchbook.com/help/pitchbook-api",
+   "fields": {
+    "primary_auth": {
+     "human": "api_key",
+     "pass1": "api_key",
+     "pass2": "api_key"
+    },
+    "access": {
+     "human": "partner_or_sales_gated",
+     "pass1": "paid_plan",
+     "pass2": "partner_or_sales_gated"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "no",
+     "pass1": "yes_with_caveats",
+     "pass2": "yes_with_caveats"
+    }
+   },
+   "trust": "verified"
+  },
+  {
+   "id": 94,
+   "name": "Consensus",
+   "note": "PI by application only with custom quote; auth method not published; MCP uses OAuth; beware goconsensus.com is a different company",
+   "evidence_url": "https://consensus.app/home/api/",
+   "fields": {
+    "primary_auth": {
+     "human": "unknown",
+     "pass1": "oauth2",
+     "pass2": "oauth2"
+    },
+    "access": {
+     "human": "approval_required",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes_with_caveats",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "needs_human"
+  },
+  {
+   "id": 99,
+   "name": "YouTube Transcript",
+   "note": "third-party service, not Google's YouTube API; 100 free credits then paid",
+   "evidence_url": "https://transcriptapi.com/docs/mcp/",
+   "fields": {
+    "primary_auth": {
+     "human": "api_key",
+     "pass1": "token",
+     "pass2": "token"
+    },
+    "access": {
+     "human": "self_serve_free",
+     "pass1": "self_serve_free",
+     "pass2": "self_serve_free"
+    },
+    "mcp": {
+     "human": "official",
+     "pass1": "official",
+     "pass2": "official"
+    },
+    "verdict": {
+     "human": "yes",
+     "pass1": "yes",
+     "pass2": "yes"
+    }
+   },
+   "trust": "partly_verified"
+  }
+ ]
+}

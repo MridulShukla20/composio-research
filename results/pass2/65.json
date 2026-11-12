@@ -1,0 +1,126 @@
+{
+ "record": {
+  "id": 65,
+  "name": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "An open-source Firebase alternative providing a Postgres database, Authentication, Instant APIs, Edge Functions, and Storage.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and obtain API keys and access tokens immediately via the dashboard.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Management API and Data APIs cover projects, organizations, databases, auth, and storage comprehensively.",
+  "mcp": "official",
+  "mcp_url": "https://supabase.com/blog/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "There are two ways to generate an access token: Personal access token (PAT)... OAuth2"
+   },
+   {
+    "field": "access",
+    "url": "https://supabase.com/pricing",
+    "quote": "Start building for free, collaborate with your team, then scale to millions of users"
+   },
+   {
+    "field": "api",
+    "url": "https://supabase.com/docs",
+    "quote": "Data REST API\n- GraphQL API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://supabase.com/blog/mcp-server",
+    "quote": "Our MCP server connects your AI tools to Supabase"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: There are two ways to generate an access token: Personal access token (PAT)... O"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: There are two ways to generate an access token: Personal access token (PAT)... O"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "There are two ways to generate an access token: Personal access token (PAT)... OAuth2",
+    "official": true,
+    "quote_check": "missing"
+   },
+   {
+    "field": "access",
+    "url": "https://supabase.com/pricing",
+    "quote": "Start building for free, collaborate with your team, then scale to millions of users",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://supabase.com/docs",
+    "quote": "Data REST API\n- GraphQL API",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://supabase.com/blog/mcp-server",
+    "quote": "Our MCP server connects your AI tools to Supabase",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "No evidence for api_key auth method",
+    "suggested": "['oauth2','token']"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page offers free self‑serve tier",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official blog post describes MCP server",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims met; no blockers",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

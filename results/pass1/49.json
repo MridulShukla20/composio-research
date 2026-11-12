@@ -1,0 +1,153 @@
+{
+ "record": {
+  "id": 49,
+  "name": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_liner": "An API service enabling Amazon sellers and vendors to programmatically access sales, orders, shipments, and inventory data.",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Requires a Professional selling account, registration as an SP-API developer, and developer profile approval.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers orders, catalog items, inventory, pricing, fulfillment, reports, and feeds.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/jay-trivedi/amazon_sp_mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Requires a Professional selling account and developer profile approval from Amazon.",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://sell.amazon.com/developers",
+    "quote": "Selling Partner API (SP-API) is a REST-based API that helps Amazon sellers and vendors programmatically access their data"
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+    "quote": "The authorization model for the Selling Partner API is based on Login with Amazon, an Amazon implementation of OAuth 2.0."
+   },
+   {
+    "field": "access",
+    "url": "https://sell.amazon.com/developers",
+    "quote": "Sign up for a Professional selling account, or log in to Seller Central if you already have one."
+   },
+   {
+    "field": "api",
+    "url": "https://sell.amazon.com/developers",
+    "quote": "Selling Partner API (SP-API) is a REST-based API that helps Amazon sellers and vendors programmatically access their data for orders, shipments, payments"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/jay-trivedi/amazon_sp_mcp",
+    "quote": "Amazon Seller Central MCP Server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://sell.amazon.com/developers",
+    "quote": "You must have a Professional selling account and be the primary account user to create an SP-API developer profile."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Amazon Selling Partner (developer-docs.amazon.com/sp-api) API authentication developer documentation",
+   "access": "Amazon Selling Partner (developer-docs.amazon.com/sp-api) API access pricing plan get API key developer account",
+   "mcp": "Amazon Selling Partner (developer-docs.amazon.com/sp-api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer-docs.amazon.com/sp-api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://sell.amazon.com/developers"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer-docs-amazon-shipping.readme.io/apis/docs/connecting-to-the-selling-partner-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=BGmx-9C1aoM"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.amazonservices.com/start"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.fivetran.com/blog/no-walled-gardens-amazon-reversed-its-seller-partner-api-fees"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://sell.amazon.com/developers"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://novadata.io/resources/news/amazon-sp-api-subscription-fees-2026"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/jay-trivedi/amazon_sp_mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/amazonseller-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://medium.com/@satya108agarwal/code-smarter-not-harder-supercharging-amazon-sp-api-integrations-with-mcp-and-llms-5431d7a21417"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/partner-central-mcp-server.html"
+   }
+  ],
+  "pages_read": [
+   "https://developer-docs.amazon.com/sp-api",
+   "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+   "https://sell.amazon.com/developers"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.2
+ }
+}

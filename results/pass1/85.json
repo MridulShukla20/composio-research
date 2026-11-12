@@ -1,0 +1,123 @@
+{
+ "record": {
+  "id": 85,
+  "name": "iPayX",
+  "category": "Finance and Fintech",
+  "one_liner": "Enterprise-grade payment processing, subscription management, and complex billing API.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "unknown",
+  "access_note": "unknown",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers payment transactions, customer management, subscriptions, and webhooks.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "other",
+  "blocker_note": "Access acquisition method is not fully detailed in the documentation snippets.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://api-docs.payments.ai",
+    "quote": "Authorization: ApiKey YOUR_API_KEY"
+   },
+   {
+    "field": "api",
+    "url": "https://api-docs.payments.ai",
+    "quote": "Process payments, manage subscriptions, and handle complex billing scenarios"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": "Exact self-serve pricing/access model is not explicitly detailed in the provided documentation snippets."
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "iPayX (ipayx.ai/docs) API authentication developer documentation",
+   "access": "iPayX (ipayx.ai/docs) API access pricing plan get API key developer account",
+   "mcp": "iPayX (ipayx.ai/docs) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://api-docs.payments.ai"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://api-docs.payments.ai"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.jasper.ai/docs/authentication"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.payroc.com/api/authentication"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://payhawk.com/help/overview-of-the-payhawk-developer-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.x.com/x-api/getting-started/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://api.market"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://cloud.google.com/api-keys/pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/how-to-get-your-perplexity-api-key"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://stytch.com/blog/model-context-protocol-introduction"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.descope.com/learn/post/mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://unito.io/blog/mcp-definition"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://api-docs.payments.ai"
+  ],
+  "pages_unreadable": [
+   "https://ipayx.ai/docs",
+   "https://docs.x.com/x-api/getting-started/pricing"
+  ],
+  "model_attempts": 1,
+  "seconds": 13.5
+ }
+}

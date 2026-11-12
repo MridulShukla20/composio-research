@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 37,
+  "name": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one marketing platform and funnel builder for building sales funnels, email campaigns, and online courses.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate an API key directly from their account dashboard settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers a broad range of features including contacts, tags, newsletters, funnels, courses, automation rules, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "API keys are unique identifiers that authenticate requests to our public API."
+   },
+   {
+    "field": "access",
+    "url": "https://systeme.io/pricing",
+    "quote": "Yes, the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course"
+   },
+   {
+    "field": "api",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform"
+   },
+   {
+    "field": "mcp",
+    "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "quote": "Our MCP feature currently provides direct access to specific contact-management features"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "API keys are unique identifiers that authenticate requests to our public API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://systeme.io/pricing",
+    "quote": "Yes, the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "quote": "Our MCP feature currently provides direct access to specific contact-management features",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state API keys authenticate public API requests.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free plan exists; API key generation documented.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official article describes MCP providing contact‑management access.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have official supporting evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 27,
+  "name": "Telegram",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud-based instant messaging service and application programming interface provider.",
+  "auth_methods": [
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can obtain a bot token via @BotFather or an api_id and api_hash via my.telegram.org for free.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Telegram Bot API and MTProto API provide comprehensive messaging, chat management, user authentication, and file transfer capabilities.",
+  "mcp": "community",
+  "mcp_url": "https://mcp.so/servers/telegram_mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://core.telegram.org/bots/api",
+    "quote": "Each bot is given a unique authentication token when it is created."
+   },
+   {
+    "field": "access",
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "quote": "Sign up for Telegram using an official application."
+   },
+   {
+    "field": "api",
+    "url": "https://core.telegram.org",
+    "quote": "The Bot API allows you to easily create programs that use Telegram messages for an interface."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.usecarly.com/blog/telegram-mcp",
+    "quote": "No — Telegram does not have an official MCP server."
+   },
+   {
+    "field": "verdict",
+    "url": "https://core.telegram.org",
+    "quote": "You are welcome to use both APIs free of charge."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://core.telegram.org/bots/api",
+    "quote": "Each bot is given a unique authentication token when it is created.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "quote": "Sign up for Telegram using an official application.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://core.telegram.org",
+    "quote": "The Bot API allows you to easily create programs that use Telegram messages for an interface.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.usecarly.com/blog/telegram-mcp",
+    "quote": "No — Telegram does not have an official MCP server.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://core.telegram.org",
+    "quote": "You are welcome to use both APIs free of charge.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Token supported; no evidence for OAuth2.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free self‑service token and API credentials available.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Only community‑built MCP servers exist.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "APIs are free for developers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

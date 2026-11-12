@@ -1,0 +1,130 @@
+{
+ "record": {
+  "id": 67,
+  "name": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Snowflake is a cloud-based data platform that provides data storage, processing, and analytics solutions.",
+  "auth_methods": [
+   "oauth2",
+   "basic",
+   "token",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can obtain credentials by signing up for a Snowflake trial account or an on-demand account.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Snowflake REST and SQL APIs cover database querying, data updates, and administrative actions.",
+  "mcp": "official",
+  "mcp_url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+    "quote": "Snowflake supports basic authentication (i.e. username and password) in the API request header as specified in RFC 7617"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.snowflake.com",
+    "quote": "Getting a Trial Account Snowflake in 20 Minutes"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+    "quote": "Snowflake’s managed Model Context Protocol (MCP) servers in public preview"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods",
+   "verdict",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: Using key pair authentication, Using OAuth, Using a programmatic access token (P"
+   },
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_trial but main_blocker=paid_plan"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+    "quote": "Snowflake supports basic authentication (i.e. username and password) in the API request header as specified in RFC 7617",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.snowflake.com",
+    "quote": "Getting a Trial Account Snowflake in 20 Minutes",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+    "quote": "Snowflake’s managed Model Context Protocol (MCP) servers in public preview",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs list basic and OAuth2 but no token/other methods.",
+    "suggested": "oauth2, basic"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs describe self‑serve trial account signup.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official blog announces managed MCP servers (public preview).",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Auth claim incomplete; token/other not documented.",
+    "suggested": "main_blocker=auth"
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

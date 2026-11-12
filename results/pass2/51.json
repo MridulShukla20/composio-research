@@ -1,0 +1,123 @@
+{
+ "record": {
+  "id": 51,
+  "name": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides comprehensive SEO, SERP, keyword, backlink, and marketing data via a REST API and official MCP server.",
+  "auth_methods": [
+   "basic"
+  ],
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "access_note": "Create a free account and obtain API credentials (login and password) from the API Access dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers a wide suite of SEO, SERP, keyword data, backlinks, on-page, and domain analytics APIs.",
+  "mcp": "official",
+  "mcp_url": "https://dataforseo.com/model-context-protocol",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service."
+   },
+   {
+    "field": "mcp",
+    "url": "https://dataforseo.com/model-context-protocol",
+    "quote": "The DataForSEO MCP server is designed to support AI-driven applications across different industries and use cases."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://dataforseo.com/model-context-protocol",
+    "quote": "The DataForSEO MCP server is designed to support AI-driven applications across different industries and use cases.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.dataforseo.com/v3/auth",
+    "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state DataForSEO uses Basic Authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs say free account provides API login/password.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP page exists on vendor site.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence contradicts claim; free account works.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

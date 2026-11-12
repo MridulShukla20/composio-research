@@ -1,0 +1,147 @@
+{
+ "record": {
+  "id": 88,
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "A fully unified spend platform offering corporate cards, expense management, reimbursements, travel, and bill pay.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Sign in to the Brex dashboard as an admin, navigate to Developer settings, and create a user token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers accounting, budgets, expenses, payments, team management, transactions, travel, and webhooks.",
+  "mcp": "community",
+  "mcp_url": "https://mcp.so/servers/mcp-brex-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.brex.com/guides/authentication",
+    "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard"
+   },
+   {
+    "field": "access",
+    "url": "https://www.brex.com/journal/press/brex-announces-api-and-zapier-partnership-to-automate-payments-transactions-and-more",
+    "quote": "This new open API is available to all Brex customers, free of charge."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.brex.com",
+    "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification"
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcp.so/servers/mcp-brex-server",
+    "quote": "Brex MCP Server is a Model Context Protocol server that provides AI assistants read-only access"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.brex.com",
+    "quote": "Using the Brex API, you can power your internal tools and create custom workflows."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Brex (developer.brex.com) API authentication developer documentation",
+   "access": "Brex (developer.brex.com) API access pricing plan get API key developer account",
+   "mcp": "Brex (developer.brex.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.brex.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.brex.com/guides/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.brex.com/guides/api-launch-stages"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.brex.com/guides/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/ex3ndr/brex-cli"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.brex.com/guides/api-launch-stages"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.openbankingtracker.com/provider/brex"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.openbankingtracker.com/provider/brex"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://integrations.sh/brex.com"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.brex.com/journal/building-the-brex-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.brex.com/journal/press/brex-announces-api-and-zapier-partnership-to-automate-payments-transactions-and-more"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/mcp-brex-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://explainx.ai/mcp-servers/brex"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/crazyrabbitLTC/mcp-brex-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/create-a-step-by-step-developer-guide-mcp-brex-integration"
+   }
+  ],
+  "pages_read": [
+   "https://developer.brex.com",
+   "https://developer.brex.com/guides/authentication",
+   "https://developer.brex.com/guides/api-launch-stages"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.1
+ }
+}

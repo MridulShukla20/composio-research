@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 14,
+  "name": "Front",
+  "category": "Support and Helpdesk",
+  "one_liner": "Shared inbox and customer operations platform for customer support and sales teams.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account to access a developer environment.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Core API covers conversations, channels, contacts, messages, and automation.",
+  "mcp": "official",
+  "mcp_url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://dev.frontapp.com/reference/introduction",
+    "quote": "Front supports OAuth2.0 as well as API Tokens."
+   },
+   {
+    "field": "access",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs."
+   },
+   {
+    "field": "api",
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "quote": "The Core API allows you as a Front developer to access core data and actions within Front."
+   },
+   {
+    "field": "mcp",
+    "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+    "quote": "We're excited to announce the beta release of the Front MCP server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You can create a developer account by signing up here."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Front (front.com) API authentication developer documentation",
+   "access": "Front (front.com) API access pricing plan get API key developer account",
+   "mcp": "Front (front.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://community.front.com/api-news-updates-40"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://front.com/pricing"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://help.front.com/en/articles/2438"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://dev.frontapp.com/docs/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://dev.frontapp.com/reference/introduction"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://dev.frontapp.com/docs/core-api-overview"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://front.com/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://help.front.com/en/articles/2438"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://dev.frontapp.com/docs/welcome"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://dev.frontapp.com/docs/rate-limiting"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.town.com/integrations/front"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://zapier.com/mcp/front-app"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://community.front.com/developer-discussion-39/is-anyone-working-on-creating-an-mcp-server-for-frontapp-2309"
+   }
+  ],
+  "pages_read": [
+   "https://community.front.com/api-news-updates-40",
+   "https://front.com/pricing",
+   "https://help.front.com/en/articles/2438"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.0
+ }
+}

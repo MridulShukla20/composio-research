@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 69,
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Monitoring and security platform for cloud applications providing infrastructure and application telemetry.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Sign up for a free trial on Datadog's website and generate API and application keys in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Extensive HTTP REST API covering metrics, logs, traces, monitors, dashboards, and organization management.",
+  "mcp": "official",
+  "mcp_url": "https://docs.datadoghq.com/mcp_server/setup",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.datadoghq.com/api/latest/authentication",
+    "quote": "Requests that write data require reporting access and require an API key."
+   },
+   {
+    "field": "access",
+    "url": "https://www.datadoghq.com/pricing",
+    "quote": "Start Free Trial"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "The Datadog API is an HTTP REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.datadoghq.com/mcp_server/setup",
+    "quote": "Go to Tools > AI Assistant > Model Context Protocol (MCP)"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Datadog (docs.datadoghq.com/api) API authentication developer documentation",
+   "access": "Datadog (docs.datadoghq.com/api) API access pricing plan get API key developer account",
+   "mcp": "Datadog (docs.datadoghq.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.datadoghq.com/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.datadoghq.com/api/latest/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.datadoghq.com/api/latest"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.datadoghq.com/api/latest/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.datadoghq.com/api/latest"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.datadoghq.com/getting_started/api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/datadog/datadog-configure-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/datadog"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.datadoghq.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://apitracker.io/a/datadog"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.truefoundry.com/blog/datadog-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/datadog-mcp-vs-api"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.datadoghq.com/mcp_server/setup"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/shelfio/datadog-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://docs.datadoghq.com/api",
+   "https://docs.datadoghq.com/api/latest/authentication",
+   "https://docs.datadoghq.com/api/latest"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.2
+ }
+}

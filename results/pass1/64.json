@@ -1,0 +1,139 @@
+{
+ "record": {
+  "id": 64,
+  "name": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloudflare provides a cloud platform offering CDN, security, DDoS mitigation, and serverless compute.",
+  "auth_methods": [
+   "token",
+   "api_key"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Cloudflare account and generate API tokens or keys directly in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers thousands of endpoints across DNS, Workers, Pages, SSL, and other Cloudflare infrastructure.",
+  "mcp": "official",
+  "mcp_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "Cloudflare uses the RFC standard ↗︎ Authorization: Bearer <API_TOKEN> interface."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+    "quote": "1. Log in to the Cloudflare dashboard. 2. Go to My Profile > API Tokens."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "The stable base URL for all Version 4 HTTPS endpoints is: https://api.cloudflare.com/client/v4/"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare",
+    "quote": "The Cloudflare API MCP server at ` is the only MCP server you need to work with Cloudflare."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Cloudflare (developers.cloudflare.com/api) API authentication developer documentation",
+   "access": "Cloudflare (developers.cloudflare.com/api) API access pricing plan get API key developer account",
+   "mcp": "Cloudflare (developers.cloudflare.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.cloudflare.com/pages/configuration/api"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://cfapi.centminmod.com"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.cloudflare.com/api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.cloudflare.com/pages/configuration/api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://developers.cloudflare.com/workers/platform/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://community.cloudflare.com/t/api-key-access/582968"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developers.cloudflare.com/api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/cloudflare/mcp-server-cloudflare"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/cloudflare-mcp-vs-api"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/cloudflare/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+   "https://developers.cloudflare.com/pages/configuration/api"
+  ],
+  "pages_unreadable": [
+   "https://developers.cloudflare.com/api"
+  ],
+  "model_attempts": 1,
+  "seconds": 34.2
+ }
+}

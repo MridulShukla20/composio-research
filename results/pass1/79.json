@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 79,
+  "name": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "A cloud-based platform for work management, project collaboration, and task automation.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a trial account or register for Developer Tools to build apps.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Smartsheet API covers sheets, reports, workspaces, users, attachments, and webhooks.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/mattjhughes/mcp-smartsheet",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "Full API and developer access typically requires a paid Smartsheet plan after trial periods.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "quote": "OAuth 2.0 (OAuth) provides a way for your app users to grant limited access to their Smartsheet resources."
+   },
+   {
+    "field": "access",
+    "url": "https://www.smartsheet.com/platform",
+    "quote": "Explore the full power of the platform before committing, improve your programs and processes, and manage all your users with ease."
+   },
+   {
+    "field": "api",
+    "url": "https://smartsheet.com/developers",
+    "quote": "Explore API docs, connect to our MCP server, develop faster on SDKs"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mattjhughes/mcp-smartsheet",
+    "quote": "A Model Context Protocol (MCP) server for integrating with the Smartsheet API."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Smartsheet (smartsheet.com/developers) API authentication developer documentation",
+   "access": "Smartsheet (smartsheet.com/developers) API access pricing plan get API key developer account",
+   "mcp": "Smartsheet (smartsheet.com/developers) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://smartsheet.com/developers"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.smartsheet.com/platform"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=ayAyEU_fGEs"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.activepieces.com/blog/smartsheet-api-rate-limits-auth-and-examples-2026"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://smartsheet.redoc.ly?iOS="
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "http://gt-events.net/api-getting-started.html"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apidog.com/blog/smartsheet-api-guide"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://rollout.com/integration-guides/smartsheet/api-essentials"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.aws.amazon.com/quicksuite/latest/userguide/smartsheet-integration.md"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://en.wikipedia.org/wiki/Smartsheet"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.syncdev.com/mcp-servers/smartsheet-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mattjhughes/mcp-smartsheet"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://lobehub.com/mcp/brianterry-smartsheet-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/smar-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://smartsheet.com/developers",
+   "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+   "https://www.smartsheet.com/platform"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 25.9
+ }
+}

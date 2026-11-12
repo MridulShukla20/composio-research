@@ -1,0 +1,154 @@
+{
+ "record": {
+  "id": 3,
+  "name": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_liner": "Pipedrive is a web-based Sales CRM and pipeline management software for managing leads, deals, and activities.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer sandbox account and register applications in the Developer Hub.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The RESTful Pipedrive API covers core CRM functionality including deals, organizations, persons, activities, and leads.",
+  "mcp": "official",
+  "mcp_url": "https://www.pipedrive.com/en/features/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "quote": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace."
+   },
+   {
+    "field": "access",
+    "url": "https://pipeline.zoominfo.com/sales/pipedrive-api",
+    "quote": "a free developer sandbox account lets you build and test integrations without touching production data."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.usecarly.com/blog/pipedrive-mcp",
+    "quote": "Yes — Pipedrive has an official MCP server."
+   },
+   {
+    "field": "one_liner",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Pipedrive (pipedrive.com) API authentication developer documentation",
+   "access": "Pipedrive (pipedrive.com) API access pricing plan get API key developer account",
+   "mcp": "Pipedrive (pipedrive.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://devcommunity.pipedrive.com/t/reseller-api-authentication/5264"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.pipedrive.com/docs/api/v1"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://endgrate.com/blog/using-the-pipedrive-api-to-create-or-update-organizations-(with-python-examples)"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://devcommunity.pipedrive.com/t/reseller-api-authentication/5264"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/pipedrive-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/crm-apis/pipedrive-api-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://endgrate.com/blog/using-the-pipedrive-api-to-create-or-update-deals-(with-php-examples)"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/pipedrive-1"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/pipedrive-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.pipedrive.com/en/features/mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/pipedrive-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://developers.pipedrive.com/docs/api/v1/Oauth",
+   "https://devcommunity.pipedrive.com/t/reseller-api-authentication/5264",
+   "https://developers.pipedrive.com/docs/api/v1"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.4
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 46,
+  "name": "Squarespace",
+  "category": "Ecommerce",
+  "one_liner": "An ecommerce and website building platform providing APIs for managing orders, inventory, products, and more.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access requires a Squarespace account on a paid plan (such as Commerce Advanced or Business depending on the API).",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers commerce operations including orders, products, inventory, transactions, and contacts.",
+  "mcp": "official",
+  "mcp_url": "https://developers.squarespace.com/mcp/overview",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "authenticate requests by using an API key or OAuth access token."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "quote": "Overview of the Squarespace MCP Server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.squarespace.com",
+    "quote": "Everything you need to build and publish external apps — reliable APIs, clear documentation"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "authenticate requests by using an API key or OAuth access token.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "quote": "Overview of the Squarespace MCP Server",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.squarespace.com",
+    "quote": "Everything you need to build and publish external apps — reliable APIs, clear documentation",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs list oauth2 and api_key, but do not state oauth2 as primary",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Custom apps require Commerce Advanced paid plan",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP overview page is provided",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Only marketing text; no explicit blocker assessment",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

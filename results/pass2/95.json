@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 95,
+  "name": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Agentic document platform for parsing, extracting, and processing documents into LLM-ready structured data",
+  "auth_methods": [
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account on Reducto Studio and generate API keys instantly with free usage credits.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers document parsing, extraction, splitting, classification, and editing endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://docs.reducto.ai/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Authorization: Bearer $REDUCTO_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Go to studio.reducto.ai and sign up for a free account."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "For developers building automated pipelines. Available in Python, Node.js, Go, and REST."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Authorization: Bearer $REDUCTO_API_KEY",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Go to studio.reducto.ai and sign up for a free account.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "For developers building automated pipelines. Available in Python, Node.js, Go, and REST.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs show Bearer header using API key, confirming api_key and token methods",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs instruct signing up free at studio.reducto.ai and creating API keys",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs mention mcp server integration for agents",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have official documentation, no blockers",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

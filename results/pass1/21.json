@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 21,
+  "name": "Slack",
+  "category": "Communications and Messaging",
+  "one_liner": "A channel-based messaging platform for team collaboration and productivity.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account or workspace and register applications to obtain credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers messaging, channels, users, reactions, search, and other collaboration features through the Web API.",
+  "mcp": "official",
+  "mcp_url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.slack.dev/authentication",
+    "quote": "Slack apps use OAuth scopes to govern what they can access."
+   },
+   {
+    "field": "access",
+    "url": "https://slack.com/pricing",
+    "quote": "Or start with the basics for free, and upgrade at any time."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.slack.dev/apis/web-api",
+    "quote": "Register your application with Slack to obtain credentials for use with our OAuth 2.0 implementation"
+   },
+   {
+    "field": "mcp",
+    "url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+    "quote": "general availability of Slack’s Real-Time Search (RTS) API and Model Context Protocol (MCP) server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Slack (slack.com) API authentication developer documentation",
+   "access": "Slack (slack.com) API access pricing plan get API key developer account",
+   "mcp": "Slack (slack.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://slack.com/pricing"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.slack.dev/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.slack.dev/reference/methods/users.identity"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.slack.dev/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.slack.dev/reference/methods/users.identity"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.slack.dev"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.slack.dev/apis/web-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/slack"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.apirefs.com/apps/slack"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.slack.dev/apis/web-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://slack.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/redhat-ai-tools/slack-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://slack.dev/secure-data-connectivity-for-the-modern-ai-era"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available"
+   }
+  ],
+  "pages_read": [
+   "https://slack.com/pricing",
+   "https://docs.slack.dev/authentication",
+   "https://docs.slack.dev/reference/methods/users.identity"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 2,
+  "seconds": 16.8
+ }
+}

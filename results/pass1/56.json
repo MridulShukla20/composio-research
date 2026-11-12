@@ -1,0 +1,149 @@
+{
+ "record": {
+  "id": 56,
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Turn websites into clean markdown and structured data using an API or AI-powered web scraper.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "none"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up on firecrawl.dev to get an API key instantly with a free tier.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers scraping, crawling, searching, mapping, and extraction endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "Requests need an `Authorization` header with your API key"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.firecrawl.dev/billing",
+    "quote": "New accounts start on the free plan. It costs nothing and does not need a card."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data."
+   },
+   {
+    "field": "mcp",
+    "url": "https://ai-tldr.dev/tools/firecrawl-mcp-server",
+    "quote": "Firecrawl MCP Server is the official Model Context Protocol wrapper around Firecrawl"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Firecrawl (firecrawl.dev) API authentication developer documentation",
+   "access": "Firecrawl (firecrawl.dev) API access pricing plan get API key developer account",
+   "mcp": "Firecrawl (firecrawl.dev) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.firecrawl.dev/billing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/firecrawl/firecrawl"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.firecrawl.dev/developer-index"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://webscraping.ai/blog/firecrawl-guide"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.onegtmlab.dev/tool-directory/research-and-scraping/firecrawl"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://crawlcrawl.com/blog/firecrawl-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.firecrawl.dev/billing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://ai-tldr.dev/tools/firecrawl-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/Msparihar/mcp-server-firecrawl"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.firecrawl.dev/use-cases/ai-mcps"
+   }
+  ],
+  "pages_read": [
+   "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "https://docs.firecrawl.dev/api-reference/introduction",
+   "https://docs.firecrawl.dev/billing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.3
+ }
+}

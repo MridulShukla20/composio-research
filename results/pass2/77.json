@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 77,
+  "name": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_liner": "Task management and productivity platform that enables teams to manage projects, tasks, goals, and documents.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free ClickUp account and generate personal API tokens or create OAuth apps directly in their settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers tasks, custom fields, comments, goals, folders, lists, attachments, webhooks, and chat views.",
+  "mcp": "official",
+  "mcp_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server.md",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.clickup.com/docs/authentication",
+    "quote": "Authenticate to the ClickUp API using a personal token or OAuth."
+   },
+   {
+    "field": "access",
+    "url": "https://clickup.com/blog/clickup-api",
+    "quote": "If you don’t have an account yet, you can sign up for free and create your first Workspace!"
+   },
+   {
+    "field": "api",
+    "url": "https://clickup.com/api",
+    "quote": "ClickUp API empowers you to create custom workflows, integrate seamlessly with your favorite tools"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "ClickUp's MCP Server is available on all plans."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "quote": "Build your own custom integrations and ClickUp apps with our public Application Programming Interface (API)."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.clickup.com/docs/authentication",
+    "quote": "Authenticate to the ClickUp API using a personal token or OAuth.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://clickup.com/blog/clickup-api",
+    "quote": "If you don’t have an account yet, you can sign up for free and create your first Workspace!",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://clickup.com/api",
+    "quote": "ClickUp API empowers you to create custom workflows, integrate seamlessly with your favorite tools",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "ClickUp's MCP Server is available on all plans.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "quote": "Build your own custom integrations and ClickUp apps with our public Application Programming Interface (API).",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs confirm OAuth and token, but don’t state OAuth is primary.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free sign‑up and token/OAuth creation are documented.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP documentation confirms availability on all plans.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Official page encourages building integrations via public API.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

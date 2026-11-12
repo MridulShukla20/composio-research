@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 57,
+  "name": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Web data platform providing proxies, web scrapers, structured datasets, and MCP tools for AI agents",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up on Bright Data's website to receive free credits and instant self-serve API access.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers data extraction, scrapers, web unlockers, datasets, search APIs, and browser automation.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/brightdata/brightdata-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "5,000 free credits per month, no credit card required. See the free tier."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.brightdata.com/introduction",
+    "quote": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API, proxies"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "quote": "The Bright Data MCP server gives AI agents and assistants real-time access to public web data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Bright Data (brightdata.com) API authentication developer documentation",
+   "access": "Bright Data (brightdata.com) API access pricing plan get API key developer account",
+   "mcp": "Bright Data (brightdata.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.brightdata.com/products/scraper-studio/quickstart"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.brightdata.com/introduction"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.brightdata.com/products/scraper-studio/quickstart"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.brightdata.com/introduction"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/api-evangelist/brightdata"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://katteb.com/blog/bright-data-ai-agent"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://brightdata.com/blog/ai/bright-data-python-sdk"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://brightdata.com/pricing/web-scraper"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/brightdata/brightdata-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.brightdata.com/products/mcp-server/overview"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://skywork.ai/skypage/en/bright-data-web-mcp-ai-agents/1978325953293230080"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://brightdata.com/pricing/mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://docs.brightdata.com/api-reference/authentication",
+   "https://docs.brightdata.com/products/scraper-studio/quickstart",
+   "https://docs.brightdata.com/introduction"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.5
+ }
+}

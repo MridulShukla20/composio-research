@@ -1,0 +1,136 @@
+{
+ "record": {
+  "id": 4,
+  "name": "Attio",
+  "category": "CRM and Sales",
+  "one_liner": "Modern CRM and customer data platform for managing relationships, records, and sales pipelines",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate API keys or set up OAuth apps directly.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+  "mcp": "official",
+  "mcp_url": "https://attio.com/apps/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.attio.com/rest-api/guides/authentication",
+    "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key"
+   },
+   {
+    "field": "access",
+    "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+    "quote": "Available on all plans."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS."
+   },
+   {
+    "field": "mcp",
+    "url": "https://attio.com/apps/mcp",
+    "quote": "Attio provides a hosted MCP server that gives AI tools secure access to your Attio workspace."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.attio.com/rest-api/guides/authentication",
+    "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+    "quote": "Available on all plans.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://attio.com/apps/mcp",
+    "quote": "Attio provides a hosted MCP server that gives AI tools secure access to your Attio workspace.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "No evidence for basic auth; only OAuth2 and API key are documented.",
+    "suggested": "oauth2, api_key"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs confirm API keys on all plans but don’t show free self‑serve signup.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP page confirms hosted server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Public REST API is documented.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 4,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

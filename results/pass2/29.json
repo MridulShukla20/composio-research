@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 29,
+  "name": "Aircall",
+  "category": "Communications and Messaging",
+  "one_liner": "A cloud-based business phone system and customer communications platform with call center tools and AI voice agents.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "Aircall requires a paid subscription plan to access the Public API.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers calls, contacts, users, teams, phone numbers, comments, tags, and webhooks.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/themobilefirstco/aircall-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth."
+   },
+   {
+    "field": "access",
+    "url": "https://aircall.io/pricing",
+    "quote": "All plans include API access and 250+ integrations."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "Aircall Public API is a classic REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+    "quote": "MCP Server for Aircall API — 73 tools for calls, contacts, SMS"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://aircall.io/pricing",
+    "quote": "All plans include API access and 250+ integrations.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "Aircall Public API is a classic REST API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+    "quote": "MCP Server for Aircall API — 73 tools for calls, contacts, SMS",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs list OAuth and Basic Auth, no API key support.",
+    "suggested": "basic"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "API access listed for all plans, not limited to paid only.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party GitHub repo provides an Aircall MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim incorrect; API key not supported.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

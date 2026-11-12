@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 21,
+  "name": "Slack",
+  "category": "Communications and Messaging",
+  "one_liner": "A channel-based messaging platform for team collaboration and productivity.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account or workspace and register applications to obtain credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers messaging, channels, users, reactions, search, and other collaboration features through the Web API.",
+  "mcp": "official",
+  "mcp_url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.slack.dev/authentication",
+    "quote": "Slack apps use OAuth scopes to govern what they can access."
+   },
+   {
+    "field": "access",
+    "url": "https://slack.com/pricing",
+    "quote": "Or start with the basics for free, and upgrade at any time."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.slack.dev/apis/web-api",
+    "quote": "Register your application with Slack to obtain credentials for use with our OAuth 2.0 implementation"
+   },
+   {
+    "field": "mcp",
+    "url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+    "quote": "general availability of Slack’s Real-Time Search (RTS) API and Model Context Protocol (MCP) server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.slack.dev/authentication",
+    "quote": "Slack apps use OAuth scopes to govern what they can access.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://slack.com/pricing",
+    "quote": "Or start with the basics for free, and upgrade at any time.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.slack.dev/apis/web-api",
+    "quote": "Register your application with Slack to obtain credentials for use with our OAuth 2.0 implementation",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+    "quote": "general availability of Slack’s Real-Time Search (RTS) API and Model Context Protocol (MCP) server.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth2 primary and token usage.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free plan allows self‑service registration of apps.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official blog announces MCP availability.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims are backed by official evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

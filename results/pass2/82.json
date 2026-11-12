@@ -1,0 +1,123 @@
+{
+ "record": {
+  "id": 82,
+  "name": "Plaid",
+  "category": "Finance and Fintech",
+  "one_liner": "Financial technology platform that builds APIs connecting bank accounts to apps.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a developer account on the Plaid Dashboard for free sandbox and trial access.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Plaid API covers authentication, accounts, balances, transactions, investments, liabilities, and payments.",
+  "mcp": "official",
+  "mcp_url": "https://plaid.com/docs/resources/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://plaid.com/docs/api",
+    "quote": "Almost all Plaid API endpoints require a client_id and secret."
+   },
+   {
+    "field": "access",
+    "url": "https://plaid.com/pricing",
+    "quote": "Start with our month-to-month plan: unlimited usage, no commitments upfront—only pay for what you use."
+   },
+   {
+    "field": "api",
+    "url": "https://plaid.com/docs/api",
+    "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON"
+   },
+   {
+    "field": "mcp",
+    "url": "https://plaid.com/docs/resources/mcp",
+    "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "verdict",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://plaid.com/docs/api",
+    "quote": "Almost all Plaid API endpoints require a client_id and secret.",
+    "official": true,
+    "quote_check": "near"
+   },
+   {
+    "field": "access",
+    "url": "https://plaid.com/pricing",
+    "quote": "Start with our month-to-month plan: unlimited usage, no commitments upfront—only pay for what you use.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://plaid.com/docs/api",
+    "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://plaid.com/docs/resources/mcp",
+    "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Only API key (client_id/secret) shown; no evidence for oauth2 or token methods.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "Evidence describes a paid month‑to‑month plan, not free self‑serve access.",
+    "suggested": "paid_plan"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs confirm Plaid hosts a remote MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Access claim is false, so overall 'yes' cannot be justified.",
+    "suggested": "no"
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

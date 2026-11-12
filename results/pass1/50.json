@@ -1,0 +1,152 @@
+{
+ "record": {
+  "id": 50,
+  "name": "fanbasis",
+  "category": "Ecommerce",
+  "one_liner": "A creator economy platform that bundles digital products, subscriptions, courses, communities, and payments into one dashboard.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a free creator account on the platform dashboard to generate API keys.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers subscriptions, payments, members, digital products, and checkout events.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "Transaction fees and revenue shares apply on sales, though it is free to start.",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://whop.com/blog/fanbasis-alternatives",
+    "quote": "Commas (formerly FanBasis) is a platform for online creators and entrepreneurs to create and sell products"
+   },
+   {
+    "field": "auth",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys."
+   },
+   {
+    "field": "access",
+    "url": "https://whop.com/blog/fanbasis-alternatives",
+    "quote": "It's free to start selling, as FanBasis operates on a revenue-share model"
+   },
+   {
+    "field": "api",
+    "url": "https://emergent.sh/integrations/fanbasis",
+    "quote": "Emergent automatically understands FanBasis's data structures, including subscriptions, payments, members, digital products"
+   },
+   {
+    "field": "mcp",
+    "url": "https://emergent.sh/integrations/fanbasis",
+    "quote": "FanBasis Integration with Emergent"
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": "Official standalone API documentation URL outside of third-party integration mentions could not be directly verified."
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "fanbasis (fanbasis.com) API authentication developer documentation",
+   "access": "fanbasis (fanbasis.com) API access pricing plan get API key developer account",
+   "mcp": "fanbasis (fanbasis.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://emergent.sh/integrations/fanbasis"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://whop.com/blog/fanbasis-alternatives"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.tarvent.com/integrations/fanbasis"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://emergent.sh/integrations/fanbasis"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.tarvent.com/integrations/fanbasis"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=PoldnKFeX_s"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://tavily.com/knowledge/company/LJmfyOI51WwS"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://whop.com/blog/fanbasis-alternatives"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.tarvent.com/integrations/fanbasis"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://commas.com"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://emergent.sh/integrations/fanbasis"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://cloud.google.com/discover/what-is-model-context-protocol"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://stytch.com/blog/model-context-protocol-introduction"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.descope.com/learn/post/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://emergent.sh/integrations/fanbasis",
+   "https://whop.com/blog/fanbasis-alternatives",
+   "https://www.tarvent.com/integrations/fanbasis"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.5
+ }
+}

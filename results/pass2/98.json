@@ -1,0 +1,135 @@
+{
+ "record": {
+  "id": 98,
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Command line tool for the Mermaid library to generate SVG/PNG/PDF files from diagram definitions",
+  "auth_methods": [
+   "none"
+  ],
+  "primary_auth": "none",
+  "access": "not_applicable",
+  "access_note": "It is an open-source command-line tool with no credentials or hosted API required.",
+  "api_styles": [
+   "other"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Provides a CLI and a basic Node.js library wrapper for rendering diagrams locally.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/andrewginns/mermaid-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Command line tool for the Mermaid library"
+   },
+   {
+    "field": "auth",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid."
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "License: MIT License"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It's possible to call `mermaid-cli` via a Node.JS API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/andrewginns/mermaid-mcp-server",
+    "quote": "The server internally calls `npx @mermaid-js/mermaid-cli` as a subprocess"
+   },
+   {
+    "field": "verdict",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "npm install -g @mermaid-js/mermaid-cli"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Command line tool for the Mermaid library",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "License: MIT License",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It's possible to call `mermaid-cli` via a Node.JS API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/andrewginns/mermaid-mcp-server",
+    "quote": "The server internally calls `npx @mermaid-js/mermaid-cli` as a subprocess",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "npm install -g @mermaid-js/mermaid-cli",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "CLI runs locally, no authentication required",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Open‑source command‑line tool, no credentialed access needed",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party server uses mermaid‑cli, fits community MCP definition",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Installable via npm, works without blockers",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

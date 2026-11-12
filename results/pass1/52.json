@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 52,
+  "name": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "An all-in-one SEO and digital marketing platform providing tools for keyword research, rank tracking, backlink analysis, and site audits via its robust API.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Users can test the API via a free trial account, sign up for pay-as-you-go, or purchase standalone API/subscription plans.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers backlinks, domain research, keyword research, site audits, AI search metrics, and account subscription data.",
+  "mcp": "official",
+  "mcp_url": "https://seranking.com/api/integrations/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "Include an Authorization header in your request, with the value Token YOUR_API_KEY."
+   },
+   {
+    "field": "access",
+    "url": "https://seranking.com/api.html",
+    "quote": "You can even test it in the free trial account."
+   },
+   {
+    "field": "api",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "All requests to the Data API must be authenticated. The base URL for all endpoints is: https://api.seranking.com"
+   },
+   {
+    "field": "mcp",
+    "url": "https://seranking.com/api/integrations/mcp",
+    "quote": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model to access your SE Ranking"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "SE Ranking (seranking.com/api) API authentication developer documentation",
+   "access": "SE Ranking (seranking.com/api) API access pricing plan get API key developer account",
+   "mcp": "SE Ranking (seranking.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://seranking.com/api/data/getting-started"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://seranking.com/api/data/reference"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://seranking.com/api/data/getting-started"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://seranking.com/api/data/reference"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://seranking.com/api/data/keyword-research"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://seranking.com/api/project"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://seranking.com/api-pricing.html"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://seranking.com/api/how-to-get-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://seranking.com/api.html"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.riffanalytics.ai/blog/se-ranking-api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://seranking.com/api/integrations/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.seranking.com/hc/en-us/articles/22903914755100-Prompt-library"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://seranking.com/api/integrations"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.youtube.com/watch?v=TvJO-RfISYY"
+   }
+  ],
+  "pages_read": [
+   "https://seranking.com/api/data/getting-started",
+   "https://seranking.com/api/data/reference"
+  ],
+  "pages_unreadable": [
+   "https://seranking.com/api"
+  ],
+  "model_attempts": 1,
+  "seconds": 72.7
+ }
+}

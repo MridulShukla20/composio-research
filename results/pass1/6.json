@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 6,
+  "name": "Podio",
+  "category": "CRM and Sales",
+  "one_liner": "Work management and collaboration platform providing customizable workspaces, apps, and CRM tools.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "You just have to sign in or sign up with Podio, and go to the API key tab in your settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers workspaces, apps, items, tasks, files, comments, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.podio.com/authentication/server_side",
+    "quote": "The server-side flow works by sending your user to Podio to authorize."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.podio.com/api-key",
+    "quote": "You just have to sign in or sign up with Podio, and go to the API key tab in your settings."
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/providers/podio",
+    "quote": "Podio apps, items, workspaces, organizations, users, tasks, files, comments, and webhooks."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+    "quote": "The Podio MCP (Model Context Protocol) Server connects AI assistants"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Podio (podio.com) API authentication developer documentation",
+   "access": "Podio (podio.com) API access pricing plan get API key developer account",
+   "mcp": "Podio (podio.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.podio.com/authentication/server_side"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.podio.com/authentication/username_password"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.podio.com/authentication/scopes"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.podio.com/authentication/server_side"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.podio.com/authentication/username_password"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.podio.com/authentication/scopes"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/podio"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://developers.podio.com/index/faq"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.progress.com/podio/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://developers.podio.com/api-key"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.larksuite.com/en_us/blog/podio-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://viasocket.com/mcp/podio"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://zapier.com/mcp/podio"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.pipedream.com/app/podio"
+   }
+  ],
+  "pages_read": [
+   "https://developers.podio.com/authentication/server_side",
+   "https://developers.podio.com/authentication/username_password",
+   "https://developers.podio.com/authentication/scopes"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.0
+ }
+}

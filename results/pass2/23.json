@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 23,
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_liner": "Team chat and communication software for businesses offering channels, meetings, and workflow automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a free Zoho account and register an app in the Zoho Developer Console to obtain OAuth credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Provides comprehensive REST endpoints covering chats, messages, channels, bots, slash commands, and user settings.",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/cliq/mcp-server.html",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://www.zoho.com/cliq/help/platform/faq.html",
+    "quote": "Register as a new client in Zoho's Developer Console ."
+   },
+   {
+    "field": "api",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/cliq/mcp-server.html",
+    "quote": "With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.zoho.com/cliq/help/platform/faq.html",
+    "quote": "Register as a new client in Zoho's Developer Console .",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/cliq/mcp-server.html",
+    "quote": "With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state OAuth 2.0 is used.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs show registration via free developer console; no payment required.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP page confirms its existence.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have official evidence; no blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

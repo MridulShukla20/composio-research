@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 93,
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting assistant that records, transcribes, and summarizes video meetings with a public API and MCP support.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate API keys or create an OAuth app via the Fathom website.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The REST API covers meeting insights, summaries, transcripts, action items, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://developers.fathom.ai/mcp-docs",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Partners can register an OAuth app to be eligible for a future marketplace listing"
+   },
+   {
+    "field": "auth",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area."
+   },
+   {
+    "field": "access",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Anyone can browse the API docs and start building!"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "This documentation describes Fathom's REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.fathom.ai/mcp-docs",
+    "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Partners can register an OAuth app to be eligible for a future marketplace listing",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Anyone can browse the API docs and start building!",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "This documentation describes Fathom's REST API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.fathom.ai/mcp-docs",
+    "quote": "Fathom now offers an official MCP (Model Context Protocol) server",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs state API keys are primary auth, not OAuth.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs say anyone can browse docs and start building, implying free self‑serve.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs announce an official MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Primary auth claim false, creating a blocker.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

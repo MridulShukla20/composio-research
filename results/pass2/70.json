@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 70,
+  "name": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Error tracking and performance monitoring platform for developers and application teams",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer plan or trial instantly.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers account-level resources, organizations, teams, issue tracking, and data export.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.sentry.dev",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.sentry.io/pricing",
+    "quote": "developer \n\nFor solo devs working on small projects \n\nFree \n\n$0"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.sentry.io/api",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://blog.sentry.io/yes-sentry-has-an-mcp-server-and-its-pretty-good",
+    "quote": "yes, as the title of this post suggests - Sentry has an MCP server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.sentry.io/pricing",
+    "quote": "developer \n\nFor solo devs working on small projects \n\nFree \n\n$0",
+    "official": true,
+    "quote_check": "other_url"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.sentry.io/api",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://blog.sentry.io/yes-sentry-has-an-mcp-server-and-its-pretty-good",
+    "quote": "yes, as the title of this post suggests - Sentry has an MCP server.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth2 and personal token auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page lists a free self‑serve plan.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official blog confirms an Sentry MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All three claims are backed by evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

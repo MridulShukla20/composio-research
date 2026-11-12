@@ -1,0 +1,145 @@
+{
+ "record": {
+  "id": 11,
+  "name": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service software and helpdesk platform providing ticketing, support, and messaging solutions.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a time-limited free trial to obtain API credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers tickets, users, organizations, help center articles, and messaging conversations.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/reminia/zendesk-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+    "quote": "Zendesk supports using OAuth access tokens to authenticate API requests."
+   },
+   {
+    "field": "access",
+    "url": "https://www.merge.dev/blog/zendesk-api-key",
+    "quote": "You can trial every plan for free except Enterprise. Also, with a trial account, you can access an API token"
+   },
+   {
+    "field": "api",
+    "url": "https://www.getmacha.com/blog/zendesk-api-explained",
+    "quote": "The Zendesk API is a REST interface at that lets other software create, read, update and delete the same tickets"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/reminia/zendesk-mcp-server",
+    "quote": "A Model Context Protocol server for Zendesk."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Zendesk (zendesk.com) API authentication developer documentation",
+   "access": "Zendesk (zendesk.com) API access pricing plan get API key developer account",
+   "mcp": "Zendesk (zendesk.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.zendesk.com/api-reference/ai-agents/authentication"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.merge.dev/blog/zendesk-api-key"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.zendesk.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.getmacha.com/blog/zendesk-api-explained"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://chatbotkit.com/connections/zendesk.com/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/reminia/zendesk-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/zendesk-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication",
+   "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+   "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.3
+ }
+}

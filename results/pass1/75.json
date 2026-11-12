@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 75,
+  "name": "Asana",
+  "category": "Productivity and Project Management",
+  "one_liner": "A web and mobile work management platform designed to help teams organize, track, and manage their work.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate personal access tokens or configure OAuth in the developer console.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers workspaces, projects, tasks, attachments, custom fields, portfolios, and audit logs.",
+  "mcp": "official",
+  "mcp_url": "https://developers.asana.com/docs/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.asana.com/docs/authentication.md",
+    "quote": "Personal access token"
+   },
+   {
+    "field": "access",
+    "url": "https://asana.com/terms/api-terms",
+    "quote": "Our APIs are currently provided for free"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.asana.com/docs/quick-start",
+    "quote": "The Asana API is a RESTful interface with predictable resource-oriented URLs"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.asana.com/docs/mcp-server",
+    "quote": "Asana offers a Model Context Protocol (MCP) server"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Asana (developers.asana.com) API authentication developer documentation",
+   "access": "Asana (developers.asana.com) API access pricing plan get API key developer account",
+   "mcp": "Asana (developers.asana.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.asana.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.asana.com/docs/quick-start"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.asana.com/docs/personal-access-token"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.asana.com/docs/quick-start"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.asana.com/docs/personal-access-token"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=cTlB3ijf8I0"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.asana.com/docs/api-explorer"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://forum.asana.com/t/premium-vs-business-account-and-api-access/170667"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=cTlB3ijf8I0"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/asana"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://asana.com/terms/api-terms"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.activepieces.com/blog/asana-mcp-server-setup-guide-and-config-2026"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/cristip73/mcp-server-asana"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/84emllc/mcp-server-asana"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.asana.com/docs/mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://developers.asana.com",
+   "https://developers.asana.com/docs/quick-start",
+   "https://developers.asana.com/docs/personal-access-token"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.2
+ }
+}

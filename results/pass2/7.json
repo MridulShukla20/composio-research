@@ -1,0 +1,122 @@
+{
+ "record": {
+  "id": 7,
+  "name": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_liner": "Top-rated Sales CRM Software with AI automation and extensive developer APIs.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Zoho CRM account and access developer credentials through the Zoho Developer Console.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Zoho CRM provides comprehensive REST APIs covering record operations, metadata, bulk processing, and query capabilities.",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+    "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+    "quote": "Free Edition"
+   },
+   {
+    "field": "api",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html",
+    "quote": "Zoho CRM REST API Collection"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+    "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+    "quote": "Free Edition",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-collection.html",
+    "quote": "Zoho CRM REST API Collection",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state the API uses OAuth 2.0.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs list a Free Edition but don’t explicitly confirm self‑serve sign‑up or dev console.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP overview confirms pre‑built MCP servers.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Auth and MCP are confirmed; free tier plausible, no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

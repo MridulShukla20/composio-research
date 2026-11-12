@@ -1,0 +1,152 @@
+{
+ "record": {
+  "id": 99,
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_liner": "A managed REST API and MCP server for extracting YouTube transcripts, search, channel data, and playlists.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account to receive 100 free credits without a credit card.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers YouTube transcripts, video search, channel search, channel videos, latest uploads, and playlist videos.",
+  "mcp": "official",
+  "mcp_url": "https://transcriptapi.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://transcriptapi.com",
+    "quote": "Stop fighting YouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP"
+   },
+   {
+    "field": "auth",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io",
+    "quote": "TranscriptAPI docs use Bearer token authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://transcriptapi.com",
+    "quote": "100 free credits to try the API — no card required."
+   },
+   {
+    "field": "api",
+    "url": "https://transcriptapi.com",
+    "quote": "Transcripts, search, channels, playlists — all in one place."
+   },
+   {
+    "field": "mcp",
+    "url": "https://transcriptapi.com/docs/mcp",
+    "quote": "TranscriptAPI’s server is hosted at"
+   },
+   {
+    "field": "verdict",
+    "url": "https://transcriptapi.com",
+    "quote": "Get a free API key at transcriptapi.com/signup"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "YouTube Transcript (transcriptapi.com) API authentication developer documentation",
+   "access": "YouTube Transcript (transcriptapi.com) API access pricing plan get API key developer account",
+   "mcp": "YouTube Transcript (transcriptapi.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://transcriptapi.com"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://transcriptapi.com"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-searchapi"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://supadata.ai/blog/best-youtube-transcript-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://transcriptapi.com"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-searchapi"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://transcriptapi.com/docs/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/zeropointrepo/youtube-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://transcriptapi.com/docs/mcp/chatgpt"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://glama.ai/mcp/servers/ZeroPointRepo/youtube-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+   "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io",
+   "https://transcriptapi.com"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 60.7
+ }
+}

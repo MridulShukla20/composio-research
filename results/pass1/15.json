@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 15,
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer support and helpdesk platform for B2B companies",
+  "auth_methods": [
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "token",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid plans such as Professional and Advanced.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers core objects like accounts, knowledge base, collections, and article feedback.",
+  "mcp": "official",
+  "mcp_url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires a paid subscription plan.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request"
+   },
+   {
+    "field": "access",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "quote": "Professional | $89 per seat/month, annual contract | Core support, viewer seats, analytics, automations, Skills, broadcasts, MCP, API, integrations"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+    "quote": "Returns a paginated list of accounts for the organization."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "quote": "The Pylon MCP Server exposes Pylon data to AI tools that support the Model Context Protocol"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Pylon (usepylon.com) API authentication developer documentation",
+   "access": "Pylon (usepylon.com) API access pricing plan get API key developer account",
+   "mcp": "Pylon (usepylon.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.scalekit.com/blog/pylon-mcp-vs-api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.usepylon.com/pylon-facts"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.usepylon.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.town.com/integrations/pylon"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/pylon-mcp-vs-api"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/JustinBeckwith/pylon-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+   "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.4
+ }
+}

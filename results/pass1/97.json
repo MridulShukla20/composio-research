@@ -1,0 +1,150 @@
+{
+ "record": {
+  "id": 97,
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native creative suite providing image, video, and audio generation models accessible via REST API, CLI, and MCP servers.",
+  "auth_methods": [
+   "api_key",
+   "other",
+   "none"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up, top up a prepaid balance in US dollars, and create API keys directly.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers over 50 video and image generation models with asynchronous request lifecycles, webhooks, and SDKs.",
+  "mcp": "official",
+  "mcp_url": "https://higgsfield.ai/cli",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.higgsfield.ai",
+    "quote": "--header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\""
+   },
+   {
+    "field": "access",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video"
+   },
+   {
+    "field": "api",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API provides access to more than 50 current video and image generation models."
+   },
+   {
+    "field": "mcp",
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools."
+   },
+   {
+    "field": "verdict",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "higgsfield (higgsfield.ai/cli (content suite)) API authentication developer documentation",
+   "access": "higgsfield (higgsfield.ai/cli (content suite)) API access pricing plan get API key developer account",
+   "mcp": "higgsfield (higgsfield.ai/cli (content suite)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://higgsfield.ai/cli"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://higgsfield.ai/blog/higgsfield-api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.higgsfield.ai"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://mindcloud.co/docs/universal/rest/higgsfield-ai/latest/introduction/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.mindstudio.ai/blog/higgsfield-cli-claude-code-content-automation"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.higgsfield.ai"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://higgsfield.ai/cli"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://higgsfield.ai/blog/higgsfield-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://higgsfield.ai/blog/ai-video-api-pricing-vs-subscriptions"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=dZBAJNdFxzo"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://higgsfield.ai/blog/higgsfield-cli"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://higgsfield.ai/blog/mcp-for-marketers"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://higgsfield.ai/cli"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://higgsfield.ai/blog/Generate-AI-Videos-From-Claude-with-Higgsfield-MCP"
+   }
+  ],
+  "pages_read": [
+   "https://higgsfield.ai/cli",
+   "https://higgsfield.ai/blog/higgsfield-api",
+   "https://docs.higgsfield.ai"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 53.5
+ }
+}

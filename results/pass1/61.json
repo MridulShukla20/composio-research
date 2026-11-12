@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 61,
+  "name": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "GitHub REST API for creating integrations, retrieving repository data, and automating developer workflows",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free GitHub account and generate personal access tokens or configure OAuth apps self-serve.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers repositories, issues, pull requests, actions, users, organizations, and nearly all platform features across hundreds of endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token. For example, create a personal access token or a GitHub App user access token."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/rest/quickstart",
+    "quote": "Create an access token."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.github.com/rest",
+    "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+    "quote": "The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "GitHub (docs.github.com/rest) API authentication developer documentation",
+   "access": "GitHub (docs.github.com/rest) API access pricing plan get API key developer account",
+   "mcp": "GitHub (docs.github.com/rest) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.github.com/rest"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.github.com/rest/quickstart"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.github.com/en/rest"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.github.com/rest/quickstart"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.github.com/en/rest"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://blog.namespacecomm.in/github-api-demystified-a-developers-handbook"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.github.com/rest/repos/contents"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.github.com/en/rest"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://latenode.com/blog/integration-api-management/api-integration-best-practices/what-is-github-api-and-how-to-get-a-github-api-key-tutorial-and-examples"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.github.com/rest/quickstart"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.github.com/en/copilot/concepts/customizations/mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/asifdotpy/github-mcp-server-asifdotpy"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://medium.com/@EleventhHourEnthusiast/model-context-protocol-for-github-integration-0605ecf29f96"
+   }
+  ],
+  "pages_read": [
+   "https://docs.github.com/rest",
+   "https://docs.github.com/rest/quickstart",
+   "https://docs.github.com/en/rest"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.6
+ }
+}

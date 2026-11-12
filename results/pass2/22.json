@@ -1,0 +1,125 @@
+{
+ "record": {
+  "id": 22,
+  "name": "Twilio",
+  "category": "Communications and Messaging",
+  "one_liner": "A cloud communications platform that enables developers to programmatically send and receive SMS, voice, and other communication channels.",
+  "auth_methods": [
+   "basic"
+  ],
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up and get free access to tools and a developer account.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Twilio REST API allows you to query metadata about your account, phone numbers, calls, text messages, and recordings.",
+  "mcp": "official",
+  "mcp_url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.twilio.com/docs/messaging/api",
+    "quote": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://www.twilio.com/en-us/pricing",
+    "quote": "Start with free access to tools, then $0.0001 per request or invocation."
+   },
+   {
+    "field": "api",
+    "url": "https://www.twilio.com/docs/iam/api",
+    "quote": "The Twilio REST API allows you to query metadata about your account, phone numbers, calls, text messages, and recordings."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+    "quote": "Our MCP server, hosted at mcp.twilio.com/docs, exposes two tools"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: Our MCP server, hosted at mcp.twilio.com/docs, exposes two tools"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: Our MCP server, hosted at mcp.twilio.com/docs, exposes two tools"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.twilio.com/docs/messaging/api",
+    "quote": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.twilio.com/en-us/pricing",
+    "quote": "Start with free access to tools, then $0.0001 per request or invocation.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.twilio.com/docs/iam/api",
+    "quote": "The Twilio REST API allows you to query metadata about your account, phone numbers, calls, text messages, and recordings.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+    "quote": "Our MCP server, hosted at mcp.twilio.com/docs, exposes two tools",
+    "official": true,
+    "quote_check": "missing"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs confirm HTTP Basic authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page states free access to tools for developers.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Twilio blog officially announces MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims are met; no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

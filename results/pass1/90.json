@@ -1,0 +1,150 @@
+{
+ "record": {
+  "id": 90,
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Private market financial data platform covering companies, deals, investors, funds, and exits",
+  "auth_methods": [
+   "api_key",
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "paid_plan",
+  "access_note": "Access requires a paid platform subscription and a separate contracted direct data agreement.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "RESTful JSON API covering companies, deals, investors, funds, people, limited partners, and service providers.",
+  "mcp": "official",
+  "mcp_url": "https://mcpservers.org/servers/pitchbook-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires an expensive enterprise contract and sales negotiation on top of a base subscription.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://investordatarooms.com/pitchbook-api",
+    "quote": "Authentication itself is API-key or token-based."
+   },
+   {
+    "field": "access",
+    "url": "https://investordatarooms.com/pitchbook-api",
+    "quote": "PitchBook doesn’t sell its API as a standalone product with a price tag. It’s a premium add-on"
+   },
+   {
+    "field": "api",
+    "url": "https://investordatarooms.com/pitchbook-api",
+    "quote": "PitchBook’s API is a RESTful, JSON-based interface."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpservers.org/servers/pitchbook-mcp",
+    "quote": "Its Premium remote MCP server brings that intelligence into assistant workflows"
+   },
+   {
+    "field": "verdict",
+    "url": "https://investordatarooms.com/pitchbook-api",
+    "quote": "Access only comes through a separate contract with PitchBook’s Direct Data team."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "PitchBook (pitchbook.com (research API)) API authentication developer documentation",
+   "access": "PitchBook (pitchbook.com (research API)) API access pricing plan get API key developer account",
+   "mcp": "PitchBook (pitchbook.com (research API)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://pitchbook.com/help/PitchBook-api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://investordatarooms.com/pitchbook-api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://emasterlabs.com/pitchbook-api-review"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://emasterlabs.com/pitchbook-api-review"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://investordatarooms.com/pitchbook-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://dlthub.com/context/source/pitchbook-api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://investordatarooms.com/pitchbook-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://emasterlabs.com/pitchbook-api-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://scrapegraphai.com/blog/pitchbook-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/pitchbook-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/pitchbook"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://apigene.ai/mcp/official/pitchbook"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.mcpbundles.com/skills/premium-mcp-7b16359d7a"
+   }
+  ],
+  "pages_read": [
+   "https://pitchbook.com/help/PitchBook-api",
+   "https://investordatarooms.com/pitchbook-api",
+   "https://emasterlabs.com/pitchbook-api-review"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 22.7
+ }
+}

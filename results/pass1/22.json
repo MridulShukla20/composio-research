@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 22,
+  "name": "Twilio",
+  "category": "Communications and Messaging",
+  "one_liner": "A cloud communications platform that enables developers to programmatically send and receive SMS, voice, and other communication channels.",
+  "auth_methods": [
+   "basic",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up and get free access to tools and a developer account.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers messaging, phone numbers, voice, verification, usage, and account metadata across thousands of endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.twilio.com/docs/messaging/api",
+    "quote": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://www.twilio.com/en-us/pricing",
+    "quote": "Start with free access to tools, then $0.0001 per request or invocation."
+   },
+   {
+    "field": "api",
+    "url": "https://www.twilio.com/docs/iam/api",
+    "quote": "The Twilio REST API allows you to query metadata about your account, phone numbers, calls, text messages, and recordings."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+    "quote": "Our MCP server, hosted at mcp.twilio.com/docs, exposes two tools"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Twilio (twilio.com) API authentication developer documentation",
+   "access": "Twilio (twilio.com) API access pricing plan get API key developer account",
+   "mcp": "Twilio (twilio.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://www.twilio.com/docs/messaging/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.twilio.com/docs/iam/api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.twilio.com/docs/verify/api"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.twilio.com/docs/messaging/api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.twilio.com/docs/iam/api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.twilio.com/docs/verify/api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.twilio.com/docs/iam/credentials/api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.twilio.com/en-us/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/twilio"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=Kcnplo9Z_F4"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.twilio.com/docs/glossary/what-is-an-api-key"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.twilio.com/docs/ai/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/twilio-labs/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://www.twilio.com/docs/messaging/api",
+   "https://www.twilio.com/docs/iam/api",
+   "https://www.twilio.com/docs/verify/api"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.5
+ }
+}

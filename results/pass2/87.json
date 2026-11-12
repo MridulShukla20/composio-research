@@ -1,0 +1,170 @@
+{
+ "record": {
+  "id": 87,
+  "name": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud-based accounting software for small businesses, accountants, and bookkeepers.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and get started with a free starter tier allowing up to 5 connections.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers accounting, payroll, files, assets, and financial reports.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/xeroapi/xero-mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "While a free starter tier exists for up to 5 connections, scaling beyond that requires paid subscription tiers.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.xero.com/faq",
+    "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge | 5 connections"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.xero.com",
+    "quote": "Xero APIs, SDKs, code samples, documentation and more."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/xeroapi/xero-mcp-server",
+    "quote": "This is a Model Context Protocol (MCP) server implementation for Xero."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: Bulk Connections... single OAuth 2.0 authorisation flow"
+   },
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Starter | No charge | 5 connections"
+   },
+   {
+    "code": "quote_not_found",
+    "field": "verdict",
+    "detail": "quote not in cited source: Starter | No charge"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   },
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_free but main_blocker=paid_plan"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Starter | No charge | 5 connections"
+   },
+   {
+    "code": "quote_not_found",
+    "field": "verdict",
+    "detail": "quote not in cited source: Starter | No charge"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   },
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_free but main_blocker=paid_plan"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.xero.com/faq",
+    "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge | 5 connections",
+    "official": true,
+    "quote_check": "missing"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.xero.com",
+    "quote": "Xero APIs, SDKs, code samples, documentation and more.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/xeroapi/xero-mcp-server",
+    "quote": "This is a Model Context Protocol (MCP) server implementation for Xero.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge",
+    "official": true,
+    "quote_check": "missing"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs state API uses OAuth 2.0 only.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page lists free Starter tier with 5 connections.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "GitHub repo under xeroapi org provides an MCP server for Xero.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Pricing page shows free tier but lacks details on paid scaling.",
+    "suggested": "include paid‑plan limits for connections"
+   }
+  },
+  "penalty_points": 5,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

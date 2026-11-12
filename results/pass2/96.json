@@ -1,0 +1,124 @@
+{
+ "record": {
+  "id": 96,
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Devin is an autonomous AI software engineer built to help engineering teams write, run, and test code, manage sessions, playbooks, and repository documentation.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a Devin account at app.devin.ai, with self-serve free and paid plans available.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Devin API provides broad capabilities covering organization sessions, knowledge management, playbooks, schedules, and enterprise controls.",
+  "mcp": "official",
+  "mcp_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "OAuth sign-in: MCP clients that support OAuth... API key: for automation, or for clients without OAuth support"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.devin.ai",
+    "quote": "To access Devin, sign up at app.devin.ai. Individual and Teams plans are available."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "curl -X GET \"https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions\""
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "The Devin MCP server provides programmatic access to Devin's platform capabilities"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: OAuth sign-in: MCP clients that support OAuth... API key: for automation, or for"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: OAuth sign-in: MCP clients that support OAuth... API key: for automation, or for"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "OAuth sign-in: MCP clients that support OAuth... API key: for automation, or for clients without OAuth support",
+    "official": true,
+    "quote_check": "missing"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.devin.ai",
+    "quote": "To access Devin, sign up at app.devin.ai. Individual and Teams plans are available.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "curl -X GET \"https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions\"",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "The Devin MCP server provides programmatic access to Devin's platform capabilities",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "doc lists OAuth first, not token as primary",
+    "suggested": "primary_auth=oauth2"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "docs mention plans but not free tier",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "official doc confirms MCP server",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "auth claim false, overall not fully supported",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 8,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

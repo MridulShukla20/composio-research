@@ -1,0 +1,141 @@
+{
+ "record": {
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_liner": "An open-source and enterprise e-commerce platform providing extensive REST and GraphQL APIs for online stores.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "basic",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Magento Open Source is freely downloadable, and developers can set up local environments or trial instances without cost.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers catalog, cart, pricing, inventory, orders, customers, and administrative actions via REST and GraphQL.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/rafaelstz/adobe-commerce-dev-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Third-party applications authenticate with OAuth 1.0a."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Magento (Adobe Commerce) (developer.adobe.com/commerce) API authentication developer documentation",
+   "access": "Magento (Adobe Commerce) (developer.adobe.com/commerce) API access pricing plan get API key developer account",
+   "mcp": "Magento (Adobe Commerce) (developer.adobe.com/commerce) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.adobe.com/commerce"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.adobe.com/commerce/webapi/rest"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.adobe.com/commerce/docs"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.adobe.com/commerce/webapi/rest"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/magento"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.adobe.com/commerce/docs"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.adobe.com/commerce/marketplace"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://ecommerce.folio3.com/blog/how-much-does-adobe-commerce-cost"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.swell.is/content/adobe-commerce-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.aiondata.io/mcp-servers/magento"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/rafaelstz/adobe-commerce-dev-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://scandiweb.com/blog/adobe-commerce-ai-features"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.miniorange.com/blog/what-is-magento-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview"
+   }
+  ],
+  "pages_read": [
+   "https://developer.adobe.com/commerce",
+   "https://developer.adobe.com/commerce/webapi/rest",
+   "https://developer.adobe.com/commerce/docs"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 2,
+  "seconds": 17.2
+ }
+}

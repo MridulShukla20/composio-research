@@ -1,0 +1,4 @@
+{
+ "app": "LiveAgent",
+ "error": "RuntimeError: Gemini kept refusing; the daily free quota may be used up."
+}

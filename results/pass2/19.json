@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 19,
+  "name": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_liner": "E-commerce helpdesk and customer support platform for managing tickets, customer data, and support workflows.",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a Gorgias account and generate API credentials or create apps directly via the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Gorgias REST API lets you read and write data in your helpdesk programmatically across core objects like tickets, customers, and users.",
+  "mcp": "official",
+  "mcp_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+    "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "Available on all Helpdesk plans"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "The Gorgias REST API lets you read and write data in your helpdesk programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+    "quote": "Gorgias MCP is in open beta today, a first-party server that plugs your workspace into Claude, ChatGPT, Cursor"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+    "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "Available on all Helpdesk plans",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "The Gorgias REST API lets you read and write data in your helpdesk programmatically.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+    "quote": "Gorgias MCP is in open beta today, a first-party server that plugs your workspace into Claude, ChatGPT, Cursor",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 confirmed; no evidence provided for basic auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API credentials can be created on any Helpdesk plan via the dashboard.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official announcement confirms MCP is available (open beta).",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Auth methods claim lacks full evidence, preventing a full yes.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

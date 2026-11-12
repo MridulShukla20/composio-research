@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 37,
+  "name": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one marketing platform and funnel builder for building sales funnels, email campaigns, and online courses.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate an API key directly from their account dashboard settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers a broad range of features including contacts, tags, newsletters, funnels, courses, automation rules, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "API keys are unique identifiers that authenticate requests to our public API."
+   },
+   {
+    "field": "access",
+    "url": "https://systeme.io/pricing",
+    "quote": "Yes, the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course"
+   },
+   {
+    "field": "api",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform"
+   },
+   {
+    "field": "mcp",
+    "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "quote": "Our MCP feature currently provides direct access to specific contact-management features"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "systeme.io (systeme.io (funnel builder)) API authentication developer documentation",
+   "access": "systeme.io (systeme.io (funnel builder)) API access pricing plan get API key developer account",
+   "mcp": "systeme.io (systeme.io (funnel builder)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-php"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://systeme.io/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apps.make.com/systeme-io"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-php"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=r9CUU5uEXE4"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://softwarefinder.com/lms/systeme-io"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://systeme.io/pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://landerlab.io/blog/systeme-io-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/snzeeee/mcp-server-systemeio"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.systeme.io/article/11408-how-to-manage-your-funnels-with-the-systeme-io-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.youtube.com/watch?v=zkojx6W8Lxo"
+   }
+  ],
+  "pages_read": [
+   "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-php",
+   "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "https://systeme.io/pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 56.4
+ }
+}

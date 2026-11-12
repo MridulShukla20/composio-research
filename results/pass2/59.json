@@ -1,0 +1,99 @@
+{
+ "record": {
+  "id": 59,
+  "name": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Aggregate B2B contact and company enrichment API powered by 30+ data vendors",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "partner_or_sales_gated",
+  "access_note": "Contact the team (support@waterfall.io) for API access and pricing.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers prospector, search, contact and company enrichment, phone lookup, email verification, job changes, and account reporting endpoints.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "API access requires contacting sales or support for credentials rather than direct self-serve sign-up.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Send your API key in the x-api-key header"
+   },
+   {
+    "field": "access",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Contact the team (support@waterfall.io) for API access and pricing."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "quote": "The Waterfall API is available at https://api.waterfall.io."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Send your API key in the x-api-key header",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://waterfall.mintlify.app/v1/authentication",
+    "quote": "Contact the team (support@waterfall.io) for API access and pricing.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "quote": "The Waterfall API is available at https://api.waterfall.io.",
+    "official": true,
+    "quote_check": "near"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state API key in x-api-key header",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs require contacting team for API access and pricing",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "contradicted",
+    "why": "Official documentation page is provided",
+    "suggested": "official"
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access gated by sales contact, so caveats apply",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

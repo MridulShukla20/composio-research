@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 19,
+  "name": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_liner": "E-commerce helpdesk and customer support platform for managing tickets, customer data, and support workflows.",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a Gorgias account and generate API credentials or create apps directly via the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Gorgias REST API lets you read and write data in your helpdesk programmatically across core objects like tickets, customers, and users.",
+  "mcp": "official",
+  "mcp_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+    "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "Available on all Helpdesk plans"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "The Gorgias REST API lets you read and write data in your helpdesk programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+    "quote": "Gorgias MCP is in open beta today, a first-party server that plugs your workspace into Claude, ChatGPT, Cursor"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Gorgias (gorgias.com) API authentication developer documentation",
+   "access": "Gorgias (gorgias.com) API access pricing plan get API key developer account",
+   "mcp": "Gorgias (gorgias.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/gorgias"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.ringly.io/blog/gorgias-developer"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.ringly.io/blog/gorgias-developer"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.getmacha.com/blog/how-to-use-the-gorgias-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/ever-works/awesome-mcp-servers/blob/master/details/gorgias-mcp-server.md"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/connect-gorgias-to-chatgpt-manage-support-tickets-and-workflows"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta"
+   }
+  ],
+  "pages_read": [
+   "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+   "https://docs.gorgias.com/en-US/rest-api-208286",
+   "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.8
+ }
+}

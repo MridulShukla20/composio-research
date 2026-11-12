@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 60,
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "GTM data enrichment and prospecting platform combining multiple data providers and AI workflows",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up for a free plan and create API keys directly from their workspace settings.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers public API endpoints for authentication, workspaces, searches, and routines, alongside an MCP server.",
+  "mcp": "official",
+  "mcp_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.clay.com/public-api/authentication",
+    "quote": "Every request to the Clay Public API must include a Clay API key in the clay-api-key header."
+   },
+   {
+    "field": "access",
+    "url": "https://www.clay.com/pricing",
+    "quote": "Start building in Clay for free. No strings attached."
+   },
+   {
+    "field": "api",
+    "url": "https://generect.com/blog/clay-api",
+    "quote": "Clay’s 2026 Public API supports developer use cases including Searches and Routines"
+   },
+   {
+    "field": "mcp",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Clay (clay.com) API authentication developer documentation",
+   "access": "Clay (clay.com) API access pricing plan get API key developer account",
+   "mcp": "Clay (clay.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.clay.com/public-api/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://university.clay.com/docs/http-api-integration-overview"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.clay.com/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.clay.com/public-api/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://generect.com/blog/clay-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://university.clay.com/docs/http-api-integration-overview"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://pipeline.zoominfo.com/sales/clay-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/enrichment-apis/clay-api-review"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/clay-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=uD4Aidlm2Gs"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.clay.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.town.com/integrations/clay"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/clay-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/clay-mcp-vs-api"
+   }
+  ],
+  "pages_read": [
+   "https://developers.clay.com/public-api/authentication",
+   "https://university.clay.com/docs/http-api-integration-overview",
+   "https://www.clay.com/pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.6
+ }
+}

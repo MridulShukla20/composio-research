@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 2,
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "one_liner": "HubSpot is a CRM, sales, marketing, and customer service platform with comprehensive APIs for managing business data.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "API access is available on every HubSpot plan including free developer accounts.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers CRM objects, marketing, sales, content, and developer tooling.",
+  "mcp": "official",
+  "mcp_url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+    "quote": "There are two ways to authenticate calls to HubSpot's APIs: OAuth, and private app access tokens."
+   },
+   {
+    "field": "access",
+    "url": "https://community.hubspot.com/t/api-pricing/9952",
+    "quote": "Hi - the access to use the HubSpot API’s is free provided you don’t go over 40 000 calls per a day."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+    "quote": "The remote HubSpot MCP server is a publicly hosted endpoint for connecting external AI tools and applications to HubSpot’s CRM."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+    "quote": "There are two ways to authenticate calls to HubSpot's APIs: OAuth, and private app access tokens.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://community.hubspot.com/t/api-pricing/9952",
+    "quote": "Hi - the access to use the HubSpot API’s is free provided you don’t go over 40 000 calls per a day.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+    "quote": "The remote HubSpot MCP server is a publicly hosted endpoint for connecting external AI tools and applications to HubSpot’s CRM.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "api_key not listed; only OAuth and private app tokens are supported",
+    "suggested": "oauth2, token"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Community post confirms free API up to 40k calls, but lacks official plan coverage details",
+    "suggested": "self_serve_free"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs describe remote HubSpot MCP server",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim false, undermining overall 'yes' verdict",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 8,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

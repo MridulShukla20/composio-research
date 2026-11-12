@@ -1,0 +1,145 @@
+{
+ "record": {
+  "id": 26,
+  "name": "Discord",
+  "category": "Communications and Messaging",
+  "one_liner": "A communications platform allowing users to interact via voice, video, and text across servers and channels.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up and create applications for free in the Discord Developer Portal.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Discord API covers channels, messages, guilds, users, reactions, voice, and gateway WebSocket events.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/SaseQ/discord-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "Authenticating with the Discord API can be done in one of three ways: 1. Using a bot token... 2. Using an OAuth2 bearer token... 3. Using basic authentication..."
+   },
+   {
+    "field": "access",
+    "url": "https://apis.io/plans/discord/discord-plans-pricing",
+    "quote": "Discord Nitro consumer subscription tiers; Discord API access is free for developers."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/SaseQ/discord-mcp",
+    "quote": "A Model Context Protocol (MCP) server for the Discord API using (JDA), designed to integrate Discord bots with MCP-compatible applications"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Discord (discord.com) API authentication developer documentation",
+   "access": "Discord (discord.com) API access pricing plan get API key developer account",
+   "mcp": "Discord (discord.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.discord.com/developers/reference"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.discord.com/developers/topics/oauth2"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.discord.com/developers/intro"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.discord.com/developers/reference"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.discord.com/developers/topics/oauth2"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.discord.com/developers/intro"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=WgyCcXotReU"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/plans/discord/discord-plans-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://rollout.com/integration-guides/discord/api-essentials"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/discord/discord-api-docs/discussions/3581"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.strac.io/blog/discord-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/v-3/discordmcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/SaseQ/discord-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://medium.com/@ngoctranfire/give-claude-cursor-or-any-ai-assistant-full-control-of-your-discord-server-channels-messages-fad6db2c950c"
+   }
+  ],
+  "pages_read": [
+   "https://docs.discord.com/developers/reference",
+   "https://docs.discord.com/developers/topics/oauth2",
+   "https://docs.discord.com/developers/intro"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.5
+ }
+}

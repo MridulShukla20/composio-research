@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 5,
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "one_liner": "An open-source CRM platform with REST and GraphQL APIs and native MCP support.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "You can self-host the open-source code for free or sign up for a cloud trial.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers both a Core API for CRUD record operations and a Metadata API for managing schemas.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/jezweb/twenty-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "Authorization: Bearer YOUR_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://twenty.com/pricing",
+    "quote": "Self-hosting the open source core is free."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "REST and GraphQL APIs generated from your workspace schema."
+   },
+   {
+    "field": "mcp",
+    "url": "https://twenty.com/pricing",
+    "quote": "MCP server\nYes\nYes\nYes"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Twenty (twenty.com (open-source CRM)) API authentication developer documentation",
+   "access": "Twenty (twenty.com (open-source CRM)) API access pricing plan get API key developer account",
+   "mcp": "Twenty (twenty.com (open-source CRM)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.twenty.com/developers/extend/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://twenty.com/pricing"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.twenty.com/developers/self-host/capabilities/setup"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.twenty.com/developers/extend/api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.twenty.com/developers/self-host/capabilities/setup"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.twenty.com/developers/introduction"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=n4OiVp-NWMo"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://opsily.com/hosting/twenty-crm/twenty-crm-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://twenty.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.reddit.com/r/selfhosted/comments/1lk3gaa/twenty_selfhosted_crm_alternative_to_pipedrive"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.taskrhino.ca/en-us/twenty-crm-implementation/twenty-crm-review"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mhenry3164/twenty-crm-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/jezweb/twenty-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://skywork.ai/skypage/en/unlocking-crm-ai-deep-dive/1980149387590488064"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.taskrhino.ca/twenty-crm-implementation/twenty-crm-review"
+   }
+  ],
+  "pages_read": [
+   "https://docs.twenty.com/developers/extend/api",
+   "https://twenty.com/pricing",
+   "https://docs.twenty.com/developers/self-host/capabilities/setup"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.2
+ }
+}

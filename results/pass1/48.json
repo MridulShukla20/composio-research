@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 48,
+  "name": "Gumroad",
+  "category": "Ecommerce",
+  "one_liner": "An e-commerce platform allowing creators to sell products, memberships, and digital downloads.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Gumroad account and generate an access token or create an OAuth application in advanced settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers products, variant categories, offer codes, custom fields, user profiles, sales notifications, and license verification.",
+  "mcp": "community",
+  "mcp_url": "https://mcpmarket.com/server/gumroad",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://gumroad.com/api",
+    "quote": "The Gumroad OAuth API is based around REST."
+   },
+   {
+    "field": "access",
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "First, sign in to your Gumroad account. Then, go to advanced settings."
+   },
+   {
+    "field": "api",
+    "url": "https://gumroad.com/api",
+    "quote": "Gumroad's OAuth 2.0 API lets you see information about your products"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Gumroad (gumroad.com/api) API authentication developer documentation",
+   "access": "Gumroad (gumroad.com/api) API access pricing plan get API key developer account",
+   "mcp": "Gumroad (gumroad.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://gumroad.com/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://gumroad.com/help/article/280-create-application-api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://rollout.com/integration-guides/gumroad/api-essentials"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://rollout.com/integration-guides/gumroad/api-essentials"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://gumroad.com/help/article/280-create-application-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=y3vtvmnw0sc"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/alexpls/gumroad_elixir"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://coldiq.com/tools/gumroad"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=y3vtvmnw0sc"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=7mLTtkvc8hU"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://nocodeapi.com/docs/gumroad-api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://composio.dev/toolkits/gumroad/framework/claude-code"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/gumroad"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.aibase.com/server/1916343466965311490"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://chatbotkit.com/connections/gumroad.com/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://gumroad.com/api",
+   "https://gumroad.com/help/article/280-create-application-api",
+   "https://rollout.com/integration-guides/gumroad/api-essentials"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.5
+ }
+}

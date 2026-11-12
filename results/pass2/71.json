@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 71,
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "Connected workspace for notes, docs, wikis, and project management with a powerful API and MCP server.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Notion account and immediately create personal access tokens or OAuth integrations in the Developer portal.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers pages, databases, data sources, views, comments, user profiles, file uploads, and content queries.",
+  "mcp": "official",
+  "mcp_url": "https://developers.notion.com/guides/mcp/overview",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.notion.com",
+    "quote": "You need a Notion account and a terminal."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.notion.com/reference/intro",
+    "quote": "Send requests over HTTPS to https://api.notion.com."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "quote": "Notion MCP is a remote MCP server hosted by Notion."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.notion.com",
+    "quote": "You need a Notion account and a terminal.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.notion.com/reference/intro",
+    "quote": "Send requests over HTTPS to https://api.notion.com.",
+    "official": true,
+    "quote_check": "near"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "quote": "Notion MCP is a remote MCP server hosted by Notion.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Evidence shows both OAuth2 and token, but primary_auth not explicitly stated.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs show free account can obtain personal access tokens immediately.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP overview page confirms existence.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Auth claim lacks clear primary_auth evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 39,
+  "name": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Official Meta API for publishing posts, retrieving media and profiles, managing replies, and viewing insights on Threads.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers create a Meta app with the Threads use case for free, though production access requires App Review.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers posting, profile retrieval, media fetching, reply moderation, and insights.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/quinnjr/threads-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "App review is required before users without a role on your app can grant permissions for production use.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "To access the Threads API, create an app and pick the Threads Use Case."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.facebook.com/documentation/threads",
+    "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.outstand.so/mcp/threads",
+    "quote": "No. Meta has not shipped an MCP server for Threads, and the third-party ecosystem is very thin"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Threads (Meta) (developers.facebook.com/docs/threads) API authentication developer documentation",
+   "access": "Threads (Meta) (developers.facebook.com/docs/threads) API access pricing plan get API key developer account",
+   "mcp": "Threads (Meta) (developers.facebook.com/docs/threads) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.facebook.com/documentation/threads/get-started"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.facebook.com/documentation/threads/get-started"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://zernio.com/blog/threads-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.facebook.com/community/threads/471982158713266"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.blotato.com/blog/threads-api-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://twitterapi.io/blog/threads-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://developers.facebook.com/documentation/threads"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developers.facebook.com/documentation/threads/get-started"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/quinnjr/threads-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.outstand.so/mcp/threads"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://medium.com/@tttndev13/a-mcp-server-for-content-creation-on-threads-7cb26cc784ca"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.threads.com/@mattnavarra/post/DaQIWUEiiYk/meta-launches-an-mcp-server-to-help-developers-debug-their-apps-developer-tools"
+   }
+  ],
+  "pages_read": [
+   "https://developers.facebook.com/documentation/threads/get-started",
+   "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions"
+  ],
+  "pages_unreadable": [
+   "https://developers.facebook.com/docs/threads"
+  ],
+  "model_attempts": 1,
+  "seconds": 30.1
+ }
+}

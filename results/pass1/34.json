@@ -1,0 +1,139 @@
+{
+ "record": {
+  "id": 34,
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one marketing, sales, and CRM platform providing tools for agencies and businesses.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid plans such as Starter, Unlimited, and Agency Pro, with advanced tokens and OAuth requiring higher tiers.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers contacts, opportunities, calendars, workflows, conversations, payments, and locations.",
+  "mcp": "official",
+  "mcp_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel supports: Private Integration Tokens for internal or single-location integrations OAuth 2.0 for public integrations"
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "API access varies by plan: Starter & Unlimited: Basic API access Agency Pro: Advanced API access"
+   },
+   {
+    "field": "api",
+    "url": "https://ghldesk.com/gohighlevel-api",
+    "quote": "GoHighLevel API is a REST API that provides programmatic access to the HighLevel platform"
+   },
+   {
+    "field": "mcp",
+    "url": "https://ai.exoticaitsolutions.com/blog/gohighlevel-mcp",
+    "quote": "HighLevel built its own MCP server on top of this standard, and it went live in mid-2025."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "GoHighLevel (highlevel.stoplight.io) API authentication developer documentation",
+   "access": "GoHighLevel (highlevel.stoplight.io) API access pricing plan get API key developer account",
+   "mcp": "GoHighLevel (highlevel.stoplight.io) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://ghldesk.com/gohighlevel-api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://community.activepieces.com/t/integration-with-lead-conector-go-high-level/738"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://ghldesk.com/gohighlevel-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://community.activepieces.com/t/integration-with-lead-conector-go-high-level/738"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://ghldesk.com/gohighlevel-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.courseplatformsreview.com/blog/highlevel-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.gohighlevel.com"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.linkedin.com/pulse/gohighlevel-mcp-server-36-tools-functions-use-cases-ai-chad-de-wet-v0fpf"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://ai.exoticaitsolutions.com/blog/gohighlevel-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/drausal/gohighlevel-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://ghldesk.com/gohighlevel-api",
+   "https://community.activepieces.com/t/integration-with-lead-conector-go-high-level/738"
+  ],
+  "pages_unreadable": [
+   "https://highlevel.stoplight.io"
+  ],
+  "model_attempts": 1,
+  "seconds": 12.6
+ }
+}

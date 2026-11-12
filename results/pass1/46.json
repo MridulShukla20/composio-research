@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 46,
+  "name": "Squarespace",
+  "category": "Ecommerce",
+  "one_liner": "An ecommerce and website building platform providing APIs for managing orders, inventory, products, and more.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access requires a Squarespace account on a paid plan (such as Commerce Advanced or Business depending on the API).",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers commerce operations including orders, products, inventory, transactions, and contacts.",
+  "mcp": "official",
+  "mcp_url": "https://developers.squarespace.com/mcp/overview",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "authenticate requests by using an API key or OAuth access token."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "quote": "Overview of the Squarespace MCP Server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.squarespace.com",
+    "quote": "Everything you need to build and publish external apps — reliable APIs, clear documentation"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Squarespace (developers.squarespace.com) API authentication developer documentation",
+   "access": "Squarespace (developers.squarespace.com) API access pricing plan get API key developer account",
+   "mcp": "Squarespace (developers.squarespace.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.squarespace.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.squarespace.com/commerce-apis/oauth"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.squarespace.com/commerce-apis/oauth"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.squarespace.com/developer-terms"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://litextension.com/migration-guide/get-api-squarespace.html"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://rollout.com/integration-guides/squarespace/api-essentials"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.stackone.com/connectors/squarespace/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.squarespace.com/mcp/overview"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.squarespace.com/mcp/connect-a-client"
+   }
+  ],
+  "pages_read": [
+   "https://developers.squarespace.com",
+   "https://developers.squarespace.com/commerce-apis/oauth",
+   "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.6
+ }
+}

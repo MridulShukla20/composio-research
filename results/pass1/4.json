@@ -1,0 +1,149 @@
+{
+ "record": {
+  "id": 4,
+  "name": "Attio",
+  "category": "CRM and Sales",
+  "one_liner": "Modern CRM and customer data platform for managing relationships, records, and sales pipelines",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate API keys or set up OAuth apps directly in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers records, lists, notes, tasks, files, meetings, and call recordings.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.attio.com",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.attio.com/rest-api/guides/authentication",
+    "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key"
+   },
+   {
+    "field": "access",
+    "url": "https://frontal.so/gtm-apis/crm-apis/attio-api-review",
+    "quote": "Free plan with full API access, 100 seat credits a month. Paid use starts at $44/user/mo."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS."
+   },
+   {
+    "field": "mcp",
+    "url": "https://truto.one/blog/best-mcp-server-for-attio-in-2026",
+    "quote": "Attio publishes a hosted MCP server at mcp.attio.com that uses OAuth authentication"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Attio (attio.com) API authentication developer documentation",
+   "access": "Attio (attio.com) API access pricing plan get API key developer account",
+   "mcp": "Attio (attio.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.attio.com/rest-api/guides/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.attio.com/rest-api/overview"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.coffee.ai/articles/attio-crm-public-api-docs"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.attio.com/rest-api/guides/authentication"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/crm-apis/attio-api-review"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=m98-fF2ri4M"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://attio.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/best-mcp-server-for-attio-in-2026"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/itsbrex/attio-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.folk.app/articles/attio-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/kesslerio/attio-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+   "https://docs.attio.com/rest-api/guides/authentication",
+   "https://docs.attio.com/rest-api/overview"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.1
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 18,
+  "name": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_liner": "Help Scout is a customer service platform that provides shared inboxes, knowledge bases, and live chat for support teams.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid plans (Standard, Plus, Pro) and is not included on the Free plan.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Mailbox API and Docs API cover conversations, customers, mailboxes, reporting, and knowledge base articles.",
+  "mcp": "official",
+  "mcp_url": "https://articles.helpscout.com/blog/introducing-help-scout-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires a paid subscription plan (Standard or higher) as free accounts lack API access.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "The Free plan does not include access to the API or integrations."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+    "quote": "Help Scout MCP gives AI assistants secure, official access to Help Scout data."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Help Scout (helpscout.com) API authentication developer documentation",
+   "access": "Help Scout (helpscout.com) API access pricing plan get API key developer account",
+   "mcp": "Help Scout (helpscout.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.helpscout.com/docs-api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.helpscout.com/docs-api/restricted-docs"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.helpscout.com/docs-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.helpscout.com/docs-api/restricted-docs"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.apievangelist.com/store/helpscout-customers-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.getmacha.com/blog/how-to-use-the-help-scout-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.eesel.ai/blog/helpscout-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://rollout.com/integration-guides/help-scout/api-essentials"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://articles.helpscout.com/blog/introducing-help-scout-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/help-scout-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/drewburchfield/help-scout-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports"
+   }
+  ],
+  "pages_read": [
+   "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "https://developer.helpscout.com/docs-api",
+   "https://developer.helpscout.com/docs-api/restricted-docs"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 57.0
+ }
+}

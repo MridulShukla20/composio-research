@@ -1,0 +1,131 @@
+{
+ "record": {
+  "id": 94,
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_liner": "A research search service that helps users find and review peer-reviewed academic papers.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "The API is self-serve on every Consensus plan, including a free tier.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Provides REST API endpoints for paper search, full-text excerpts, citations, and research agent threads.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/Consensus-NLP/consensus-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "Pass the key in the x-api-key header."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan."
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "quote": "The same search is available as a REST API at api.consensus.app/v1/search"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "quote": "The Consensus MCP server is a hosted remote server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "Pass the key in the x-api-key header.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "quote": "The same search is available as a REST API at api.consensus.app/v1/search",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "quote": "The Consensus MCP server is a hosted remote server",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Only API key auth shown; no OAuth2 or token mentioned.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs state API is self‑serve on every plan, including free.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repo for consensus-mcp is provided.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No blockers; API is self‑serve per documentation.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

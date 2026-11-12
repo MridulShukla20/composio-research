@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 76,
+  "name": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "A work operating system and AI work platform that helps teams run projects, workflows, and collaboration.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free, no expiration date developer account or free trial.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "An expressive GraphQL API to interact with workflows, automate processes, and power integrations.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/mondaycom/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.monday.com/apps/docs/choosing-auth",
+    "quote": "Generally speaking, there are four ways your app can get an access token to use"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference",
+    "quote": "developer account on a free, no expiration date developer account!"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.monday.com",
+    "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mondaycom/mcp",
+    "quote": "The `@mondaydotcomorg/monday-api-mcp` package provides a plug-and-play server implementation for the Model Context Protocol (MCP)."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Monday.com (developer.monday.com) API authentication developer documentation",
+   "access": "Monday.com (developer.monday.com) API access pricing plan get API key developer account",
+   "mcp": "Monday.com (developer.monday.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.monday.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://endgrate.com/blog/using-the-monday.com-api-to-get-users-in-javascript"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.monday.com/apps/docs/choosing-auth"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://endgrate.com/blog/using-the-monday.com-api-to-get-users-in-javascript"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.monday.com/apps/docs/choosing-auth"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.monday.com/api-reference/docs/authentication"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/monday-com"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developer.monday.com/api-reference"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=e-2OWktts80"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=e-2OWktts80&xstg=CAMSBhUDzO3xHw%3D%3D"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mondaycom/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.gumloop.com/connectors/monday-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/connect-monday-com-to-claude-sync-docs-assets-team-updates"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/sakce/mcp-server-monday"
+   }
+  ],
+  "pages_read": [
+   "https://developer.monday.com",
+   "https://endgrate.com/blog/using-the-monday.com-api-to-get-users-in-javascript",
+   "https://developer.monday.com/apps/docs/choosing-auth"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.5
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "record": {
+  "id": 56,
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Turn websites into clean markdown and structured data using an API or AI-powered web scraper.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "none"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "New accounts start on the free plan with a monthly credit allotment and no credit card required.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers scraping, crawling, searching, mapping, extraction, and browser interaction endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "Requests need an `Authorization` header with your API key"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.firecrawl.dev/billing",
+    "quote": "New accounts start on the free plan. It costs nothing and does not need a card."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "quote": "ghcr.io/firecrawl/firecrawl-mcp-server:latest"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "Requests need an `Authorization` header with your API key",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.firecrawl.dev/billing",
+    "quote": "New accounts start on the free plan. It costs nothing and does not need a card.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "quote": "ghcr.io/firecrawl/firecrawl-mcp-server:latest",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "OAuth2 not mentioned in docs; only API key (and keyless) supported",
+    "suggested": "api_key, none"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "New accounts start free, no credit card needed",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repository for firecrawl-mcp-server exists",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Docs state API gives programmatic access to web data",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 27,
+  "name": "Telegram",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud-based instant messaging service and application programming interface provider.",
+  "auth_methods": [
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can obtain a bot token via @BotFather or an api_id and api_hash via my.telegram.org for free.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Telegram Bot API and MTProto API provide comprehensive messaging, chat management, user authentication, and file transfer capabilities.",
+  "mcp": "community",
+  "mcp_url": "https://mcp.so/servers/telegram_mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://core.telegram.org/bots/api",
+    "quote": "Each bot is given a unique authentication token when it is created."
+   },
+   {
+    "field": "access",
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "quote": "Sign up for Telegram using an official application."
+   },
+   {
+    "field": "api",
+    "url": "https://core.telegram.org",
+    "quote": "The Bot API allows you to easily create programs that use Telegram messages for an interface."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.usecarly.com/blog/telegram-mcp",
+    "quote": "No — Telegram does not have an official MCP server."
+   },
+   {
+    "field": "verdict",
+    "url": "https://core.telegram.org",
+    "quote": "You are welcome to use both APIs free of charge."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Telegram (core.telegram.org) API authentication developer documentation",
+   "access": "Telegram (core.telegram.org) API access pricing plan get API key developer account",
+   "mcp": "Telegram (core.telegram.org) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://core.telegram.org"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://core.telegram.org/widgets/login"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://core.telegram.org/api/obtaining_api_id"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://core.telegram.org/widgets/login"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://core.telegram.org/api/obtaining_api_id"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/telegram"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://core.telegram.org/bots/api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://data365.co/blog/telegram-api-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/telegram"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.botract.com/blog/telegram-bot-cost-pricing-guide"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://core.telegram.org/api/obtaining_api_id"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/telegram-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/telegram_mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/overpod/mcp-telegram"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/telegram-12"
+   }
+  ],
+  "pages_read": [
+   "https://core.telegram.org",
+   "https://core.telegram.org/widgets/login",
+   "https://core.telegram.org/api/obtaining_api_id"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 58.4
+ }
+}

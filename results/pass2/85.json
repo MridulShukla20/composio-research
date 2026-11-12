@@ -1,0 +1,128 @@
+{
+ "record": {
+  "id": 85,
+  "name": "iPayX",
+  "category": "Finance and Fintech",
+  "one_liner": "Enterprise-grade FX audit platform and Model Context Protocol server for real-time foreign exchange verification.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account with self-serve usage tiers and upgrade to paid plans.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers FX transaction audits, forensic reports, mid-market exchange rate checks, and MCP tool integrations.",
+  "mcp": "official",
+  "mcp_url": "https://www.ipayx.ai/docs/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.ipayx.ai/docs/mcp-server",
+    "quote": "Authentication Method: HTTP Bearer token in Authorization header."
+   },
+   {
+    "field": "access",
+    "url": "https://www.ipayx.ai",
+    "quote": "Start free with five lifetime audits. Upgrade to the 100-audit Credit Pack or Unlimited for API access"
+   },
+   {
+    "field": "api",
+    "url": "https://www.ipayx.ai/docs/mcp-server",
+    "quote": "Connect your AI agent to real-time FX audit verdicts."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "api_styles",
+   "mcp",
+   "verdict",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "evidence_missing",
+    "field": "access",
+    "detail": "no evidence given for access"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.ipayx.ai/docs/mcp-server",
+    "quote": "Authentication Method: HTTP Bearer token in Authorization header.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.ipayx.ai",
+    "quote": "Start free with five lifetime audits. Upgrade to the 100-audit Credit Pack or Unlimited for API access",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.ipayx.ai/docs/mcp-server",
+    "quote": "Connect your AI agent to real-time FX audit verdicts.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs state HTTP Bearer token, not API key.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free tier with five lifetime audits is offered.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official documentation page provided.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth mismatch introduces a blocker.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "medium"
+ }
+}

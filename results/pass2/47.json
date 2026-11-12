@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 47,
+  "name": "Ecwid",
+  "category": "Ecommerce",
+  "one_liner": "Ecwid is an ecommerce platform that enables businesses to build online stores and integrate with APIs for managing products, orders, and customers.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "Only stores on paid plans can access API, though free upgrades can be requested for development.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers products, categories, orders, customers, and other store data via REST endpoints.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/m190/usefulapi-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires a paid plan, though developers can request a free upgrade for test stores under specific conditions.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Only stores on paid plans can access API."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "All requests to Ecwid REST API require an access token."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "mcp",
+   "verdict",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Only stores on paid plans can access API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "All requests to Ecwid REST API require an access token.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state OAuth 2.0 is primary; token access also mentioned.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Official docs say only paid‑plan stores can use the API.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "No evidence provided for the community MCP link.",
+    "suggested": "unknown"
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "API requires paid plan; free upgrade possible for dev stores.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

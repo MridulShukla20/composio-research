@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 12,
+  "name": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer support and communication platform with inbox, tickets, help center, and developer APIs",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "You can create a free developer workspace and app in the Intercom Developer Hub to obtain an access token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers contacts, conversations, tickets, companies, help center articles, admins, and data events.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/intercom/intercom-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+   },
+   {
+    "field": "access",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only."
+   },
+   {
+    "field": "api",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "Key endpoints available in version 2.18 of the Intercom API include the ones below."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/intercom/intercom-mcp-server",
+    "quote": "Intercom hosts a remote MCP server that follows the authenticated remote MCP specification"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: Intercom's MCP server lets AI tools and CLIs... securely access your Intercom da"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "Key endpoints available in version 2.18 of the Intercom API include the ones below.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/intercom/intercom-mcp-server",
+    "quote": "Intercom hosts a remote MCP server that follows the authenticated remote MCP specification",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs list oauth2 and token but don’t state oauth2 as primary.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Official FAQ confirms free developer workspaces.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repo provides the MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have supporting evidence; no blocker identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

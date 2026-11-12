@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 72,
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_liner": "Airtable is a cloud-based collaboration platform that combines the features of a database with the user interface of a spreadsheet.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate personal access tokens or configure OAuth in the Airtable developer hub.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers bases, tables, records, comments, webhooks, and metadata.",
+  "mcp": "official",
+  "mcp_url": "https://airtable.com/developers",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process."
+   },
+   {
+    "field": "access",
+    "url": "https://airtable.com/pricing",
+    "quote": "Our Free plan is available at no cost for users just getting started."
+   },
+   {
+    "field": "api",
+    "url": "https://airtable.com/developers",
+    "quote": "Any MCP-compatible tool can read, write, and query your bases through natural language"
+   },
+   {
+    "field": "mcp",
+    "url": "https://airtable.com/developers",
+    "quote": "Using Airtable's MCP server, AI tools can query your Airtable data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Plan availability: All plan types."
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://airtable.com/pricing",
+    "quote": "Our Free plan is available at no cost for users just getting started.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://airtable.com/developers",
+    "quote": "Any MCP-compatible tool can read, write, and query your bases through natural language",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://airtable.com/developers",
+    "quote": "Using Airtable's MCP server, AI tools can query your Airtable data",
+    "official": true,
+    "quote_check": "other_url"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs list OAuth and personal access tokens as supported authentication methods.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free plan available; developers can sign up and use tokens.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "MCP mentioned on official developers site.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All required auth, access, and MCP are available without blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

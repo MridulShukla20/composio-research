@@ -1,0 +1,153 @@
+{
+ "record": {
+  "id": 86,
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud-based accounting and financial management platform providing programmatic access to invoicing, customers, payments, and reports.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account on the Intuit Developer Portal and immediately access a sandbox environment.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The QuickBooks Online Accounting API is a REST API from Intuit that provides programmatic access to a QuickBooks Online company's financial data.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks API uses OAuth 2.0 exclusively — there are no API keys or basic authentication options."
+   },
+   {
+    "field": "access",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "1. Sign in at developer.intuit.com (free account)."
+   },
+   {
+    "field": "api",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks Online Accounting API is a REST API from Intuit that provides programmatic access to a QuickBooks Online company's financial data."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks API uses OAuth 2.0 exclusively — there are no API keys or basic authentication options.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "1. Sign in at developer.intuit.com (free account).",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks Online Accounting API is a REST API from Intuit that provides programmatic access to a QuickBooks Online company's financial data.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Third‑party guide confirms OAuth 2.0 only",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free developer sign‑up gives immediate sandbox",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Repo under Intuit org provides official MCP server",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All criteria met, no blockers",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

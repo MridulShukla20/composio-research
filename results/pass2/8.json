@@ -1,0 +1,127 @@
+{
+ "record": {
+  "id": 8,
+  "name": "Close",
+  "category": "CRM and Sales",
+  "one_liner": "A sales CRM platform that manages leads, contacts, opportunities, and activities.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can create a free secondary organization or request a free dev organization.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers core CRM concepts like leads, contacts, opportunities, activities, custom fields, and pipelines.",
+  "mcp": "official",
+  "mcp_url": "https://developer.close.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Two methods are supported: API Keys — Best for scripts... OAuth 2.0 — Best for user-facing integrations."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.close.com/integrations",
+    "quote": "Already a Close user — You can create a free secondary organization."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.close.com/mcp",
+    "quote": "Model Context Protocol (MCP) servers provide a standardized interface that allows any compatible AI model or agent"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods",
+   "access"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: Two methods are supported: API Keys — Best for scripts, internal tools... OAuth "
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: Two methods are supported: API Keys — Best for scripts... OAuth 2.0 — Best for u"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Two methods are supported: API Keys — Best for scripts... OAuth 2.0 — Best for user-facing integrations.",
+    "official": true,
+    "quote_check": "missing"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.close.com/integrations",
+    "quote": "Already a Close user — You can create a free secondary organization.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.close.com/mcp",
+    "quote": "Model Context Protocol (MCP) servers provide a standardized interface that allows any compatible AI model or agent",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Official docs list both API keys and OAuth2 as supported methods.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Free secondary org is self‑serve; dev org requires emailing support.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP page describes Close's Model Context Protocol.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No blocker; auth and MCP confirmed, free access mostly available.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

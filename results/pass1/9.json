@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 9,
+  "name": "Copper",
+  "category": "CRM and Sales",
+  "one_liner": "A CRM and sales productivity tool designed for Google Workspace.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a free trial and generate API keys or register for OAuth2 credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The REST API covers core CRM objects like people, companies, leads, opportunities, tasks, and activities.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "To generate an API token, in the Copper web app go to System settings > API Keys"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.copper.com/introduction/oauth/flow.html",
+    "quote": "https://api.copper.com/developer_api/v1/account"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Copper (copper.com) API authentication developer documentation",
+   "access": "Copper (copper.com) API access pricing plan get API key developer account",
+   "mcp": "Copper (copper.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.copper.com/introduction/oauth/flow.html"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.copper.com/introduction/authentication.html"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.copper.com/introduction/requests.html"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.copper.com/introduction/oauth/flow.html"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.copper.com/introduction/authentication.html"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.copper.com/introduction/requests.html"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/copper"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://developer.copper.com/introduction/authentication.html"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://dev.to/gettruto/3-steps-to-integrate-with-copper-crm-using-rest-api-4db6"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://weezly.com/gtm-tools/copper"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.copper.com/introduction/requests.html"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.copper.com/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://stytch.com/blog/model-context-protocol-introduction"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://cloud.google.com/discover/what-is-model-context-protocol"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://cohere.com/blog/guide-to-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developer.copper.com/introduction/oauth/flow.html",
+   "https://developer.copper.com/introduction/authentication.html",
+   "https://developer.copper.com/introduction/requests.html"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 7.7
+ }
+}

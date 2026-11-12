@@ -1,0 +1,150 @@
+{
+ "record": {
+  "id": 65,
+  "name": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "An open-source Firebase alternative providing a Postgres database, Authentication, Instant APIs, Edge Functions, and Storage.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and obtain API keys and access tokens immediately via the dashboard.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Management API and Data APIs cover projects, organizations, databases, auth, and storage comprehensively.",
+  "mcp": "official",
+  "mcp_url": "https://supabase.com/blog/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "There are two ways to generate an access token: Personal access token (PAT)... OAuth2"
+   },
+   {
+    "field": "access",
+    "url": "https://supabase.com/pricing",
+    "quote": "Start building for free, collaborate with your team, then scale to millions of users"
+   },
+   {
+    "field": "api",
+    "url": "https://supabase.com/docs",
+    "quote": "Data REST API\n- GraphQL API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://supabase.com/blog/mcp-server",
+    "quote": "Our MCP server connects your AI tools to Supabase"
+   },
+   {
+    "field": "one_liner",
+    "url": "https://schematichq.com/blog/supabase-pricing",
+    "quote": "Supabase is a Backend-as-a-Service built on Postgres"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Supabase (supabase.com/docs) API authentication developer documentation",
+   "access": "Supabase (supabase.com/docs) API access pricing plan get API key developer account",
+   "mcp": "Supabase (supabase.com/docs) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://supabase.com/docs"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://supabase.com/docs/reference/api/introduction"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://supabase.com/docs/guides/auth"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.reddit.com/r/Supabase/comments/13s5g53/is_there_complete_documentation_of_the_auth_rest"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://supabase.com/docs/reference/api/introduction"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://supabase.com/docs/guides/auth"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://supabase.com/docs/reference/javascript/v1"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://supabase.com/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://schematichq.com/blog/supabase-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://catdoes.com/blog/what-is-supabase"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://supabase.com/docs/guides/api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://supabase.com/docs/guides/auth/oauth-server/mcp-authentication"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://supabase.com/blog/mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://supabase.com/docs/guides/self-hosting/enable-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://supabase.com/docs/guides/ai-tools/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://supabase.com/docs",
+   "https://supabase.com/docs/reference/api/introduction",
+   "https://supabase.com/docs/guides/auth"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.3
+ }
+}

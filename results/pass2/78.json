@@ -1,0 +1,117 @@
+{
+ "record": {
+  "id": 78,
+  "name": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "An all-in-one collaborative doc platform combining docs, spreadsheets, and apps.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate an API token directly from their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers documents, pages, tables, rows, columns, formulas, folders, and publishing settings.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/orellazri/coda-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://coda.io/developers",
+    "quote": "headers = {'Authorization': 'Bearer <your API token>'}"
+   },
+   {
+    "field": "access",
+    "url": "https://coda.io/developers",
+    "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+   },
+   {
+    "field": "api",
+    "url": "https://coda.io/developers",
+    "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/orellazri/coda-mcp",
+    "quote": "This MCP server is not developed or maintained by Coda; it's a community-built project."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://coda.io/developers",
+    "quote": "headers = {'Authorization': 'Bearer <your API token>'}",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://coda.io/developers",
+    "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://coda.io/developers",
+    "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/orellazri/coda-mcp",
+    "quote": "This MCP server is not developed or maintained by Coda; it's a community-built project.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs show Bearer token header for API authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs confirm free API but don't explicitly show self‑service token generation.",
+    "suggested": "self_serve_free"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Repository states it is a community‑built project.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All required elements are present with no blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

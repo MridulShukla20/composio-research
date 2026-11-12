@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 62,
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Frontend cloud platform for deploying and scaling web applications and serverless functions.",
+  "auth_methods": [
+   "token",
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free hobby plan and generate personal access tokens directly in their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers deployments, projects, domains, DNS, certs, billing, and infrastructure configuration.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.vercel.com",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header"
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "quote": "You create and manage them on the Account Tokens page, under the Settings area of your account"
+   },
+   {
+    "field": "api",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "All endpoints live under the URL and follow the REST architecture."
+   },
+   {
+    "field": "mcp",
+    "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "quote": "Vercel MCP is Vercel's official MCP server."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "quote": "You create and manage them on the Account Tokens page, under the Settings area of your account",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "All endpoints live under the URL and follow the REST architecture.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "quote": "Vercel MCP is Vercel's official MCP server.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Token auth shown; oauth2 and api_key not evidenced.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Self‑serve token creation shown; free hobby plan not documented.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official Vercel MCP server confirmed.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No blockers identified in evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

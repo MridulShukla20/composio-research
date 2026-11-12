@@ -1,0 +1,133 @@
+{
+ "record": {
+  "id": 44,
+  "name": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Salesforce Commerce Cloud offers ecommerce solutions for B2B, D2C, and B2C to build personalized, scalable, and high-volume shopping experiences.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "partner_or_sales_gated",
+  "access_note": "Credentials and enterprise access are obtained through Salesforce enterprise contracts, sales partnerships, or specialized commerce accounts.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The B2C Commerce API (SCAPI), Open Commerce API (OCAPI), and Script APIs provide broad read and write coverage for products, baskets, orders, and administrative tasks.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/taurgis/sfcc-dev-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "Commerce Cloud requires enterprise commercial agreements or partner channels to provision full production environments and administrative credentials.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "To authorize this wide range of client types, we’ve defined a set of scopes based on the OAuth 2.1 standard."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI)."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/taurgis/sfcc-dev-mcp",
+    "quote": "An AI-powered Model Context Protocol (MCP) server that provides comprehensive access to Salesforce B2C Commerce Cloud development tools"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Salesforce Commerce Cloud offers distinct solutions for B2B/D2C... and B2C... co"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "To authorize this wide range of client types, we’ve defined a set of scopes based on the OAuth 2.1 standard.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI).",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/taurgis/sfcc-dev-mcp",
+    "quote": "An AI-powered Model Context Protocol (MCP) server that provides comprehensive access to Salesforce B2C Commerce Cloud development tools",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Doc confirms OAuth2 but does not explicitly list a separate token method.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "No evidence of enterprise‑only or partner gating; docs describe product capabilities only.",
+    "suggested": "self_serve_trial or paid_plan"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party repo provides a community MCP server for SFCC tools.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Evidence lacks any statement that production access requires partner or sales contracts.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "record": {
+  "id": 86,
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud-based accounting and financial management platform providing programmatic access to invoicing, customers, payments, and reports.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account on the Intuit Developer Portal and immediately access a sandbox environment.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Comprehensive coverage of accounting objects, financial reports, and transaction entities like invoices, payments, and customers.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks API uses OAuth 2.0 exclusively — there are no API keys or basic authentication options."
+   },
+   {
+    "field": "access",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "1. Sign in at developer.intuit.com (free account).\n2. Click Create an App and select QuickBooks Online and Payments."
+   },
+   {
+    "field": "api",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+    "quote": "The QuickBooks Online Accounting API is a REST API from Intuit that provides programmatic access to a QuickBooks Online company's financial data."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.scalekit.com/blog/quickbooks-mcp-vs-api",
+    "quote": "Intuit published an official QuickBooks Online MCP server on GitHub, first shared as an early preview in October 2025."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "QuickBooks (developer.intuit.com) API authentication developer documentation",
+   "access": "QuickBooks (developer.intuit.com) API access pricing plan get API key developer account",
+   "mcp": "QuickBooks (developer.intuit.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://endgrate.com/blog/using-the-quickbooks-api-to-create-or-update-products-(with-python-examples)"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/quickbooks"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apideck.com/blog/how-to-get-your-quickbooks-api-key.md"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://coefficient.io/quickbooks-api/setup-quickbooks-api-integration"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/quickbooks-mcp-vs-api"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://reflektlab.ai/blog/quickbooks-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://loopfour.ai/articles/quickbooks-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77"
+  ],
+  "pages_unreadable": [
+   "https://developer.intuit.com",
+   "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+  ],
+  "model_attempts": 1,
+  "seconds": 18.0
+ }
+}

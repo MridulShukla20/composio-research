@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 1,
+  "name": "Salesforce",
+  "category": "CRM and Sales",
+  "one_liner": "Salesforce is a leading cloud-based CRM platform for sales, service, marketing, and custom app development.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Developer Edition org or sandbox to get API access.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Salesforce provides comprehensive REST, SOAP, and Connect APIs covering virtually all CRM objects and operations.",
+  "mcp": "official",
+  "mcp_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "quote": "To successfully send requests, REST API requires an access token obtained by authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://pipeline.zoominfo.com/sales/salesforce-api",
+    "quote": "The Developer Edition is free and includes 15,000 API calls per 24-hour period"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "quote": "REST API Developer Guide"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "quote": "Salesforce Hosted MCP Servers give AI agents a secure, governed way to interact with Salesforce data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Salesforce (salesforce.com) API authentication developer documentation",
+   "access": "Salesforce (salesforce.com) API access pricing plan get API key developer account",
+   "mcp": "Salesforce (salesforce.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.salesforce.com/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.postman.com/salesforce-developers/salesforce-developers/collection/b32utmu/salesforce-platform-apis"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/salesforce/salesforce-authentication-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/salesforce-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://getknit.dev/blog/salesforce-api-key"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.salesforce.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.salesforceben.com/salesforce-model-context-protocol-explained-how-mcp-bridges-ai-and-your-crm"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/salesforcecli/mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://pipeline.zoominfo.com/sales/salesforce-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+   }
+  ],
+  "pages_read": [
+   "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+   "https://www.salesforce.com/pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 19.4
+ }
+}

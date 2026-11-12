@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 68,
+  "name": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "A cloud-hosted multi-cloud database service with programmatic management capabilities.",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free tier account and generate service accounts or API keys in the Atlas UI.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Atlas Administration API and CLI cover administration, infrastructure deployment, clusters, users, and projects.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "We recommend you use service accounts instead of API (Application Programming Interface) keys to authenticate to the Atlas Administration API."
+   },
+   {
+    "field": "access",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "In Atlas, go to the Applications page."
+   },
+   {
+    "field": "api",
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "quote": "The Official MongoDB MCP Server."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "We recommend you use service accounts instead of API (Application Programming Interface) keys to authenticate to the Atlas Administration API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org",
+    "quote": "In Atlas, go to the Applications page.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "quote": "The Official MongoDB MCP Server.",
+    "official": true,
+    "quote_check": "other_url"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs recommend service accounts over API keys as primary auth.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs show UI access but no proof of free self‑serve signup.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "GitHub page labels it the Official MongoDB MCP Server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Primary auth is not API key, breaking the claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

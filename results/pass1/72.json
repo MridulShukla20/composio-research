@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 72,
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_liner": "Airtable is a cloud-based collaboration platform that combines the features of a database with the user interface of a spreadsheet.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate personal access tokens or configure OAuth in the Airtable developer hub.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers bases, tables, records, comments, webhooks, and metadata.",
+  "mcp": "official",
+  "mcp_url": "https://www.airtable.com/developers/agents/mcp/getting-started",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process."
+   },
+   {
+    "field": "access",
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+    "quote": "Plan availability: All plan types."
+   },
+   {
+    "field": "api",
+    "url": "https://airtable.com/developers",
+    "quote": "Any MCP-compatible tool can read, write, and query your bases through natural language"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.airtable.com/developers/agents/mcp/getting-started",
+    "quote": "Using Airtable's MCP server, AI tools can query your Airtable data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Airtable (airtable.com/developers) API authentication developer documentation",
+   "access": "Airtable (airtable.com/developers) API access pricing plan get API key developer account",
+   "mcp": "Airtable (airtable.com/developers) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://airtable.com/developers"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://airtable.com/developers/web/api/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.karllhughes.com/posts/using-airtable-as-an-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=-ievSZSWGzQ"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://airtable.com/developers/web/api/authentication"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=qWFHRqf4yKs"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://ones.com/blog/airtable-api-pricing-2026-free-vs-paid-tiers-explained"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=qWFHRqf4yKs"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=7Xcd2D0E8y0"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/loticdigital/airtable-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/domdomegg/airtable-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.airtable.com/developers/agents/mcp/getting-started"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.airtable.com/developers/agents"
+   }
+  ],
+  "pages_read": [
+   "https://airtable.com/developers",
+   "https://airtable.com/developers/web/api/authentication",
+   "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.2
+ }
+}

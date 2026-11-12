@@ -1,0 +1,153 @@
+{
+ "record": {
+  "id": 63,
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Netlify is a hosting and serverless backend platform for the web that provides an API for atomic site deploys, DNS, form submissions, and serverless functions.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate personal access tokens or configure OAuth2 applications directly from the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Netlify REST API provides broad coverage for managing sites, deploys, domains, form submissions, environment variables, and functions.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/netlify/netlify-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.netlify.com/api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more."
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.netlify.com/api",
+    "quote": "Netlify uses OAuth2 for authentication. All requests must use HTTPS."
+   },
+   {
+    "field": "access",
+    "url": "https://apis.io/providers/netlify",
+    "quote": "Netlify publishes its prices; its Free plan is $0 forever as of 2026-10-28."
+   },
+   {
+    "field": "api",
+    "url": "https://open-api.netlify.com",
+    "quote": "This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.netlify.com/blog/netlify-mcp-server-ai-agents-deploy-your-code",
+    "quote": "Today we’re releasing the Netlify MCP Server. Built on Anthropic’s open source Model Context Protocol, our MCP Server gives agents direct access to the Netlify API and CLI."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.netlify.com/api",
+    "quote": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Netlify (docs.netlify.com/api) API authentication developer documentation",
+   "access": "Netlify (docs.netlify.com/api) API access pricing plan get API key developer account",
+   "mcp": "Netlify (docs.netlify.com/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.netlify.com/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.netlify.com/blog/2021/11/17/first-look-announcing-api-authentication-on-netlify"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.netlify.com/blog/2021/11/17/first-look-announcing-api-authentication-on-netlify"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://open-api.netlify.com"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=ypb7x5b83Q0&vl=en"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/netlify"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.netlify.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://dev.to/donnierich/api-key-management-on-netlify-4il9"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.netlify.com/blog/netlify-mcp-server-ai-agents-deploy-your-code"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/netlify/netlify-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://eseospace.com/blog/netlify-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify"
+   }
+  ],
+  "pages_read": [
+   "https://docs.netlify.com/api",
+   "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+   "https://www.netlify.com/blog/2021/11/17/first-look-announcing-api-authentication-on-netlify"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 61.6
+ }
+}

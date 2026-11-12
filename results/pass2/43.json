@@ -1,0 +1,114 @@
+{
+ "record": {
+  "id": 43,
+  "name": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "An open SaaS ecommerce platform and API suite for managing stores, products, orders, and customer data.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Sign up for a free trial store or use the developer portal to create API credentials and trial accounts.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers product catalogs, orders, customers, storefront operations, webhooks, and store settings.",
+  "mcp": "official",
+  "mcp_url": "https://docs.bigcommerce.com/_mcp/server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "BigCommerce offers three types of OAuth-based API accounts to developers"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "connect to the MCP server at https://docs.bigcommerce.com/_mcp/server."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "BigCommerce offers three types of OAuth-based API accounts to developers",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs only mention OAuth‑based accounts; no evidence for api_key or token methods.",
+    "suggested": "oauth2"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs state you can sign up for a free trial store to test APIs.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs give the MCP server URL at https://docs.bigcommerce.com/_mcp/server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim is false, so overall verdict cannot be yes.",
+    "suggested": "no, main_blocker=auth"
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

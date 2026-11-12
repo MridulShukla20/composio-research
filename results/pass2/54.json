@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 54,
+  "name": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "An AI-powered web scraping and data extraction platform with built-in proxies and browser rendering.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up on the platform and generate API tokens directly from their dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The API covers web page scraping, structured data extraction, scraper management, and account usage.",
+  "mcp": "official",
+  "mcp_url": "https://docs.mrscraper.com",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "The MrScraper API uses API token authentication to secure all endpoints."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "API tokens are managed directly from your MrScraper dashboard."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.mrscraper.com",
+    "quote": "The MrScraper MCP server source code is available on GitHub for local setup"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "The MrScraper API uses API token authentication to secure all endpoints.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "API tokens are managed directly from your MrScraper dashboard.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.mrscraper.com",
+    "quote": "The MrScraper MCP server source code is available on GitHub for local setup",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state API token authentication, matching api_key method.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs show token generation but no explicit free self‑serve sign‑up info.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs confirm MCP source code is publicly available.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence contradicts claims; main blocker absent.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

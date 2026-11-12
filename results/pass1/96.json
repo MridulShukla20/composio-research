@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 96,
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Devin is an autonomous AI software engineer built to help engineering teams write, run, and test code, manage sessions, playbooks, and repository documentation.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a Devin account at Devin.ai and generate API tokens or use OAuth from their account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Devin API provides broad capabilities covering organization sessions, knowledge management, playbooks, schedules, and enterprise controls.",
+  "mcp": "official",
+  "mcp_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "OAuth sign-in: MCP clients that support OAuth... API key: for automation, or for clients without OAuth support"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.devin.ai",
+    "quote": "To access Devin, sign up at app.devin.ai. Individual and Teams plans are available."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "curl -X GET \"https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions\""
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "The Devin MCP server provides programmatic access to Devin's platform capabilities"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Devin (docs.devin.ai (MCP)) API authentication developer documentation",
+   "access": "Devin (docs.devin.ai (MCP)) API access pricing plan get API key developer account",
+   "mcp": "Devin (docs.devin.ai (MCP)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.devin.ai"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.devin.ai/api-reference/authentication"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.devin.ai/api-reference/authentication"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.scalekit.com/blog/devin-mcp-vs-api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.devin.ai/work-with-devin/mcp"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://twitterapi.io/blog/devin-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.usagepricing.com/blueprint/cognition"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://fast.io/resources/devin-ai-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.devin.ai/cli/extensibility/mcp/overview"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/devin-mcp-vs-api"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.linkedin.com/posts/cognition-ai-labs_devin-is-now-model-context-protocol-mcp-activity-7353868386835058688-zvo2"
+   }
+  ],
+  "pages_read": [
+   "https://docs.devin.ai",
+   "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "https://docs.devin.ai/api-reference/authentication"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.8
+ }
+}

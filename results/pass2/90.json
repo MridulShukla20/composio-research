@@ -1,0 +1,156 @@
+{
+ "record": {
+  "id": 90,
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Private market financial data platform covering companies, deals, investors, funds, and exits",
+  "auth_methods": [
+   "api_key",
+   "token",
+   "other"
+  ],
+  "primary_auth": "api_key",
+  "access": "partner_or_sales_gated",
+  "access_note": "API access requires contacting the Direct Data team and establishing a standalone contract agreement.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "RESTful API solution allowing calls to financing details, deal stock information, and relational endpoints for companies and investors.",
+  "mcp": "official",
+  "mcp_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "API access requires sales engagement and a separate contract agreement.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "help you establish the API connection through an API key or authentication token."
+   },
+   {
+    "field": "access",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement."
+   },
+   {
+    "field": "api",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access"
+   },
+   {
+    "field": "mcp",
+    "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+    "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built."
+   },
+   {
+    "field": "verdict",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "To start your API connection, you will need to send a request directly to our Direct Data team through this link."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": "Exact programmatic pricing and public rate limits are not disclosed in official documentation."
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods",
+   "access",
+   "api_styles",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   },
+   {
+    "code": "note_suggests_gate",
+    "field": "access",
+    "detail": "access=paid_plan but the notes mention a sales or contract gate"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "help you establish the API connection through an API key or authentication token.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+    "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "To start your API connection, you will need to send a request directly to our Direct Data team through this link.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs list API key and authentication token as methods.",
+    "suggested": "api_key, token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API requires a standalone contract agreement.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Press release officially announces PitchBook Data MCP.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access gated behind sales contact and contract.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

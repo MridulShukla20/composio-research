@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 20,
+  "name": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service and helpdesk platform for customer interactions and support.",
+  "auth_methods": [
+   "basic",
+   "token"
+  ],
+  "primary_auth": "basic",
+  "access": "paid_plan",
+  "access_note": "Gladly requires a paid enterprise contract to access the platform and its API tokens.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers core helpdesk objects like customer profiles, agent status, and answers.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "An active paid subscription to Gladly is required to obtain API access tokens.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Gladly API uses token-based Basic Authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://hiverhq.com/blog/gladly-pricing",
+    "quote": "Gladly typically costs $180–$210 per agent per month"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.gladly.com/rest",
+    "quote": "Clients can access the REST API via HTTPS at your organization's Gladly domain"
+   },
+   {
+    "field": "mcp",
+    "url": "https://truto.one/blog/connect-gladly-to-chatgpt-manage-customers-tasks-and-support-data",
+    "quote": "You can either build and maintain this infrastructure yourself, or use a managed integration platform"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Gladly (gladly.com) API authentication developer documentation",
+   "access": "Gladly (gladly.com) API access pricing plan get API key developer account",
+   "mcp": "Gladly (gladly.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.gladly.com/rest"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.gladly.com/chat"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.gladly.com/rest"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.gladly.com/chat"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.gladly.ai/gladly-developer-platform"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://hiverhq.com/blog/gladly-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://developer.gladly.com/rest"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://help.gladly.com/docs/api-export-tool"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/connect-gladly-to-chatgpt-manage-customers-tasks-and-support-data"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.contentful.com/blog/model-context-protocol-introduction"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.gladly.ai/blog/making-sense-of-agentic-commerce"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+   "https://developer.gladly.com/rest",
+   "https://developer.gladly.com/chat"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.4
+ }
+}

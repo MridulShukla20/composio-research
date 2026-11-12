@@ -1,0 +1,119 @@
+{
+ "record": {
+  "id": 41,
+  "name": "Shopify",
+  "category": "Ecommerce",
+  "one_liner": "An ecommerce platform enabling merchants to build online stores and manage products, inventory, customers, and orders.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers sign up for a free developer account in the Dev Dashboard to create apps and obtain credentials.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "GraphQL and REST Admin APIs read and writes products, customers, orders, inventory, and store data.",
+  "mcp": "official",
+  "mcp_url": "https://www.npmjs.com/package/@shopify/dev-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange"
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores"
+   },
+   {
+    "field": "api",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Set up authentication for: - The GraphQL Admin API to read and write store data"
+   },
+   {
+    "field": "mcp",
+    "url": "https://shopify.dev/changelog/posts/mcp-server-for-the-shopify-dev-assistant",
+    "quote": "We're excited to announce the release of the new Shopify.dev MCP Server!"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Set up authentication for: - The GraphQL Admin API to read and write store data",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://shopify.dev/changelog/posts/mcp-server-for-the-shopify-dev-assistant",
+    "quote": "We're excited to announce the release of the new Shopify.dev MCP Server!",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth primary and token exchange.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Dev Dashboard enables free developer sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "Only announcement shown, no npm package reference.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence blocks any claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

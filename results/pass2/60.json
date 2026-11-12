@@ -1,0 +1,114 @@
+{
+ "record": {
+  "id": 60,
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "GTM data enrichment and prospecting platform combining multiple data providers and AI workflows",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up for a free plan and create API keys directly from their workspace settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers public API endpoints for authentication, workspaces, searches, and routines, alongside an MCP server.",
+  "mcp": "official",
+  "mcp_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.clay.com/public-api/authentication",
+    "quote": "Every request to the Clay Public API must include a Clay API key in the clay-api-key header."
+   },
+   {
+    "field": "access",
+    "url": "https://www.clay.com/pricing",
+    "quote": "Start building in Clay for free. No strings attached."
+   },
+   {
+    "field": "mcp",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "api_styles"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.clay.com/public-api/authentication",
+    "quote": "Every request to the Clay Public API must include a Clay API key in the clay-api-key header.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.clay.com/pricing",
+    "quote": "Start building in Clay for free. No strings attached.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Only API‑key auth documented; no OAuth2 evidence.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page confirms free self‑serve plan.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs describe MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim includes unsupported OAuth2, creating a blocker.",
+    "suggested": "no, main_blocker=auth"
+   }
+  },
+  "penalty_points": 7,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

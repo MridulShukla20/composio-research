@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 87,
+  "name": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud-based accounting software for small businesses, accountants, and bookkeepers.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and get started with a free tier allowing up to 5 connections.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers accounting, payroll, files, assets, and financial reports.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/xeroapi/xero-mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "While a free starter tier exists for up to 5 connections, scaling beyond that requires paid subscription tiers.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Bulk Connections... single OAuth 2.0 authorisation flow"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge | 5 connections"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.xero.com",
+    "quote": "Xero APIs, SDKs, code samples, documentation and more."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.usecarly.com/blog/xero-mcp",
+    "quote": "Yes — Xero has an official MCP server."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.xero.com/pricing",
+    "quote": "Starter | No charge"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Xero (developer.xero.com) API authentication developer documentation",
+   "access": "Xero (developer.xero.com) API access pricing plan get API key developer account",
+   "mcp": "Xero (developer.xero.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.xero.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.xero.com/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.activepieces.com/blog/xero-api-setup-authentication-and-limits-2026"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://xero.uservoice.com/forums/5528-accounting-api/category/37766-authentication?category_id=98494&status_id=31940"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://endgrate.com/blog/using-the-xero-api-to-create-or-update-items-(with-javascript-examples)"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/xeroapi"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/xero-api-pricing-and-the-app-partner-program"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developer.xero.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.activepieces.com/blog/xero-api-setup-authentication-and-limits-2026"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://truto.one/blog/xero-api-pricing-changes-2026-costs-tiers-and-how-to-minimize-egress"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/xero-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://explainx.ai/mcp-servers/xero"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/xeroapi/xero-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/john-zhang-dev/xero-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developer.xero.com",
+   "https://developer.xero.com/pricing"
+  ],
+  "pages_unreadable": [
+   "https://developer.xero.com/documentation/api/accounting/overview"
+  ],
+  "model_attempts": 1,
+  "seconds": 9.9
+ }
+}

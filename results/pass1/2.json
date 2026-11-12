@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 2,
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "one_liner": "HubSpot is a CRM, sales, marketing, and customer service platform with comprehensive APIs for managing business data.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "A free developer account can be signed up for instantly at no cost to obtain API credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers CRM objects (contacts, companies, deals, tickets), marketing, sales, content, and developer tooling.",
+  "mcp": "official",
+  "mcp_url": "https://developers.hubspot.com/ai-tools/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+    "quote": "There are two ways to authenticate calls to HubSpot's APIs: OAuth, and private app access tokens."
+   },
+   {
+    "field": "access",
+    "url": "https://pipeline.zoominfo.com/sales/hubspot-api",
+    "quote": "API access is available on every HubSpot plan, including the free tier. A free developer account lets you build and test without a paid subscription."
+   },
+   {
+    "field": "api",
+    "url": "https://frontal.so/gtm-apis/crm-apis/hubspot-api-review",
+    "quote": "Full CRM object access over the API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.hubspot.com/ai-tools/mcp",
+    "quote": "HubSpot offers two distinct MCP (Model Context Protocol) servers"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "HubSpot (hubspot.com) API authentication developer documentation",
+   "access": "HubSpot (hubspot.com) API access pricing plan get API key developer account",
+   "mcp": "HubSpot (hubspot.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.hubspot.com/docs"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/hubspot-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/crm-apis/hubspot-api-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/how-to-get-your-hubspot-api-key"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=kdL1ycQ6JXw"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://coworker.ai/blog/hubspot-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.hubspot.com/ai-tools/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.truefoundry.com/blog/hubspot-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+   "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 13.5
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "record": {
+  "id": 1,
+  "name": "Salesforce",
+  "category": "CRM and Sales",
+  "one_liner": "Salesforce is a leading cloud-based CRM platform for sales, service, marketing, and custom app development.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "API access is enabled by default in Developer Edition orgs and developer sandboxes.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Salesforce provides comprehensive REST, SOAP, and Bulk APIs covering virtually all CRM objects and operations.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/salesforcecli/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+    "quote": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+    "quote": "API access is enabled by default in Enterprise, Performance, Unlimited, and Developer Edition orgs."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/salesforcecli/mcp",
+    "quote": "The Salesforce DX MCP Server is a specialized Model Context Protocol (MCP) implementation"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+    "quote": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+    "quote": "API access is enabled by default in Enterprise, Performance, Unlimited, and Developer Edition orgs.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/salesforcecli/mcp",
+    "quote": "The Salesforce DX MCP Server is a specialized Model Context Protocol (MCP) implementation",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs confirm OAuth2 flows and bearer token usage",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API access enabled by default in Developer Edition (free self‑serve)",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "GitHub repo is official source for MCP implementation",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims have supporting official evidence",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

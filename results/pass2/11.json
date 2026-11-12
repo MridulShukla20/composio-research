@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 11,
+  "name": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service software and helpdesk platform providing ticketing, support, and messaging solutions.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a time-limited free trial to obtain API credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers tickets, users, organizations, and other core support resources.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/KalchevS/zendesk-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+    "quote": "Zendesk supports using OAuth access tokens to authenticate API requests."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.zendesk.com/api-reference/ticketing/tickets/tickets",
+    "quote": "Trial"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Trial"
+   },
+   {
+    "code": "evidence_missing",
+    "field": "api",
+    "detail": "no evidence given for api"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+    "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+    "official": true,
+    "quote_check": "other_url"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.zendesk.com/api-reference/ticketing/tickets/tickets",
+    "quote": "Trial",
+    "official": true,
+    "quote_check": "missing"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Only OAuth2 shown; other methods not evidenced.",
+    "suggested": "oauth2"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Quote only says “Trial” without self‑serve detail.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "GitHub repo is community‑maintained, not official.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 4,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

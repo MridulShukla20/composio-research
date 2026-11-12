@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 23,
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_liner": "Team chat and communication software for businesses offering channels, meetings, and workflow automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a free Zoho account and register an app in the Zoho Developer Console to obtain OAuth credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Provides comprehensive REST endpoints covering chats, messages, channels, bots, slash commands, and user settings.",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/cliq/mcp-server.html",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://www.zoho.com/cliq/help/platform/faq.html",
+    "quote": "Register as a new client in Zoho's Developer Console ."
+   },
+   {
+    "field": "api",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+    "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.zoho.com/cliq/mcp-server.html",
+    "quote": "With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Zoho Cliq (zoho.com/cliq) API authentication developer documentation",
+   "access": "Zoho Cliq (zoho.com/cliq) API access pricing plan get API key developer account",
+   "mcp": "Zoho Cliq (zoho.com/cliq) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://zoho.com/cliq"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/glossary"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.zoho.com/cliq/help/developers.html"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.zoho.com/cliq/help/platform/faq.html"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/registerclient"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/how-to-get-your-zoho-books-api-key"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.zoho.com/cliq/mcp-server.html"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/zoho-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.zoho.com/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://zoho.com/cliq",
+   "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+   "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.6
+ }
+}

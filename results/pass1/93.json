@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 93,
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting assistant that records, transcribes, and summarizes video meetings with a public API and MCP support.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate API keys or create an OAuth app via the Fathom website.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The REST API covers meeting insights, summaries, transcripts, action items, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://developers.fathom.ai/mcp-docs",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Partners can register an OAuth app to be eligible for a future marketplace listing"
+   },
+   {
+    "field": "auth",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area."
+   },
+   {
+    "field": "access",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Anyone can browse the API docs and start building!"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.fathom.ai/api-overview",
+    "quote": "This documentation describes Fathom's REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.fathom.ai/mcp-docs",
+    "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Fathom (fathom.video) API authentication developer documentation",
+   "access": "Fathom (fathom.video) API access pricing plan get API key developer account",
+   "mcp": "Fathom (fathom.video) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://help.fathom.video/en/articles/8368641"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.fathom.ai/api-overview"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.fathom.ai"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.fathom.ai/api-overview"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.fathom.ai"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/fathomhq"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://help.fathom.video/en/articles/8368641"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.fathom.ai/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=R4FpOKFdIhE"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://meetgeek.ai/blog/fathom-ai-pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://help.fathom.video/en/articles/8368641"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://truto.one/blog/best-mcp-server-for-fathom-in-2026"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/matthewbergvinson/fathom-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://composio.dev/toolkits/fathom/framework/openclaw"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.fathom.ai/mcp-docs"
+   }
+  ],
+  "pages_read": [
+   "https://help.fathom.video/en/articles/8368641",
+   "https://developers.fathom.ai/api-overview",
+   "https://developers.fathom.ai"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.2
+ }
+}

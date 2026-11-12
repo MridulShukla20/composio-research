@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 38,
+  "name": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A visual discovery engine and social media platform for sharing and discovering ideas.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Developers must register a business account and submit an application that is reviewed by Pinterest for trial access.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers organic content (Pins and Boards), ad campaigns, targeting, reporting, and shopping catalogs.",
+  "mcp": "official",
+  "mcp_url": "https://developers.pinterest.com/about-pinterest-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Applications require review and approval from Pinterest to obtain API access tiers.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+    "quote": "Make sure your API requests on a user\"s behalf include a current access token"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.pinterest.com/docs/getting-started/connect-app",
+    "quote": "Application requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.pinterest.com",
+    "quote": "Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards)"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.pinterest.com/about-pinterest-mcp",
+    "quote": "The Pinterest MCP Server brings Pinterest data into the AI tools you already use"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+    "quote": "Make sure your API requests on a user\"s behalf include a current access token",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.pinterest.com/docs/getting-started/connect-app",
+    "quote": "Application requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.pinterest.com",
+    "quote": "Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards)",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.pinterest.com/about-pinterest-mcp",
+    "quote": "The Pinterest MCP Server brings Pinterest data into the AI tools you already use",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Token required; OAuth2 not explicitly mentioned",
+    "suggested": "oauth2"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "App requests are reviewed and approved by Pinterest",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP documentation exists on Pinterest site",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access hinges on Pinterest's approval process",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

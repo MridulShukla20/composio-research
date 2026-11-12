@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 8,
+  "name": "Close",
+  "category": "CRM and Sales",
+  "one_liner": "A sales CRM platform that manages leads, contacts, opportunities, and activities.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a trial or free developer organization, and generate API keys or OAuth apps in settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers core CRM concepts like leads, contacts, opportunities, activities, custom fields, pipelines, and webhooks.",
+  "mcp": "official",
+  "mcp_url": "https://close.com/integrations/close-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Two methods are supported: API Keys — Best for scripts, internal tools... OAuth 2.0 — Best for user-facing integrations."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.close.com/integrations",
+    "quote": "Integration partners who don’t use Close in their own sales process can request a free Dev organization"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.close.com/api/overview",
+    "quote": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+   },
+   {
+    "field": "mcp",
+    "url": "https://close.com/integrations/close-mcp",
+    "quote": "Model Context Protocol (MCP) servers provide a standardized interface that allows any compatible AI model or agent to access your Close data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Close (close.com) API authentication developer documentation",
+   "access": "Close (close.com) API access pricing plan get API key developer account",
+   "mcp": "Close (close.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.close.com/api/overview"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.close.com"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.close.com/api/resources/pipelines/create"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.close.com/api/overview"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.close.com"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.close.com/api/resources/pipelines/create"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.close.com/api/resources/leads"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://addtocrm.com/how-to-find-api-key/close-crm"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=Vfd1c12dfbQ"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://help.close.com/integrations/api-keys-oauth"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.close.com/integrations"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://close.com/integrations/close-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://close.com/blog/close-claude-crm-integration"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.anthropic.com/news/model-context-protocol"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://zylo.com/blog/what-is-model-context-protocol"
+   }
+  ],
+  "pages_read": [
+   "https://developer.close.com/api/overview",
+   "https://developer.close.com",
+   "https://developer.close.com/api/resources/pipelines/create"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.4
+ }
+}

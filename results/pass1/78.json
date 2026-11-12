@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 78,
+  "name": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "An all-in-one collaborative doc platform combining docs, spreadsheets, and apps.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Coda account and generate an API token directly from their account settings page.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers documents, pages, tables, rows, columns, formulas, folders, and publishing settings.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/orellazri/coda-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://coda.io/developers",
+    "quote": "headers = {'Authorization': 'Bearer <your API token>'}"
+   },
+   {
+    "field": "access",
+    "url": "https://rollout.com/integration-guides/coda/api-essentials",
+    "quote": "1. Log in to your Coda account\n2. Go to your Account Settings page (coda.io/account)\n3. Scroll down to the \"API Settings\" section\n4. Click \"Generate API Token\""
+   },
+   {
+    "field": "api",
+    "url": "https://coda.io/developers",
+    "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/orellazri/coda-mcp",
+    "quote": "This MCP server is not developed or maintained by Coda; it's a community-built project."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Coda (coda.io/developers) API authentication developer documentation",
+   "access": "Coda (coda.io/developers) API access pricing plan get API key developer account",
+   "mcp": "Coda (coda.io/developers) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://coda.io/developers"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://coda.io/trust"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://rollout.com/integration-guides/coda/api-essentials"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://codaio.readthedocs.io/en/latest"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://coda.io/trust"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://rollout.com/integration-guides/coda/api-essentials"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.techrepublic.com/article/coda-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://firebearstudio.com/blog/what-is-coda-io.html"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.vendr.com/marketplace/coda"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/codamcpserver"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/orellazri/coda-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://composio.dev/toolkits/coda/framework/pydantic-ai"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/coda-1"
+   }
+  ],
+  "pages_read": [
+   "https://coda.io/developers",
+   "https://coda.io/trust",
+   "https://rollout.com/integration-guides/coda/api-essentials"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.6
+ }
+}

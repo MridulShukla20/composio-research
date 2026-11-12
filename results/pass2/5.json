@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 5,
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "one_liner": "An open-source CRM platform with REST and GraphQL APIs and native MCP support.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "You can self-host the open-source code for free or sign up for a cloud trial.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers both a Core API for CRUD record operations and a Metadata API for managing schemas.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/jezweb/twenty-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "Authorization: Bearer YOUR_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://twenty.com/pricing",
+    "quote": "Self-hosting the open source core is free."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "REST and GraphQL APIs generated from your workspace schema."
+   },
+   {
+    "field": "mcp",
+    "url": "https://twenty.com/pricing",
+    "quote": "MCP server\nYes\nYes\nYes"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "Authorization: Bearer YOUR_API_KEY",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://twenty.com/pricing",
+    "quote": "Self-hosting the open source core is free.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "REST and GraphQL APIs generated from your workspace schema.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://twenty.com/pricing",
+    "quote": "MCP server\nYes\nYes\nYes",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs show API key only, no OAuth2 evidence",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page confirms free self‑hosting",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "contradicted",
+    "why": "No official link to the GitHub repo provided",
+    "suggested": "none_found"
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "MCP claim lacks official source",
+    "suggested": "main_blocker=mcp"
+   }
+  },
+  "penalty_points": 5,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

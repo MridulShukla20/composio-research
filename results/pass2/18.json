@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 18,
+  "name": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_liner": "Help Scout is a customer service platform that provides shared inboxes, knowledge bases, and live chat for support teams.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid plans (Standard, Plus, Pro) and is not included on the Free plan.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Mailbox API and Docs API cover conversations, customers, mailboxes, reporting, and knowledge base articles.",
+  "mcp": "official",
+  "mcp_url": "https://articles.helpscout.com/blog/introducing-help-scout-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires a paid subscription plan (Standard or higher) as free accounts lack API access.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "The Free plan does not include access to the API or integrations."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+    "quote": "Help Scout MCP gives AI assistants secure, official access to Help Scout data."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "The Free plan does not include access to the API or integrations.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+    "quote": "Help Scout MCP gives AI assistants secure, official access to Help Scout data.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Evidence shows only OAuth2, no API key support.",
+    "suggested": "oauth2"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free plan lacks API access; paid plans provide it.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs describe Help Scout MCP as official AI integration.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "API requires paid plan, matching claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

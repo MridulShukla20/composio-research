@@ -1,0 +1,145 @@
+{
+ "record": {
+  "id": 43,
+  "name": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "An open SaaS ecommerce platform and API suite for managing stores, products, orders, and customer data.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Sign up for a free trial store or use the developer portal to create API credentials and trial accounts.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers product catalogs, orders, customers, storefront operations, webhooks, and store settings.",
+  "mcp": "official",
+  "mcp_url": "https://docs.bigcommerce.com/_mcp/server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "BigCommerce offers three types of OAuth-based API accounts to developers"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.bigcommerce.com",
+    "quote": "connect to the MCP server at https://docs.bigcommerce.com/_mcp/server."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "BigCommerce (developer.bigcommerce.com) API authentication developer documentation",
+   "access": "BigCommerce (developer.bigcommerce.com) API access pricing plan get API key developer account",
+   "mcp": "BigCommerce (developer.bigcommerce.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.bigcommerce.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.bigcommerce.com"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.bigcommerce.com"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/customer-authentication/customer-login"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "***REDACTED***"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=7H_0nHxKdz8"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.bigcommerce.com/blog/feature-updates-api-key-access-for-non-store-owners-now-available"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.bigcommerce.com"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.bigcommerce.com/blog/model-context-protocol"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.bigcommerce.com/blog/storefront-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://ecommerce.folio3.com/blog/how-bigcommerce-mcp-enables-real-time-ai-automation-for-ecommerce"
+   }
+  ],
+  "pages_read": [
+   "https://developer.bigcommerce.com",
+   "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+   "https://docs.bigcommerce.com"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.8
+ }
+}

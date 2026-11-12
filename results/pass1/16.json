@@ -1,0 +1,147 @@
+{
+ "record": {
+  "id": 16,
+  "name": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_liner": "Help desk and customer support software featuring ticketing, live chat, call center, and AI tools.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a free trial and generate API keys directly in the admin panel.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers tickets, agents, conversations, knowledge base search, reporting, and management.",
+  "mcp": "official",
+  "mcp_url": "https://support.liveagent.com/150554-AI-features",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://support.liveagent.com/741982-API-key",
+    "quote": "API key is an identity of your LiveAgent... which you can use to build your own custom integration solutions."
+   },
+   {
+    "field": "access",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "Consider registering a new free Trial"
+   },
+   {
+    "field": "api",
+    "url": "https://videosdk.live/developer-hub/ai_agent/live-agent-api",
+    "quote": "The Live Agent API exposes the full LiveAgent support workflow... through a consistent REST interface"
+   },
+   {
+    "field": "mcp",
+    "url": "https://support.liveagent.com/150554-AI-features",
+    "quote": "LiveAgent exposes a built-in MCP server (Model Context Protocol)"
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "You can find whole LiveAgent API documentation within your LiveAgent account"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "LiveAgent (liveagent.com) API authentication developer documentation",
+   "access": "LiveAgent (liveagent.com) API access pricing plan get API key developer account",
+   "mcp": "LiveAgent (liveagent.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://www.liveagent.com/pricing"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://support.liveagent.com/741982-API-key"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://support.liveagent.com/911737-API-v3"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://videosdk.live/developer-hub/ai_agent/live-agent-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://support.liveagent.com/911737-API-v3"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://support.liveagent.com/066804-LiveAgent-API"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.liveagent.com/security-privacy-policy"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.liveagent.com/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.getmacha.com/blog/what-is-liveagent"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://support.liveagent.com/741982-API-key"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.liveagent.com"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.liveagent.com/150554-AI-features"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.liveagent.com/features/mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://crawlbase.com/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://codingscape.com/blog/how-model-context-protocol-mcp-works-connect-ai-agents-to-tools"
+   }
+  ],
+  "pages_read": [
+   "https://www.liveagent.com/pricing",
+   "https://support.liveagent.com/741982-API-key",
+   "https://support.liveagent.com/911737-API-v3"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.4
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "record": {
+  "id": 69,
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Monitoring and security platform for cloud applications providing infrastructure and application telemetry.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Sign up for a free trial on Datadog's website and generate API and application keys in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Extensive HTTP REST API covering metrics, logs, traces, monitors, dashboards, and organization management.",
+  "mcp": "official",
+  "mcp_url": "https://docs.datadoghq.com/mcp_server/setup",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.datadoghq.com/api/latest/authentication",
+    "quote": "Requests that write data require reporting access and require an API key."
+   },
+   {
+    "field": "access",
+    "url": "https://www.datadoghq.com/pricing",
+    "quote": "Start Free Trial"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "The Datadog API is an HTTP REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.datadoghq.com/mcp_server/setup",
+    "quote": "Go to Tools > AI Assistant > Model Context Protocol (MCP)"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.datadoghq.com/api/latest/authentication",
+    "quote": "Requests that write data require reporting access and require an API key.",
+    "official": true,
+    "quote_check": "near"
+   },
+   {
+    "field": "access",
+    "url": "https://www.datadoghq.com/pricing",
+    "quote": "Start Free Trial",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "The Datadog API is an HTTP REST API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.datadoghq.com/mcp_server/setup",
+    "quote": "Go to Tools > AI Assistant > Model Context Protocol (MCP)",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs only mention API key, no OAuth2 or token support.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page offers a self‑serve free trial.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP setup docs are provided.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim is false, so overall yes is unsupported.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

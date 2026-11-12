@@ -1,0 +1,130 @@
+{
+ "record": {
+  "id": 36,
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A marketing automation platform offering email, SMS, and data-driven customer communication tools via robust APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account and generate API keys or set up OAuth apps directly from their settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers profiles, campaigns, flows, lists, segments, catalogs, coupons, metrics, and more.",
+  "mcp": "official",
+  "mcp_url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "All /api endpoints use private API keys with API key scopes to authenticate requests."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+    "quote": "The Klaviyo MCP server connects compatible AI clients to Klaviyo APIs through Model Context Protocol (MCP)."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "api",
+    "detail": "quote not in cited source: Available scopes for each API ... Accounts ... Campaigns ... Flows ... Profiles"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "All /api endpoints use private API keys with API key scopes to authenticate requests.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+    "quote": "The Klaviyo MCP server connects compatible AI clients to Klaviyo APIs through Model Context Protocol (MCP).",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs list api_key and OAuth, plus public key; no primary auth specified.",
+    "suggested": "api_key, oauth2, public_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Official docs say you can get started for free.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official page describes Klaviyo MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "No evidence provided about blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

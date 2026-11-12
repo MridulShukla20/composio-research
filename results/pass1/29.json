@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 29,
+  "name": "Aircall",
+  "category": "Communications and Messaging",
+  "one_liner": "A cloud-based business phone system and customer communications platform with call center tools and AI voice agents.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "access_note": "Aircall requires a paid subscription plan to access the Public API.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers calls, contacts, users, teams, phone numbers, comments, tags, and webhooks.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/themobilefirstco/aircall-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth."
+   },
+   {
+    "field": "access",
+    "url": "https://aircall.io/pricing",
+    "quote": "All plans include API access and 250+ integrations."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.aircall.io/api-references",
+    "quote": "Aircall Public API is a classic REST API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+    "quote": "MCP Server for Aircall API — 73 tools for calls, contacts, SMS"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Aircall (aircall.io) API authentication developer documentation",
+   "access": "Aircall (aircall.io) API access pricing plan get API key developer account",
+   "mcp": "Aircall (aircall.io) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.aircall.io/docs/basic-authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.aircall.io/api-references"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://aircall.io/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.aircall.io/docs/basic-authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.aircall.io/api-references"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/aircall"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/aircall"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/aircall-api-review"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://aircall.io/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://developer.aircall.io/docs/basic-authentication"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://supergood.ai/api-report-card/aircall"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/themobilefirstco/aircall-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://composio.dev/toolkits/aircall"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.aircall.io/en-gb/articles/39677926959517"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://zapier.com/mcp/aircall"
+   }
+  ],
+  "pages_read": [
+   "https://developer.aircall.io/docs/basic-authentication",
+   "https://developers.aircall.io/api-references",
+   "https://aircall.io/pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 15.2
+ }
+}

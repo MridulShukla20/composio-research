@@ -1,0 +1,142 @@
+{
+ "record": {
+  "id": 40,
+  "name": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A cloud-based email delivery platform that provides transactional and marketing email at scale.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan or trial directly on the website without a credit card.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers mail send, marketing campaigns, contacts, stats, suppressions, and account management through a comprehensive REST API.",
+  "mcp": "community",
+  "mcp_url": "https://mcpmarket.com/server/sendgrid",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://apis.io/providers/sendgrid",
+    "quote": "All APIs authenticate with a scoped bearer API key against api.sendgrid.com"
+   },
+   {
+    "field": "access",
+    "url": "https://apis.io/providers/sendgrid",
+    "quote": "Freemium (free trial) · Self-serve signup"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/providers/sendgrid",
+    "quote": "SendGrid is a cloud-based email delivery platform... over an HTTP v3 REST API and an SMTP relay."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcpmarket.com/server/sendgrid",
+    "quote": "SendGrid is a Model Context Protocol (MCP) server designed to facilitate interaction between AI agents"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "SendGrid (sendgrid.com) API authentication developer documentation",
+   "access": "SendGrid (sendgrid.com) API access pricing plan get API key developer account",
+   "mcp": "SendGrid (sendgrid.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://apis.io/providers/sendgrid"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://apitracker.io/a/sendgrid"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://campaignrefinery.com/sendgrid-pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/sendgrid"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/sendgrid"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=HpJtDqOeMIU"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/sendgrid"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://campaignrefinery.com/sendgrid-pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.spendflo.com/blog/sendgrid-pricing-guide"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.twilio.com/en-us/products/email-api/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/sendgrid"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/garethcull/sendgrid-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/Garoth/sendgrid-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows"
+   }
+  ],
+  "pages_read": [
+   "https://apis.io/providers/sendgrid",
+   "https://apitracker.io/a/sendgrid",
+   "https://campaignrefinery.com/sendgrid-pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.1
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "record": {
+  "id": 26,
+  "name": "Discord",
+  "category": "Communications and Messaging",
+  "one_liner": "A communications platform allowing users to interact via voice, video, and text across servers and channels.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up and create applications for free in the Discord Developer Portal.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/ExilProductions/discord-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "Authenticating with the Discord API can be done in one of three ways:"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.discord.com/developers/intro",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ExilProductions/discord-mcp",
+    "quote": "A production-grade Model Context Protocol (MCP) server for Discord built with FastMCP and discord.py."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "auth",
+    "detail": "quote not in cited source: Authenticating with the Discord API can be done in one of three ways: 1. Using a"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "Authenticating with the Discord API can be done in one of three ways:",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.discord.com/developers/intro",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ExilProductions/discord-mcp",
+    "quote": "A production-grade Model Context Protocol (MCP) server for Discord built with FastMCP and discord.py.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs list oauth2 and bot token only; no basic auth mentioned.",
+    "suggested": "auth_methods=['oauth2','token']"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs describe building bots but do not state sign‑up is free.",
+    "suggested": "self_serve_free"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party repo provides a community MCP implementation.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "No direct evidence; minor auth mismatch not shown as blocker.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 5,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

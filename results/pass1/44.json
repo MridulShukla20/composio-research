@@ -1,0 +1,149 @@
+{
+ "record": {
+  "id": 44,
+  "name": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Salesforce Commerce Cloud offers ecommerce solutions for B2B, D2C, and B2C to build personalized, scalable, and high-volume shopping experiences.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "partner_or_sales_gated",
+  "access_note": "Credentials and enterprise access are obtained through Salesforce enterprise contracts, sales partnerships, or specialized commerce accounts.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The B2C Commerce API (SCAPI), Open Commerce API (OCAPI), and Script APIs provide broad read and write coverage for products, baskets, orders, and administrative tasks.",
+  "mcp": "official",
+  "mcp_url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "Commerce Cloud requires enterprise commercial agreements or partner channels to provision full production environments and administrative credentials.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "To authorize this wide range of client types, we’ve defined a set of scopes based on the OAuth 2.1 standard."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C... and B2C... commerce."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI)."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+    "quote": "The B2C Commerce MCP Service is a fully-hosted service for linking an AI agent to real-time B2C Commerce data access."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C (business-to-business and direct-to-consumer) and B2C (business-to-consumer) commerce."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Salesforce Commerce Cloud (developer.salesforce.com/docs/commerce) API authentication developer documentation",
+   "access": "Salesforce Commerce Cloud (developer.salesforce.com/docs/commerce) API access pricing plan get API key developer account",
+   "mcp": "Salesforce Commerce Cloud (developer.salesforce.com/docs/commerce) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.salesforce.com/docs/commerce"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://rhino-inquisitor.com/salesforce-b2c-commerce-cloud-documentation"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.salesforce.com/developer-centers/commerce-cloud"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://pipeline.zoominfo.com/sales/salesforce-api"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.swell.is/content/salesforce-commerce-cloud-pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/BrinsilElias/commercecloud-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/taurgis/sfcc-dev-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.salesforceben.com/salesforce-admins-guide-to-model-context-protocol-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developer.salesforce.com/docs/commerce",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 20.2
+ }
+}

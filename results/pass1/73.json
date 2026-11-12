@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 73,
+  "name": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Linear is an issue tracking and product development platform for software teams.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate API keys or register OAuth applications directly in workspace settings.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The GraphQL API covers issues, teams, projects, comments, users, workflow states, webhooks, and attachments.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.linear.app/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "The Linear API supports personal API keys and OAuth2 authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://linear.app/pricing",
+    "quote": "Free Free for everyone Unlimited members 2 teams 250 issues Agent platform Linear Agent"
+   },
+   {
+    "field": "api",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.linear.app",
+    "quote": "connect to the Linear MCP server at https://mcp.linear.app/mcp"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Linear (developers.linear.app) API authentication developer documentation",
+   "access": "Linear (developers.linear.app) API access pricing plan get API key developer account",
+   "mcp": "Linear (developers.linear.app) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.linear.app"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://linear.app/developers/graphql"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://linear.app/developers/oauth-2-0-authentication"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://linear.app/developers/graphql"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://rollout.com/integration-guides/linear/api-essentials"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://linear.app/developers/oauth-2-0-authentication"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/linear-app"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/zalab-inc/mcp-linear-app"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.merge.dev/blog/linear-api-key"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/linear-app"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://linear.app/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.gamut.so/blog/linear-mcp-server-guide"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://coworker.ai/blog/linear-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/linear-10"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/jerhadf/linear-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://developers.linear.app",
+   "https://linear.app/developers/graphql",
+   "https://linear.app/developers/oauth-2-0-authentication"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.3
+ }
+}

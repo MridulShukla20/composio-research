@@ -1,0 +1,119 @@
+{
+ "record": {
+  "id": 30,
+  "name": "Vonage",
+  "category": "Communications and Messaging",
+  "one_liner": "Vonage provides communications and messaging APIs for voice, video, messaging, and identity verification.",
+  "auth_methods": [
+   "api_key",
+   "token",
+   "basic"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account and receive free credit when opening an account.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers voice, video, messaging, network features, and verification capabilities.",
+  "mcp": "official",
+  "mcp_url": "https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+    "quote": "Verify API supports two types of authentication:\n- Basic Authentication\n- JWT"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "We’ll give you some free credit when you first open your account and you can top up when you run low."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.vonage.com",
+    "quote": "Communication & Network APIs\nVoice\nVideo\nMessaging\nNetwork Features\nLow Code and AI\nPrivacy and Security"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+    "quote": "An MCP (Model Context Protocol) server that provides AI assistants with access to Vonage API documentation"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: introducing-the-vonage-documentation-mcp-server"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+    "quote": "Verify API supports two types of authentication:\n- Basic Authentication\n- JWT",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "We’ll give you some free credit when you first open your account and you can top up when you run low.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.vonage.com",
+    "quote": "Communication & Network APIs\nVoice\nVideo\nMessaging\nNetwork Features\nLow Code and AI\nPrivacy and Security",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+    "quote": "An MCP (Model Context Protocol) server that provides AI assistants with access to Vonage API documentation",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs list only Basic and JWT; no api_key support.",
+    "suggested": "token, basic"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free credit is given on account creation.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official repo describes MCP server for AI assistants.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim is inaccurate, so overall verdict cannot be yes.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

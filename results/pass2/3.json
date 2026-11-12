@@ -1,0 +1,150 @@
+{
+ "record": {
+  "id": 3,
+  "name": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_liner": "Pipedrive is a web-based Sales CRM and pipeline management software for managing leads, deals, and activities.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a Pipedrive account and obtain credentials or sandbox access for free.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "This reference helps you implement the RESTful Pipedrive API.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/WillDent/pipedrive-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "quote": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace."
+   },
+   {
+    "field": "access",
+    "url": "https://www.pipedrive.com/en/features/crm-api",
+    "quote": "Every Pipedrive plan comes with an API token that gives you access to our RESTful API for free."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API."
+   },
+   {
+    "field": "mcp",
+    "url": "https://devcommunity.pipedrive.com/t/open-source-pipedrive-mcp-server-155-tools-v2-first-mit/20392",
+    "quote": "Repo and the full tool table are here: GitHub - ckalima/pipedrive-mcp-server"
+   },
+   {
+    "field": "one_liner",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "api_styles",
+   "mcp"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "mcp_official_unbacked",
+    "field": "mcp",
+    "detail": "mcp=official but no vendor-owned page or vendor GitHub org cited"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "quote": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.pipedrive.com/en/features/crm-api",
+    "quote": "Every Pipedrive plan comes with an API token that gives you access to our RESTful API for free.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://devcommunity.pipedrive.com/t/open-source-pipedrive-mcp-server-155-tools-v2-first-mit/20392",
+    "quote": "Repo and the full tool table are here: GitHub - ckalima/pipedrive-mcp-server",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "one_liner",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "OAuth2 required; API token also available for access",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API token provided free with any Pipedrive plan",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "contradicted",
+    "why": "Evidence shows a different community repo, not the claimed URL",
+    "suggested": "https://github.com/ckalima/pipedrive-mcp-server"
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Sandbox accounts can be created freely for testing",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

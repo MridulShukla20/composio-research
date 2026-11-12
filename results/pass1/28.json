@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 28,
+  "name": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_liner": "Official API platform to send and receive WhatsApp messages, manage business profiles, and automate customer communications.",
+  "auth_methods": [
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "token",
+  "access": "approval_required",
+  "access_note": "Developers sign up on the Meta for Developer portal and set up a business account, but real usage requires app review and business verification.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers sending messages, managing templates, webhook events, and business profiles.",
+  "mcp": "community",
+  "mcp_url": "https://mcp.so/servers/whatsapp-mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Requires Meta Business verification and app review for production use.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.youtube.com/watch?v=2C99NvvOg_k",
+    "quote": "For the access token, the permanent access token that we have created through the system users, we'll have to paste it here."
+   },
+   {
+    "field": "access",
+    "url": "https://elfsight.com/blog/whatsapp-business-api-overview",
+    "quote": "To start working with all opportunities of WhatsApp API key, you need to set up your Business account, verify it"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/apis/facebook-business-manager/facebook-whatsapp-business-platform-api",
+    "quote": "Send and receive messages, manage business profiles, and automate customer communications through the WhatsApp Business Platform."
+   },
+   {
+    "field": "mcp",
+    "url": "https://mcp.so/servers/whatsapp-mcp-server",
+    "quote": "WhatsApp MCP Server is a Python implementation that provides a Model Context Protocol (MCP) interface"
+   },
+   {
+    "field": "verdict",
+    "url": "https://apis.io/apis/facebook-business-manager/facebook-whatsapp-business-platform-api",
+    "quote": "The Cloud API enables businesses to integrate WhatsApp messaging into their applications"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "WhatsApp Business (developers.facebook.com/docs/whatsapp) API authentication developer documentation",
+   "access": "WhatsApp Business (developers.facebook.com/docs/whatsapp) API access pricing plan get API key developer account",
+   "mcp": "WhatsApp Business (developers.facebook.com/docs/whatsapp) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.facebook.com/docs/whatsapp"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/facebook-business-manager/facebook-whatsapp-business-platform-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/whatsapp/whatsapp-messages-api"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/whatsapp/whatsapp-message-templates-api"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://archive.ph/developers.facebook.com"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://elfsight.com/blog/whatsapp-business-api-overview"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.eesel.ai/blog/whatsapp-business-api"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=2C99NvvOg_k"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/whatsapp-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://lobehub.com/mcp/asherclement-whatsapp-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://pickyassist.com/blog/whatsapp-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/lharries/whatsapp-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developers.facebook.com/docs/whatsapp",
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+  ],
+  "pages_unreadable": [
+   "https://archive.ph/developers.facebook.com"
+  ],
+  "model_attempts": 1,
+  "seconds": 71.6
+ }
+}

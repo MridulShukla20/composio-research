@@ -1,0 +1,120 @@
+{
+ "record": {
+  "id": 92,
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-powered meeting transcription, recording, and notetaking assistant with Model Context Protocol (MCP) support and API integration.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up for a free Otter Basic account or subscribe to paid plans, with API and enterprise features available on higher tiers.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers webhooks, transcripts, and integrations with third-party tools via API.",
+  "mcp": "official",
+  "mcp_url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+    "quote": "Otter's MCP implementation uses OAuth-based authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://otter.ai/pricing",
+    "quote": "Basic Zoom, MS Teams, and Google Meet AI Chat within and across meetings AI meeting workflows"
+   },
+   {
+    "field": "api",
+    "url": "https://otter.ai/blog/otter-ai-zapier-integration",
+    "quote": "In Apps > Zapier > API Key. Be sure to save it as it won't be shown again."
+   },
+   {
+    "field": "mcp",
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "quote": "Otter's MCP Server connects your meeting data directly to AI tools like Claude and ChatGPT"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+    "quote": "Otter's MCP implementation uses OAuth-based authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://otter.ai/pricing",
+    "quote": "Basic Zoom, MS Teams, and Google Meet AI Chat within and across meetings AI meeting workflows",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://otter.ai/blog/otter-ai-zapier-integration",
+    "quote": "In Apps > Zapier > API Key. Be sure to save it as it won't be shown again.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "quote": "Otter's MCP Server connects your meeting data directly to AI tools like Claude and ChatGPT",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 shown; no evidence for API key.",
+    "suggested": "oauth2"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Pricing page lists paid plans; free tier not confirmed.",
+    "suggested": "self_serve_paid"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official blog posts describe Otter's MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Some claim aspects lack full evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 3,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

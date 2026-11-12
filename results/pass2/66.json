@@ -1,0 +1,133 @@
+{
+ "record": {
+  "id": 66,
+  "name": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Graph database platform for storing and querying connected data",
+  "auth_methods": [
+   "basic",
+   "token",
+   "api_key"
+  ],
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for free AuraDB tiers and local editions without cost.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Provides comprehensive database querying and management via drivers and REST/HTTP APIs.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/neo4j/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+    "quote": "For basic authentication, auth can be a simple tuple"
+   },
+   {
+    "field": "access",
+    "url": "https://neo4j.com/pricing",
+    "quote": "Try for free"
+   },
+   {
+    "field": "api",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+    "quote": "The neo4j.Driver construction is done via a classmethod"
+   },
+   {
+    "field": "mcp",
+    "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp",
+    "quote": "The official MCP Server for Neo4j, is a local MCP server"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "primary_auth",
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Free $0 Start learning"
+   },
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+    "quote": "For basic authentication, auth can be a simple tuple",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://neo4j.com/pricing",
+    "quote": "Try for free",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+    "quote": "The neo4j.Driver construction is done via a classmethod",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp",
+    "quote": "The official MCP Server for Neo4j, is a local MCP server",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Docs confirm basic auth only; token and api_key not shown.",
+    "suggested": "basic"
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "Evidence mentions a free trial, not a self‑serve free tier.",
+    "suggested": "self_serve_trial"
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "Page calls it official MCP server but does not provide the GitHub URL.",
+    "suggested": "official"
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Access claim unsupported, so overall 'yes' is inaccurate.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 8,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

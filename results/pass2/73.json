@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 73,
+  "name": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Linear is an issue tracking and product development platform for software teams.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate API keys or register OAuth applications directly in workspace settings.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The GraphQL API covers issues, teams, projects, comments, users, workflow states, webhooks, and attachments.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.linear.app/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "The Linear API supports personal API keys and OAuth2 authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://linear.app/pricing",
+    "quote": "Free Free for everyone Unlimited members 2 teams 250 issues Agent platform Linear Agent"
+   },
+   {
+    "field": "api",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.linear.app",
+    "quote": "connect to the Linear MCP server at https://mcp.linear.app/mcp"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "The Linear API supports personal API keys and OAuth2 authentication.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://linear.app/pricing",
+    "quote": "Free Free for everyone Unlimited members 2 teams 250 issues Agent platform Linear Agent",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.linear.app",
+    "quote": "connect to the Linear MCP server at https://mcp.linear.app/mcp",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs list both OAuth2 and API keys, recommending OAuth2 as primary.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Pricing shows free tier but no explicit self‑serve sign‑up/key generation evidence.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs reference the MCP URL directly.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No major blocker; claims mostly backed by evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

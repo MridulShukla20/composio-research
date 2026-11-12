@@ -1,0 +1,123 @@
+{
+ "record": {
+  "id": 64,
+  "name": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloudflare provides a cloud platform offering CDN, security, DDoS mitigation, and serverless compute.",
+  "auth_methods": [
+   "token",
+   "api_key"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Cloudflare account and generate API tokens or keys directly in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers thousands of endpoints across DNS, Workers, Pages, SSL, and other Cloudflare infrastructure.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "Cloudflare uses the RFC standard ↗︎ Authorization: Bearer <API_TOKEN> interface."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+    "quote": "To retrieve your Global API key:"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "The stable base URL for all Version 4 HTTPS endpoints is: https://api.cloudflare.com/client/v4/"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "quote": "Cloudflare provides two categories of MCP servers:"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: 1. Log in to the Cloudflare dashboard. 2. Go to My Profile > API Tokens."
+   },
+   {
+    "code": "quote_not_found",
+    "field": "mcp",
+    "detail": "quote not in cited source: The Cloudflare API MCP server at ` is the only MCP server you need to work with "
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "Cloudflare uses the RFC standard ↗︎ Authorization: Bearer <API_TOKEN> interface.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+    "quote": "To retrieve your Global API key:",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls",
+    "quote": "The stable base URL for all Version 4 HTTPS endpoints is: https://api.cloudflare.com/client/v4/",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "quote": "Cloudflare provides two categories of MCP servers:",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs show Bearer token auth and mention Global API key.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs show key retrieval but don’t state free sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repo confirms vendor‑published MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No evidence contradicts any claim; no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

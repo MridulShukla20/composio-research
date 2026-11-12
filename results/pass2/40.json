@@ -1,0 +1,135 @@
+{
+ "record": {
+  "id": 40,
+  "name": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A cloud-based email delivery platform that provides transactional and marketing email at scale.",
+  "auth_methods": [
+   "api_key",
+   "basic"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free trial directly on the website with no credit card required.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The SendGrid Email API enables businesses to create, send, and manage emails at scale through RESTful APIs.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/garethcull/sendgrid-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "quote": "Twilio SendGrid supports API keys delivered via Bearer token or Basic authentication"
+   },
+   {
+    "field": "access",
+    "url": "https://sendgrid.com/en-us/pricing?tab=1_1",
+    "quote": "Free trial lets you send 100 emails/day for 60 days"
+   },
+   {
+    "field": "api",
+    "url": "https://sendgrid.com/en-us/solutions/email-api",
+    "quote": "The SendGrid Email API enables businesses to create, send, and manage emails at scale through RESTful APIs or SMTP relay."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/garethcull/sendgrid-mcp",
+    "quote": "A Model Context Protocol (MCP) server that exposes SendGrid Email Management and Reporting tools as MCP-compatible endpoints."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "auth_methods"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "api",
+    "detail": "quote not in cited source: SendGrid is a cloud-based email delivery platform... over an HTTP v3 REST API an"
+   },
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "quote": "Twilio SendGrid supports API keys delivered via Bearer token or Basic authentication",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://sendgrid.com/en-us/pricing?tab=1_1",
+    "quote": "Free trial lets you send 100 emails/day for 60 days",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://sendgrid.com/en-us/solutions/email-api",
+    "quote": "The SendGrid Email API enables businesses to create, send, and manage emails at scale through RESTful APIs or SMTP relay.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/garethcull/sendgrid-mcp",
+    "quote": "A Model Context Protocol (MCP) server that exposes SendGrid Email Management and Reporting tools as MCP-compatible endpoints.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs list API‑key (Bearer) and Basic auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Free trial shown, but credit‑card‑free claim not evidenced.",
+    "suggested": "self_serve_trial"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party repo provides SendGrid MCP endpoints.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "No blocker; claims mostly backed.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

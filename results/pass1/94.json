@@ -1,0 +1,149 @@
+{
+ "record": {
+  "id": 94,
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_liner": "A research search service that helps users find and review peer-reviewed academic papers.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up on Consensus and generate an API key or authenticate via OAuth in your MCP client.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Provides REST API endpoints for paper search, full-text excerpts, citations, and research agent threads.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.consensus.app/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "Pass the key in the x-api-key header."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan."
+   },
+   {
+    "field": "api",
+    "url": "https://integrations.sh/consensus.app",
+    "quote": "Consensus exposes a REST API at https://api.consensus.app for paper search"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "quote": "The Consensus MCP server is a hosted remote server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Consensus (consensus.app (OAuth requested)) API authentication developer documentation",
+   "access": "Consensus (consensus.app (OAuth requested)) API access pricing plan get API key developer account",
+   "mcp": "Consensus (consensus.app (OAuth requested)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.consensus.app/api-plans-and-access"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://integrations.sh/consensus.app"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.consensus.app/enterprise/connection-reference"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://support.goconsensus.com/hubfs/consensus-oauth-guide%20for%20V2%20API%20(1).pdf?ref=newsroom.siliconslopes.com"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/consensus-app"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://integrations.sh/consensus.app"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.consensus.app/enterprise/connection-reference"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://docs.consensus.app/api-plans-and-access"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.consensus.app/api-get-started"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://integrations.sh/consensus.app"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.consensus.app/consensus-mcp"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://support.goconsensus.com/setting-up-the-consensus-ai-connect-consensus-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.consensus.app/consensus-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.consensus.app/enterprise/overview"
+   }
+  ],
+  "pages_read": [
+   "https://docs.consensus.app/api-plans-and-access",
+   "https://integrations.sh/consensus.app",
+   "https://docs.consensus.app/enterprise/connection-reference"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.5
+ }
+}

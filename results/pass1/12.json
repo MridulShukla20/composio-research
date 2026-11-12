@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 12,
+  "name": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer support and communication platform with inbox, tickets, help center, and developer APIs",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "You can create a free developer workspace and app in the Intercom Developer Hub to obtain an access token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers contacts, conversations, tickets, companies, help center articles, admins, and data events.",
+  "mcp": "official",
+  "mcp_url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+   },
+   {
+    "field": "access",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only."
+   },
+   {
+    "field": "api",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "quote": "Key endpoints available in version 2.18 of the Intercom API include the ones below."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+    "quote": "Intercom's MCP server lets AI tools and CLIs... securely access your Intercom data through the Model Context Protocol."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Intercom (intercom.com) API authentication developer documentation",
+   "access": "Intercom (intercom.com) API access pricing plan get API key developer account",
+   "mcp": "Intercom (intercom.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://integrations.sh/intercom.com"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://www.getmacha.com/blog/intercom-api-guide"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=39ve8pwgfow"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://integrations.sh/intercom.com"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.getmacha.com/blog/intercom-api-guide"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.merge.dev/blog/intercom-api-key"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=33z1mucuVx8"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=39ve8pwgfow"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.intercom.com/docs/guides/mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/intercom"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://chatbotkit.com/connections/intercom.com/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "https://integrations.sh/intercom.com",
+   "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 25.5
+ }
+}

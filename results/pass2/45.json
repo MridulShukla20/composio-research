@@ -1,0 +1,103 @@
+{
+ "record": {
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_liner": "An open-source and enterprise e-commerce platform providing extensive REST and GraphQL APIs for online stores.",
+  "auth_methods": [
+   "oauth2",
+   "token",
+   "basic",
+   "other"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Magento Open Source is freely downloadable, and developers can set up local environments or trial instances without cost.",
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers catalog, cart, pricing, inventory, orders, customers, and administrative actions via REST and GraphQL.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/rafaelstz/adobe-commerce-dev-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Third-party applications authenticate with OAuth 1.0a."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Third-party applications authenticate with OAuth 1.0a.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.adobe.com/commerce/webapi/rest",
+    "quote": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs list OAuth 1.0a, not OAuth 2.0, as primary method.",
+    "suggested": "oauth1a"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "No explicit evidence of free self‑serve download shown.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "No evidence provided confirming community MCP source.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Primary auth claim fails, undermining overall yes claim.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 8,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

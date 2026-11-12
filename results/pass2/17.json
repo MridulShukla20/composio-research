@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 17,
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "one_liner": "Plain is an API-first customer support platform for modern tech companies.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up for an account on the website to get access.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers the complete product functionality via a GraphQL API.",
+  "mcp": "official",
+  "mcp_url": "https://www.plain.com/docs/getting-started",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://www.plain.com/docs/graphql/authentication",
+    "quote": "To call the API as a user in your workspace, use an OAuth app."
+   },
+   {
+    "field": "access",
+    "url": "https://www.plain.com/blog/ai-customer-support-api-first-platforms-2025",
+    "quote": "Pricing: Foundation is $45/user/month (billed annually), with unlimited free viewer seats"
+   },
+   {
+    "field": "api",
+    "url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "An overview of Plain's GraphQL API and the data model behind it."
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.plain.com/docs/getting-started",
+    "quote": "Plain’s Model Context Protocol (MCP) server"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://www.plain.com/docs/graphql/authentication",
+    "quote": "To call the API as a user in your workspace, use an OAuth app.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.plain.com/blog/ai-customer-support-api-first-platforms-2025",
+    "quote": "Pricing: Foundation is $45/user/month (billed annually), with unlimited free viewer seats",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "An overview of Plain's GraphQL API and the data model behind it.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.plain.com/docs/getting-started",
+    "quote": "Plain’s Model Context Protocol (MCP) server",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs state OAuth app is primary; also mention API keys (token).",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "Pricing shows paid plan; no free self‑serve access.",
+    "suggested": "paid_plan"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official getting‑started docs reference MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Access claim false, requiring paid plan.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 92,
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-powered meeting transcription, recording, and notetaking assistant with Model Context Protocol (MCP) support.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Users can sign up for a free Otter Basic account or subscribe to paid plans to access integrated features.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers audio file uploads, transcription retrieval via webhooks, and searching meeting knowledge.",
+  "mcp": "official",
+  "mcp_url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt",
+    "quote": "Otter's MCP implementation uses OAuth-based authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://otter.ai/pricing",
+    "quote": "Basic Zoom, MS Teams, and Google Meet AI Chat within and across meetings AI meeting workflows"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/providers/otter-ai",
+    "quote": "can upload audio files, retrieve processed transcripts via webhooks, and integrate meeting intelligence into their own applications using bearer token authentication."
+   },
+   {
+    "field": "mcp",
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "quote": "Otter's MCP Server connects your meeting data directly to AI tools like Claude and ChatGPT"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Otter AI (help.otter.ai (MCP server)) API authentication developer documentation",
+   "access": "Otter AI (help.otter.ai (MCP server)) API access pricing plan get API key developer account",
+   "mcp": "Otter AI (help.otter.ai (MCP server)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://help.otter.ai"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://otter.ai/pricing"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/otter-ai"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/otter-ai"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://composio.dev/toolkits/otter_ai_mcp"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://otter.ai/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://composio.dev/toolkits/otter_ai_mcp"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://meetgeek.ai/blog/otter-ai-pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://www.claap.io/blog/otter-pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/DarrenZal/otter-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/otter-ai-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://zapier.com/mcp/otterai"
+   }
+  ],
+  "pages_read": [
+   "https://help.otter.ai",
+   "https://otter.ai/pricing",
+   "https://otter.ai/blog/your-meeting-data-now-accessible-in-chatgpt"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 9.6
+ }
+}

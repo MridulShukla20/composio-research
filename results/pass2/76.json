@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 76,
+  "name": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "A work operating system and AI work platform that helps teams run projects, workflows, and collaboration.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can create a free developer account or sign up for the free plan to obtain API credentials.",
+  "api_styles": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "An expressive GraphQL API to interact with workflows, automate processes, and power integrations.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/mondaycom/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "If you don't have a monday.com account yet, create a free developer account to get an API token and start testing."
+   },
+   {
+    "field": "api",
+    "url": "https://developer.monday.com",
+    "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mondaycom/mcp",
+    "quote": "The `@mondaydotcomorg/monday-api-mcp` package provides a plug-and-play server implementation for the Model Context Protocol (MCP)."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: developer account on a free, no expiration date developer account!"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "If you don't have a monday.com account yet, create a free developer account to get an API token and start testing.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.monday.com",
+    "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/mondaycom/mcp",
+    "quote": "The `@mondaydotcomorg/monday-api-mcp` package provides a plug-and-play server implementation for the Model Context Protocol (MCP).",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "contradicted",
+    "why": "Docs only mention personal API tokens, no OAuth2 support.",
+    "suggested": "token"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs state a free developer account provides an API token.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official GitHub repo provides the MCP package.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Auth claim is incorrect, blocking overall approval.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 6,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

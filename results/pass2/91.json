@@ -1,0 +1,131 @@
+{
+ "record": {
+  "id": 91,
+  "name": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "An AI-powered research and notebook assistant by Google for generating insights and summaries from documents.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "partner_or_sales_gated",
+  "access_note": "API access requires Gemini Notebook Enterprise subscription and enterprise cloud setup.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers notebook management tasks, sources, and sharing via Google Cloud REST endpoints.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "partner_or_sales_gate",
+  "blocker_note": "API access requires an enterprise subscription and cloud identity setup.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "The projects.locations.notebooks REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "quote": "Get a subscription 1. Enter the Number of licenses that you want."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Gemini Notebook Enterprise is a powerful tool for generating insights and summaries from your documents."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "Google's Gemini Notebook (renamed from NotebookLM in July 2026) is the best grounded-answer engine on the market"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [
+   "access",
+   "main_blocker"
+  ],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "api",
+    "detail": "quote not in cited source: Create a notebook Retrieve a notebook List recently viewed notebooks Delete a no"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Get a subscription 1. Enter the Number of licenses that you want."
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "The projects.locations.notebooks REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "quote": "Get a subscription 1. Enter the Number of licenses that you want.",
+    "official": true,
+    "quote_check": "missing"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Gemini Notebook Enterprise is a powerful tool for generating insights and summaries from your documents.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "Google's Gemini Notebook (renamed from NotebookLM in July 2026) is the best grounded-answer engine on the market",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs require gcloud OAuth2 login for authenticated user.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Docs show subscription needed but no explicit sales/partner gate.",
+    "suggested": "paid_plan"
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Third‑party GitHub repo provides community MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Access may be gated, creating a caveat.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

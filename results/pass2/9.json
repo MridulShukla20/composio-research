@@ -1,0 +1,100 @@
+{
+ "record": {
+  "id": 9,
+  "name": "Copper",
+  "category": "CRM and Sales",
+  "one_liner": "A CRM and sales productivity tool designed for Google Workspace.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_trial",
+  "access_note": "Developers can sign up for a free trial and generate API keys or register for OAuth2 credentials.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The REST API covers core CRM objects like people, companies, leads, opportunities, tasks, and activities.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "To generate an API token, in the Copper web app go to System settings > API Keys"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.copper.com/introduction/oauth/flow.html",
+    "quote": "https://api.copper.com/developer_api/v1/account"
+   }
+  ],
+  "confidence": "low",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "To generate an API token, in the Copper web app go to System settings > API Keys",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.copper.com/introduction/oauth/flow.html",
+    "quote": "https://api.copper.com/developer_api/v1/account",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 preferred but API keys also primary",
+    "suggested": "primary_auth=api_key"
+   },
+   "access": {
+    "judgement": "contradicted",
+    "why": "No evidence of self‑serve trial signup",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "contradicted",
+    "why": "Official docs exist, not none_found",
+    "suggested": "official"
+   },
+   "verdict": {
+    "judgement": "contradicted",
+    "why": "Access and mcp claims unsupported",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 10,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

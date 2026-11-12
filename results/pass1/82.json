@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 82,
+  "name": "Plaid",
+  "category": "Finance and Fintech",
+  "one_liner": "Financial technology platform that builds APIs connecting bank accounts to apps.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "approval_required",
+  "access_note": "Sign up for a developer account and request production access via the Plaid Dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Plaid API covers authentication, accounts, balances, transactions, investments, liabilities, and payments.",
+  "mcp": "official",
+  "mcp_url": "https://plaid.com/docs/resources/mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Sandbox is self-serve free, but moving to production requires dashboard application and approval.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://plaid.com/docs/api",
+    "quote": "Almost all Plaid API endpoints require a client_id and secret."
+   },
+   {
+    "field": "access",
+    "url": "https://www.apideck.com/blog/how-to-get-your-plaid-api-key",
+    "quote": "When you're ready to go live, you'll need to request Production access through the Dashboard"
+   },
+   {
+    "field": "api",
+    "url": "https://plaid.com/docs/api",
+    "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON"
+   },
+   {
+    "field": "mcp",
+    "url": "https://plaid.com/docs/resources/mcp",
+    "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Plaid (plaid.com/docs) API authentication developer documentation",
+   "access": "Plaid (plaid.com/docs) API access pricing plan get API key developer account",
+   "mcp": "Plaid (plaid.com/docs) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://plaid.com/docs"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://plaid.com/docs/api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://plaid.com/docs/api/institutions"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://plaid.com/docs/api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://plaid.com/docs/api/institutions"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://plaid.com/docs/api/items"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://plaid.com/docs/link"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.apideck.com/blog/how-to-get-your-plaid-api-key"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://news.ycombinator.com/item?id=37614748"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/plaid"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://plaid.com/pricing"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://lobehub.com/mcp/t-rhex-plaid-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/plaid-mcp-vs-api"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://plaid.com/docs/resources/mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://skywork.ai/skypage/en/plaid-mcp-server-ai-engineer/1980813597284151296"
+   }
+  ],
+  "pages_read": [
+   "https://plaid.com/docs",
+   "https://plaid.com/docs/api",
+   "https://plaid.com/docs/api/institutions"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.6
+ }
+}

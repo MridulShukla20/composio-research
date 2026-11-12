@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 89,
+  "name": "Ramp",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards, expense management, bill payments, and spend controls platform with a developer API and MCP server.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a Ramp account and create developer app credentials in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Extensive API covering transactions, bills, cards, reimbursements, users, funds, and accounting sync.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/ramp-public/ramp_mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "Ramp uses OAuth 2.0. Your app gets an access token from /developer/v1/token"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "quote": "In your Ramp account, go to Company → Developer (you'll need admin access)."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.ramp.com",
+    "quote": "Canonical OpenAPI schema for the Developer API: /openapi/developer-api.json."
+   },
+   {
+    "field": "mcp",
+    "url": "https://truthifi.com/providermcps/ramp-mcp",
+    "quote": "Ramp does publish an official MCP server — the open-source ramp-public/ramp-mcp project"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Ramp (docs.ramp.com) API authentication developer documentation",
+   "access": "Ramp (docs.ramp.com) API access pricing plan get API key developer account",
+   "mcp": "Ramp (docs.ramp.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.ramp.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/ramp"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://support.ramp.com/accessing-the-developer-api"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/ramp"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apitracker.io/a/ramp"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpservers.org/servers/ramp-public/ramp-mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://truthifi.com/providermcps/ramp-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/ramp-public/ramp_mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/claude-ramp-integration"
+   }
+  ],
+  "pages_read": [
+   "https://docs.ramp.com",
+   "https://docs.ramp.com/developer-api/v1/getting-started",
+   "https://docs.ramp.com/developer-api/v1/authorization"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.8
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "record": {
+  "id": 99,
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_liner": "A managed REST API and MCP server for extracting YouTube transcripts, search, channel data, and playlists.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account to receive 100 free credits without a credit card.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers YouTube transcripts, video search, channel search, channel videos, latest uploads, and playlist videos.",
+  "mcp": "official",
+  "mcp_url": "https://transcriptapi.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://transcriptapi.com",
+    "quote": "Stop fighting YouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP"
+   },
+   {
+    "field": "auth",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io",
+    "quote": "TranscriptAPI docs use Bearer token authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://transcriptapi.com",
+    "quote": "100 free credits to try the API — no card required."
+   },
+   {
+    "field": "api",
+    "url": "https://transcriptapi.com",
+    "quote": "Transcripts, search, channels, playlists — all in one place."
+   },
+   {
+    "field": "mcp",
+    "url": "https://transcriptapi.com/docs/mcp",
+    "quote": "TranscriptAPI’s server is hosted at"
+   },
+   {
+    "field": "verdict",
+    "url": "https://transcriptapi.com",
+    "quote": "Get a free API key at transcriptapi.com/signup"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://transcriptapi.com",
+    "quote": "Stop fighting YouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://transcriptapi.com/blog/transcriptapi-vs-youtube-transcript-io",
+    "quote": "TranscriptAPI docs use Bearer token authentication.",
+    "official": true,
+    "quote_check": "other_url"
+   },
+   {
+    "field": "access",
+    "url": "https://transcriptapi.com",
+    "quote": "100 free credits to try the API — no card required.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://transcriptapi.com",
+    "quote": "Transcripts, search, channels, playlists — all in one place.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://transcriptapi.com/docs/mcp",
+    "quote": "TranscriptAPI’s server is hosted at",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://transcriptapi.com",
+    "quote": "Get a free API key at transcriptapi.com/signup",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs explicitly say Bearer token authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Offers 100 free credits with no credit‑card requirement.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "Official page found at /docs/mcp, not the claimed /mcp URL.",
+    "suggested": "https://transcriptapi.com/docs/mcp"
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "No direct statement of “no blocker”; only free API key info provided.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

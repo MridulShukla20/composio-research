@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 55,
+  "name": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Cloud platform and marketplace for web scraping, browser automation, and AI tools with a REST API and official MCP server.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Sign up on the Apify console to get a free plan with monthly credits and an API token.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and account settings.",
+  "mcp": "official",
+  "mcp_url": "https://docs.apify.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.apify.com/api/v2",
+    "quote": "(Recommended) Add the token to your request's Authorization header as Bearer"
+   },
+   {
+    "field": "access",
+    "url": "https://apify.com/pricing",
+    "quote": "Free $0 $5 to spend in Apify Store or on your own Actors"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.apify.com",
+    "quote": "Apify API documentation: Endpoints to manage Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and your account."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.apify.com/mcp",
+    "quote": "The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.apify.com/api/v2",
+    "quote": "(Recommended) Add the token to your request's Authorization header as Bearer",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://apify.com/pricing",
+    "quote": "Free $0 $5 to spend in Apify Store or on your own Actors",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.apify.com",
+    "quote": "Apify API documentation: Endpoints to manage Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and your account.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.apify.com/mcp",
+    "quote": "The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs show Bearer token auth.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page lists a free tier.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP docs exist.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims are backed by official evidence.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

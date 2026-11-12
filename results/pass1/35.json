@@ -1,0 +1,149 @@
+{
+ "record": {
+  "id": 35,
+  "name": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one marketing platform providing tools for email campaigns, automation, and audience management.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Mailchimp account and generate API keys or set up OAuth apps directly from their profile dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Mailchimp's Marketing API provides extensive coverage of lists, campaigns, automations, templates, and reports.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/AgentX-ai/mailchimp-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://mailchimp.com/developer/marketing/api/lists/list",
+    "quote": "Authorization using a Mailchimp API key (a.k.a. Bearer token)"
+   },
+   {
+    "field": "auth",
+    "url": "https://ones.com/blog/the-developers-roadmap-to-mailchimp-api-docs-2026-edition",
+    "quote": "All requests to the Marketing API use HTTP Basic Auth."
+   },
+   {
+    "field": "access",
+    "url": "https://mailchimp.com/developer/marketing",
+    "quote": "Creating a Mailchimp account is the first step to accessing our APIs and developer tools."
+   },
+   {
+    "field": "api",
+    "url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp’s Marketing API powers timely, relevant marketing campaigns with custom data pulled directly from your app."
+   },
+   {
+    "field": "mcp",
+    "url": "https://growthmethod.com/mailchimp-mcp-server",
+    "quote": "Every option for connecting an agent to that side of Mailchimp is community-driven"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Mailchimp (mailchimp.com/developer) API authentication developer documentation",
+   "access": "Mailchimp (mailchimp.com/developer) API access pricing plan get API key developer account",
+   "mcp": "Mailchimp (mailchimp.com/developer) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://mailchimp.com/developer"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://mailchimp.com/developer/marketing/api/lists/list"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://mailchimp.com/developer/marketing/api/root/list"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://ones.com/blog/the-developers-roadmap-to-mailchimp-api-docs-2026-edition"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/mailchimp"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://mailchimp.com/developer/marketing/api/lists/list"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://mailchimp.com/developer/marketing/api/root/list"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.youtube.com/watch?v=7AlPMGdrdX4"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://mailchimp.com/developer/marketing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://ones.com/blog/the-developers-roadmap-to-mailchimp-api-docs-2026-edition"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://mailchimp.com/help/about-api-keys"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://growthmethod.com/mailchimp-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/AgentX-ai/mailchimp-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://apify.com/engaging_image/mailchimp-mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://mailchimp.com/developer",
+   "https://mailchimp.com/developer/marketing/api/lists/list",
+   "https://mailchimp.com/developer/marketing/api/root/list"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.4
+ }
+}

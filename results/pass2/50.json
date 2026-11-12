@@ -1,0 +1,172 @@
+{
+ "record": {
+  "id": 50,
+  "name": "fanbasis",
+  "category": "Ecommerce",
+  "one_liner": "A creator economy platform that bundles digital products, subscriptions, courses, communities, and payments into one dashboard.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a creator account on the platform dashboard to generate API keys.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers subscriptions, payments, members, and digital products.",
+  "mcp": "none_found",
+  "mcp_url": "",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "The platform operates on transaction fees or revenue shares on sales.",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://whop.com/blog/fanbasis-alternatives",
+    "quote": "Commas (formerly FanBasis) is a platform for online creators and entrepreneurs to create and sell products"
+   },
+   {
+    "field": "auth",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys."
+   },
+   {
+    "field": "access",
+    "url": "https://www.fanbasis.com",
+    "quote": "One place to create, sell, and get paid, with payments built in."
+   },
+   {
+    "field": "api",
+    "url": "https://emergent.sh/integrations/fanbasis",
+    "quote": "FanBasis's data structures, including subscriptions, payments, members, digital products"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ArturoHurtado7/MCP-Server",
+    "quote": "This project implements an MCP (Model Context Protocol) server in Python."
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys."
+   }
+  ],
+  "confidence": "low",
+  "unknowns": "Official standalone API documentation URL outside of third-party integration mentions could not be directly verified."
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "access",
+    "detail": "access is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_free but main_blocker=paid_plan"
+   }
+  ],
+  "flags_after": [
+   {
+    "code": "third_party_only",
+    "field": "auth",
+    "detail": "auth is backed only by non-vendor pages"
+   },
+   {
+    "code": "third_party_only",
+    "field": "api",
+    "detail": "api is backed only by non-vendor pages"
+   },
+   {
+    "code": "verdict_inconsistent",
+    "field": "access",
+    "detail": "access=self_serve_free but main_blocker=paid_plan"
+   }
+  ],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://whop.com/blog/fanbasis-alternatives",
+    "quote": "Commas (formerly FanBasis) is a platform for online creators and entrepreneurs to create and sell products",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.fanbasis.com",
+    "quote": "One place to create, sell, and get paid, with payments built in.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://emergent.sh/integrations/fanbasis",
+    "quote": "FanBasis's data structures, including subscriptions, payments, members, digital products",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/ArturoHurtado7/MCP-Server",
+    "quote": "This project implements an MCP (Model Context Protocol) server in Python.",
+    "official": false,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.tarvent.com/integrations/fanbasis",
+    "quote": "Create an API key. To do this, go to Account > API Keys.",
+    "official": false,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Third‑party docs show API key creation for Fanbasis.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Official page mentions selling but not free self‑serve sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "No Fanbasis MCP docs; unrelated GitHub project.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "No source confirms fee or revenue‑share model.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 4,
+  "trust": "needs_human",
+  "pass1_confidence": "high"
+ }
+}

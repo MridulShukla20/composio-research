@@ -1,0 +1,136 @@
+{
+ "record": {
+  "id": 66,
+  "name": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Graph database platform for storing and querying connected data",
+  "auth_methods": [
+   "oauth2",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free AuraDB tier or use local editions without cost.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Provides comprehensive database querying and management via drivers and REST/HTTP APIs.",
+  "mcp": "official",
+  "mcp_url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://apis.apievangelist.com/store/neo4j-authentication-api",
+    "quote": "OAuth2 bearer token obtained from the /oauth/token endpoint using client credentials."
+   },
+   {
+    "field": "access",
+    "url": "https://neo4j.com/pricing",
+    "quote": "Free $0 Start learning"
+   },
+   {
+    "field": "api",
+    "url": "https://apis.io/providers/neo4j",
+    "quote": "Neo4j publishes 12 API contracts indexed on the APIs.io network, including Query API, Authentication API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp",
+    "quote": "The official MCP Server for Neo4j, is a local MCP server that is downloadable"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Neo4j (neo4j.com/docs/api) API authentication developer documentation",
+   "access": "Neo4j (neo4j.com/docs/api) API access pricing plan get API key developer account",
+   "mcp": "Neo4j (neo4j.com/docs/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.apievangelist.com/store/neo4j-authentication-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/providers/neo4j"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://neo4j.com/docs/api/python-driver/current/api.html"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://medium.com/@jongiffard/token-based-auth-with-neo4j-query-api-for-applications-b1ac65c215a9"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/neo4j"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://neo4j.com/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://neo4j.com/docs/rest-docs/current"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://medium.com/@jongiffard/token-based-auth-with-neo4j-query-api-for-applications-b1ac65c215a9"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.truefoundry.com/docs/ai-gateway/mcp/neo4j-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/neo4j-contrib/mcp-neo4j"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://graphacademy.neo4j.com/courses/genai-mcp-neo4j-tools"
+   }
+  ],
+  "pages_read": [
+   "https://neo4j.com/docs/api/python-driver/current/api.html"
+  ],
+  "pages_unreadable": [
+   "https://neo4j.com/docs/api",
+   "https://neo4j.com/docs/operations-manual/current/authentication-authorization"
+  ],
+  "model_attempts": 1,
+  "seconds": 16.7
+ }
+}

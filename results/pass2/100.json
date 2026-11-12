@@ -1,0 +1,118 @@
+{
+ "record": {
+  "id": 100,
+  "name": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting recorder and transcript assistant that captures calls, generates notes, and provides APIs and MCP servers for AI workflows.",
+  "auth_methods": [
+   "oauth2",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate a personal access token directly from account settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The Grain API lets developers read meeting data, manage recordings, and receive real-time events from Grain programmatically.",
+  "mcp": "official",
+  "mcp_url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Grain supports three authentication methods depending on your use case."
+   },
+   {
+    "field": "access",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Personal API tokens are generated in Account settings → Integrations → Personal API. They are available on every plan."
+   },
+   {
+    "field": "api",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "The Grain API lets developers read meeting data, manage recordings, and receive real-time events from Grain programmatically."
+   },
+   {
+    "field": "mcp",
+    "url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+    "quote": "Grain's MCP (Model Context Protocol) server gives AI assistants direct access to your meetings"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": true,
+  "changed_fields": [],
+  "flags_before": [
+   {
+    "code": "quote_not_found",
+    "field": "access",
+    "detail": "quote not in cited source: Personal Access Token (PAT): grants access on behalf of a single user. ... Avail"
+   }
+  ],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Grain supports three authentication methods depending on your use case.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Personal API tokens are generated in Account settings → Integrations → Personal API. They are available on every plan.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "The Grain API lets developers read meeting data, manage recordings, and receive real-time events from Grain programmatically.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+    "quote": "Grain's MCP (Model Context Protocol) server gives AI assistants direct access to your meetings",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "OAuth2 not evidenced; only personal access token shown",
+    "suggested": "primary_auth=token, auth_methods=['token']"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Personal API tokens available on every plan, including free",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official article confirms Grain MCP server",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "weak",
+    "why": "Auth claim lacks OAuth2 evidence",
+    "suggested": "revise auth to token-only"
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

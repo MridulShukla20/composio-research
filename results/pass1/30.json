@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 30,
+  "name": "Vonage",
+  "category": "Communications and Messaging",
+  "one_liner": "Vonage provides communications and messaging APIs for voice, video, messaging, and identity verification.",
+  "auth_methods": [
+   "api_key",
+   "token",
+   "basic"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free developer account on the Vonage API Developer Portal.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The API covers voice, video, messaging, network features, AI, and verification capabilities.",
+  "mcp": "official",
+  "mcp_url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+    "quote": "Verify API supports two types of authentication:\n- Basic Authentication\n- JWT"
+   },
+   {
+    "field": "access",
+    "url": "https://www.vonage.com/communications-apis/verify/pricing",
+    "quote": "Try it free"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.vonage.com",
+    "quote": "Communication & Network APIs\nVoice\nVideo\nMessaging\nNetwork Features\nLow Code and AI\nPrivacy and Security"
+   },
+   {
+    "field": "mcp",
+    "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+    "quote": "introducing-the-vonage-documentation-mcp-server"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Vonage (developer.vonage.com) API authentication developer documentation",
+   "access": "Vonage (developer.vonage.com) API access pricing plan get API key developer account",
+   "mcp": "Vonage (developer.vonage.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.vonage.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.vonage.com/en/application/overview"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.vonage.com/en/application/overview"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.vonage.com/en/documentation"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://tavily.com/knowledge/company/4M7WRruAanjZ"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://developer.vonage.com/en/vonage-business-cloud/overview"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://www.vonage.com/communications-apis/pricing"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://www.vonage.com/communications-apis/verify/pricing"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://tokbox.com/developer/guides/account-management"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/Vonage/vonage-mcp-server-documentation"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcp.so/servers/vonage-mcp-server-api-bindings"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developer.vonage.com/en/blog/introducing-mcp-ai-meets-programmable-communications-with-vonage"
+   }
+  ],
+  "pages_read": [
+   "https://developer.vonage.com",
+   "https://developer.vonage.com/en/verify/concepts/authentication",
+   "https://developer.vonage.com/en/application/overview"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 8.2
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "record": {
+  "id": 36,
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A marketing automation platform offering email, SMS, and data-driven customer communication tools via robust APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account or test account and generate API keys or set up OAuth apps directly.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers profiles, campaigns, flows, lists, segments, catalogs, coupons, metrics, and more.",
+  "mcp": "official",
+  "mcp_url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Available scopes for each API ... Accounts ... Campaigns ... Flows ... Profiles"
+   },
+   {
+    "field": "mcp",
+    "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+    "quote": "The Klaviyo MCP server connects compatible AI clients to Klaviyo APIs through Model Context Protocol (MCP)."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Klaviyo (developers.klaviyo.com) API authentication developer documentation",
+   "access": "Klaviyo (developers.klaviyo.com) API access pricing plan get API key developer account",
+   "mcp": "Klaviyo (developers.klaviyo.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.klaviyo.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://community.make.com/t/help-with-klaviyo-api-authenticate/12246"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://endgrate.com/blog/using-the-klaviyo-api-to-create-or-update-profiles-(with-php-examples)"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/klaviyo"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developers.klaviyo.com/en/v2023-01-24/docs/retrieve_api_credentials"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://developers.klaviyo.com/en/v2022-10-17/reference/api_overview"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.klaviyo.com/blog/introducing-mcp-server"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://magnetmonster.com/blog/klaviyo-mcp-server-a-comprehensive-guide-for-marketers"
+   }
+  ],
+  "pages_read": [
+   "https://developers.klaviyo.com",
+   "https://developers.klaviyo.com/en/reference/api_overview",
+   "https://developers.klaviyo.com/en/docs/authenticate_"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.1
+ }
+}

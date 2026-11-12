@@ -1,0 +1,111 @@
+{
+ "record": {
+  "id": 52,
+  "name": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "An all-in-one SEO and digital marketing platform providing tools for keyword research, rank tracking, backlink analysis, and site audits via its robust API.",
+  "auth_methods": [
+   "token"
+  ],
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "access_note": "Users can test the API via a free trial account, sign up for pay-as-you-go, or purchase standalone API/subscription plans.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers backlinks, domain research, keyword research, site audits, AI search metrics, and account subscription data.",
+  "mcp": "official",
+  "mcp_url": "https://seranking.com/api/integrations/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "Include an Authorization header in your request, with the value Token YOUR_API_KEY."
+   },
+   {
+    "field": "access",
+    "url": "https://seranking.com/api.html",
+    "quote": "You can even test it in the free trial account."
+   },
+   {
+    "field": "api",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "All requests to the Data API must be authenticated. The base URL for all endpoints is: https://api.seranking.com"
+   },
+   {
+    "field": "mcp",
+    "url": "https://seranking.com/api/integrations/mcp",
+    "quote": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model to access your SE Ranking"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "Include an Authorization header in your request, with the value Token YOUR_API_KEY.",
+    "official": true,
+    "quote_check": "near"
+   },
+   {
+    "field": "access",
+    "url": "https://seranking.com/api.html",
+    "quote": "You can even test it in the free trial account.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://seranking.com/api/data/getting-started",
+    "quote": "All requests to the Data API must be authenticated. The base URL for all endpoints is: https://api.seranking.com",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://seranking.com/api/integrations/mcp",
+    "quote": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model to access your SE Ranking",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Doc states Authorization header uses Token API key.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Free trial lets you test API; pay‑as‑you‑go and add‑on plans available.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official MCP page describes a standardized interface for AI models.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "All claims verified; no blockers identified.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

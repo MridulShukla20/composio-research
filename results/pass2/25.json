@@ -1,0 +1,136 @@
+{
+ "record": {
+  "id": 25,
+  "name": "Pumble",
+  "category": "Communications and Messaging",
+  "one_liner": "Pumble is a team communication and collaboration tool for messaging, video calls, and workflow automation.",
+  "auth_methods": [
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free plan and generate an API key directly from the Pumble workspace addon settings.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "The API and native MCP server cover core messaging, reactions, channels, and user management operations.",
+  "mcp": "official",
+  "mcp_url": "https://mcp.pumble.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Want to automate workflows, build custom messaging alerts, and connect LLMs directly to your team communication data?"
+   },
+   {
+    "field": "auth",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests."
+   },
+   {
+    "field": "access",
+    "url": "https://pumble.com/pricing",
+    "quote": "Start using Pumble for free, and upgrade when you need more features."
+   },
+   {
+    "field": "api",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "The Pumble API addon provides simple HTTP endpoints to handle messaging actions inside your workspace."
+   },
+   {
+    "field": "mcp",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com"
+   },
+   {
+    "field": "verdict",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "The full list of available actions is available in the Swagger documentation."
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Want to automate workflows, build custom messaging alerts, and connect LLMs directly to your team communication data?",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://pumble.com/pricing",
+    "quote": "Start using Pumble for free, and upgrade when you need more features.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "The Pumble API addon provides simple HTTP endpoints to handle messaging actions inside your workspace.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "The full list of available actions is available in the Swagger documentation.",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Evidence shows API key support only; no token auth mentioned.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Pricing page confirms free self‑serve plan.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "weak",
+    "why": "MCP existence confirmed, but specific URL not shown.",
+    "suggested": "hosted at pumble.com"
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Swagger docs confirm API actions are available.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

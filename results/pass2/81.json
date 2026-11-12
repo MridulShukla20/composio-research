@@ -1,0 +1,138 @@
+{
+ "record": {
+  "id": 81,
+  "name": "Stripe",
+  "category": "Finance and Fintech",
+  "one_liner": "Online payment processing and financial infrastructure platform for internet businesses",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "token",
+   "other"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a Stripe account on the website to obtain test and live API keys instantly in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers charges, customers, subscriptions, payment intents, and extensive financial operations.",
+  "mcp": "official",
+  "mcp_url": "https://docs.stripe.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST."
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "The Stripe API uses API keys to authenticate requests."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "You can view and manage your API keys in the Stripe Dashboard."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.stripe.com/mcp",
+    "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.stripe.com/api",
+    "quote": "You can use the Stripe API in sandboxes without affecting your live data"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "The Stripe API uses API keys to authenticate requests.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "You can view and manage your API keys in the Stripe Dashboard.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.stripe.com/mcp",
+    "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.stripe.com/api",
+    "quote": "You can use the Stripe API in sandboxes without affecting your live data",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Evidence only mentions API keys, not basic, token, or other methods.",
+    "suggested": "api_key"
+   },
+   "access": {
+    "judgement": "weak",
+    "why": "Evidence shows key management but not free self‑service sign‑up.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs describe Stripe MCP.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Docs confirm sandbox usage without blockers.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 2,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

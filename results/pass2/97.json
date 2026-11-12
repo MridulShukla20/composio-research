@@ -1,0 +1,126 @@
+{
+ "record": {
+  "id": 97,
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native creative suite providing image, video, and audio generation models accessible via REST API, CLI, and MCP servers.",
+  "auth_methods": [
+   "api_key",
+   "other",
+   "none"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up, top up a prepaid balance in US dollars, and create API keys directly.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers over 50 video and image generation models with asynchronous request lifecycles, webhooks, and SDKs.",
+  "mcp": "official",
+  "mcp_url": "https://higgsfield.ai/cli",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.higgsfield.ai",
+    "quote": "--header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\""
+   },
+   {
+    "field": "access",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video"
+   },
+   {
+    "field": "api",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API provides access to more than 50 current video and image generation models."
+   },
+   {
+    "field": "mcp",
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools."
+   },
+   {
+    "field": "verdict",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers"
+   }
+  ],
+  "confidence": "medium",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.higgsfield.ai",
+    "quote": "--header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\"",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API provides access to more than 50 current video and image generation models.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "verdict",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "weak",
+    "why": "Only API‑key auth shown; no evidence for other methods or none.",
+    "suggested": "api_key only"
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "Docs state self‑serve, pay‑as‑you‑go with prepaid balance.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official page confirms use of MCP (Model Context Protocol).",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "Self‑serve API confirmed; no blockers mentioned.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 1,
+  "trust": "partly_verified",
+  "pass1_confidence": "high"
+ }
+}

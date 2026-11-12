@@ -1,0 +1,147 @@
+{
+ "record": {
+  "id": 83,
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Cryptocurrency exchange platform providing spot, futures, and brokerage trading APIs.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "other",
+   "none"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up on Binance and generate API keys or set up OAuth2 through the developer portal.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Covers spot trading, futures, margin trading, account management, brokerage operations, and market data via REST and WebSockets.",
+  "mcp": "community",
+  "mcp_url": "https://github.com/TermiX-official/binance-mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.binance.com/en",
+    "quote": "Send the user to Binance for consentGET  ?response_type=code"
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/sammchardy/python-binance/blob/master/docs/overview.rst",
+    "quote": "Firstly register an account with Binance."
+   },
+   {
+    "field": "api",
+    "url": "https://developers.binance.com/en",
+    "quote": "Pick a product, follow the documentation, and integrate with our REST and WebSocket APIs."
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "quote": "Binance MCP Server is a backend service designed to interact with the Binance API."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.binance.com/en/docs",
+    "quote": "Public endpoint — no API key needed"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Binance (binance-docs.github.io) API authentication developer documentation",
+   "access": "Binance (binance-docs.github.io) API access pricing plan get API key developer account",
+   "mcp": "Binance (binance-docs.github.io) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://binance-docs.github.io/Brokerage-API/Brokerage_Operation_Endpoints"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://github.com/sammchardy/python-binance/blob/master/docs/overview.rst"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/sammchardy/python-binance/blob/master/docs/overview.rst"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.binance.com/en"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.binance.com/en/docs"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://binance-docs.github.io/Brokerage-API/Brokerage_Operation_Endpoints"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://developers.binance.com/en"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://developers.binance.com/en/docs"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://binance-docs.github.io/Brokerage-API/Brokerage_Operation_Endpoints"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://github.com/binance/binance-spot-api-docs"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/nirholas/Binance-MCP"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/TermiX-official/binance-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/nirholas/binance-us-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/pawneetdev/binance-mcp"
+   }
+  ],
+  "pages_read": [
+   "https://binance-docs.github.io/Brokerage-API/Brokerage_Operation_Endpoints",
+   "https://github.com/sammchardy/python-binance/blob/master/docs/overview.rst"
+  ],
+  "pages_unreadable": [
+   "https://binance-docs.github.io"
+  ],
+  "model_attempts": 1,
+  "seconds": 10.9
+ }
+}

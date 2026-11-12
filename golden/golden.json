@@ -1,0 +1,202 @@
+{
+ "1": {
+  "name": "Salesforce",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "note": "",
+  "checked_by": "human"
+ },
+ "2": {
+  "name": "HubSpot",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+  "note": "",
+  "checked_by": "human"
+ },
+ "14": {
+  "name": "Front",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://dev.frontapp.com/docs/welcome",
+  "note": "",
+  "checked_by": "human"
+ },
+ "15": {
+  "name": "Pylon",
+  "primary_auth": "token",
+  "access": "unknown",
+  "mcp": "official",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "note": "could not confirm which plans include API access",
+  "checked_by": "human"
+ },
+ "23": {
+  "name": "Zoho Cliq",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2",
+  "note": "",
+  "checked_by": "human"
+ },
+ "24": {
+  "name": "Lark (Larksuite)",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://open.larksuite.com/",
+  "note": "tenant token vs OAuth user token, both exist",
+  "checked_by": "human"
+ },
+ "32": {
+  "name": "Meta Ads",
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "mcp": "official",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+  "note": "App Review needed to manage other people's ad accounts",
+  "checked_by": "human"
+ },
+ "39": {
+  "name": "Threads (Meta)",
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "mcp": "community",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://developers.facebook.com/docs/threads/get-started",
+  "note": "App Review needed for non-tester users; MCP servers found are all third-party",
+  "checked_by": "human"
+ },
+ "42": {
+  "name": "WooCommerce",
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+  "note": "auth: API key pair sent via Basic auth",
+  "checked_by": "human"
+ },
+ "47": {
+  "name": "Ecwid",
+  "primary_auth": "oauth2",
+  "access": "paid_plan",
+  "mcp": "community",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://api-docs.ecwid.com/reference/access-ecwid-api",
+  "note": "API needs a paid plan (Venture or above); MCP servers found are third-party platforms only",
+  "checked_by": "human"
+ },
+ "51": {
+  "name": "DataForSEO",
+  "primary_auth": "basic",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://docs.dataforseo.com/v3/auth/",
+  "note": "",
+  "checked_by": "human"
+ },
+ "60": {
+  "name": "Clay",
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://developers.clay.com/public-api/authentication",
+  "note": "Public API is new (2026) and narrow: read tables and run functions, no table writes; older pages say no public API",
+  "checked_by": "human"
+ },
+ "62": {
+  "name": "Vercel",
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://vercel.com/docs/accounts/access-tokens",
+  "note": "access token for own account; OAuth for published integrations",
+  "checked_by": "human"
+ },
+ "64": {
+  "name": "Cloudflare",
+  "primary_auth": "token",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+  "note": "",
+  "checked_by": "human"
+ },
+ "74": {
+  "name": "Jira",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication-for-apps/",
+  "note": "",
+  "checked_by": "human"
+ },
+ "79": {
+  "name": "Smartsheet",
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+  "note": "developer sandbox for building; normal accounts need a paid licence for tokens",
+  "checked_by": "human"
+ },
+ "81": {
+  "name": "Stripe",
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://docs.stripe.com/api/authentication",
+  "note": "",
+  "checked_by": "human"
+ },
+ "90": {
+  "name": "PitchBook",
+  "primary_auth": "api_key",
+  "access": "partner_or_sales_gated",
+  "mcp": "official",
+  "verdict": "no",
+  "evidence_url": "https://pitchbook.com/help/pitchbook-api",
+  "note": "not blind; API needs standalone contract via Direct Data team",
+  "checked_by": "human"
+ },
+ "94": {
+  "name": "Consensus",
+  "primary_auth": "unknown",
+  "access": "approval_required",
+  "mcp": "official",
+  "verdict": "yes_with_caveats",
+  "evidence_url": "https://consensus.app/home/api/",
+  "note": "PI by application only with custom quote; auth method not published; MCP uses OAuth; beware goconsensus.com is a different company",
+  "checked_by": "human"
+ },
+ "99": {
+  "name": "YouTube Transcript",
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "mcp": "official",
+  "verdict": "yes",
+  "evidence_url": "https://transcriptapi.com/docs/mcp/",
+  "note": "third-party service, not Google's YouTube API; 100 free credits then paid",
+  "checked_by": "human"
+ }
+}

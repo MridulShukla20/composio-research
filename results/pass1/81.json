@@ -1,0 +1,155 @@
+{
+ "record": {
+  "id": 81,
+  "name": "Stripe",
+  "category": "Finance and Fintech",
+  "one_liner": "Online payment processing and financial infrastructure platform for internet businesses",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "token",
+   "other"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Sign up for a Stripe account on the website to obtain test and live API keys instantly in the dashboard.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The REST API covers charges, customers, subscriptions, payment intents, and extensive financial operations.",
+  "mcp": "official",
+  "mcp_url": "https://docs.stripe.com/mcp",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "one_liner",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST."
+   },
+   {
+    "field": "auth",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "The Stripe API uses API keys to authenticate requests."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.stripe.com/api/authentication",
+    "quote": "You can view and manage your API keys in the Stripe Dashboard."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.stripe.com/api",
+    "quote": "The Stripe API is organized around REST."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.stripe.com/mcp",
+    "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.stripe.com/api",
+    "quote": "You can use the Stripe API in sandboxes without affecting your live data"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Stripe (stripe.com/docs/api) API authentication developer documentation",
+   "access": "Stripe (stripe.com/docs/api) API access pricing plan get API key developer account",
+   "mcp": "Stripe (stripe.com/docs/api) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://stripe.com/docs/api"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.stripe.com/api"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://docs.stripe.com/api/authentication"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.stripe.com/api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://apitracker.io/a/stripe"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.stripe.com/api/authentication"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.stripe.com/apis"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/providers/stripe"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://docs.stripe.com/keys"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apidog.com/blog/stripe-api-key"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.stripe.com/api"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.stripe.com/mcp"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.npmjs.com/package/@iflow-mcp/stripe-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://lobehub.com/mcp/stripe-stripe-mcp"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/mcp/com.stripe/mcp"
+   }
+  ],
+  "pages_read": [
+   "https://stripe.com/docs/api",
+   "https://docs.stripe.com/api",
+   "https://docs.stripe.com/api/authentication"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 14.1
+ }
+}

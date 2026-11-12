@@ -1,0 +1,112 @@
+{
+ "record": {
+  "id": 15,
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer support and helpdesk platform for B2B companies",
+  "auth_methods": [
+   "token",
+   "oauth2"
+  ],
+  "primary_auth": "token",
+  "access": "paid_plan",
+  "access_note": "API access is available on paid plans such as Professional and Advanced.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers core objects like accounts, knowledge base, collections, and article feedback.",
+  "mcp": "official",
+  "mcp_url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_note": "API access requires a paid subscription plan.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request"
+   },
+   {
+    "field": "access",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "quote": "Professional | $89 per seat/month, annual contract | Core support, viewer seats, analytics, automations, Skills, broadcasts, MCP, API, integrations"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+    "quote": "Returns a paginated list of accounts for the organization."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "quote": "The Pylon MCP Server exposes Pylon data to AI tools that support the Model Context Protocol"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass2",
+  "re_researched": false,
+  "changed_fields": [],
+  "flags_before": [],
+  "flags_after": [],
+  "evidence_checks": [
+   {
+    "field": "auth",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "access",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "quote": "Professional | $89 per seat/month, annual contract | Core support, viewer seats, analytics, automations, Skills, broadcasts, MCP, API, integrations",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "api",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+    "quote": "Returns a paginated list of accounts for the organization.",
+    "official": true,
+    "quote_check": "exact"
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "quote": "The Pylon MCP Server exposes Pylon data to AI tools that support the Model Context Protocol",
+    "official": true,
+    "quote_check": "exact"
+   }
+  ],
+  "skeptic_model": "openai/gpt-oss-120b",
+  "skeptic": {
+   "auth": {
+    "judgement": "supported",
+    "why": "Docs show bearer token and OAuth2 authentication.",
+    "suggested": ""
+   },
+   "access": {
+    "judgement": "supported",
+    "why": "API listed as feature of Professional (paid) plan.",
+    "suggested": ""
+   },
+   "mcp": {
+    "judgement": "supported",
+    "why": "Official docs describe Pylon MCP server.",
+    "suggested": ""
+   },
+   "verdict": {
+    "judgement": "supported",
+    "why": "API requires paid subscription, matching main blocker.",
+    "suggested": ""
+   }
+  },
+  "penalty_points": 0,
+  "trust": "verified",
+  "pass1_confidence": "high"
+ }
+}

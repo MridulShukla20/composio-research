@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 95,
+  "name": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Agentic document platform for parsing, extracting, and processing documents into LLM-ready structured data",
+  "auth_methods": [
+   "api_key",
+   "token"
+  ],
+  "primary_auth": "api_key",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free account on Reducto Studio and generate API keys instantly with free usage credits.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Covers document parsing, extraction, splitting, classification, and editing endpoints.",
+  "mcp": "official",
+  "mcp_url": "https://docs.reducto.ai/mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Authorization: Bearer $REDUCTO_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "Go to studio.reducto.ai and sign up for a free account."
+   },
+   {
+    "field": "api",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "For developers building automated pipelines. Available in Python, Node.js, Go, and REST."
+   },
+   {
+    "field": "mcp",
+    "url": "https://docs.reducto.ai/overview",
+    "quote": "Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients."
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Reducto (reducto.ai (document parsing)) API authentication developer documentation",
+   "access": "Reducto (reducto.ai (document parsing)) API access pricing plan get API key developer account",
+   "mcp": "Reducto (reducto.ai (document parsing)) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://docs.reducto.ai/overview"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://docs.reducto.ai/quickstart"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://reducto.ai/pricing"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://github.com/api-evangelist/reducto-ai"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.reducto.ai/overview"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://docs.reducto.ai/quickstart"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://www.beri.net/tools/reducto"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://reducto.ai/pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://reducto.ai"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://docs.reducto.ai/quickstart"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://docs.reducto.ai/studio-account"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://docs.reducto.ai/mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.gumloop.com/connectors/reducto-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://finance.biggo.com/podcast/f55cfb07215525db"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://reducto.ai/about"
+   }
+  ],
+  "pages_read": [
+   "https://docs.reducto.ai/overview",
+   "https://docs.reducto.ai/quickstart",
+   "https://reducto.ai/pricing"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 10.1
+ }
+}

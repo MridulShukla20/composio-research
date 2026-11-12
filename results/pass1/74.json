@@ -1,0 +1,144 @@
+{
+ "record": {
+  "id": 74,
+  "name": "Jira",
+  "category": "Productivity and Project Management",
+  "one_liner": "Issue tracking and project management tool for teams",
+  "auth_methods": [
+   "oauth2",
+   "basic",
+   "token"
+  ],
+  "primary_auth": "oauth2",
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free cloud account and generate API tokens or OAuth apps via the Atlassian developer console.",
+  "api_styles": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Jira platform REST API covers issues, projects, users, workflows, boards, and agile features extensively.",
+  "mcp": "official",
+  "mcp_url": "https://github.com/atlassian/atlassian-mcp-server",
+  "verdict": "yes",
+  "main_blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+    "quote": "OAuth 2.0 apps (integrations) created in the developer console can use OAuth 2.0 authorization code grants"
+   },
+   {
+    "field": "access",
+    "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account",
+    "quote": "To create an API token with scopes:"
+   },
+   {
+    "field": "api",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+    "quote": "The Jira Cloud platform REST API"
+   },
+   {
+    "field": "mcp",
+    "url": "https://github.com/atlassian/atlassian-mcp-server",
+    "quote": "The official Model Context Protocol (MCP) server for Atlassian"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Jira (developer.atlassian.com) API authentication developer documentation",
+   "access": "Jira (developer.atlassian.com) API access pricing plan get API key developer account",
+   "mcp": "Jira (developer.atlassian.com) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developer.atlassian.com"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://www.merge.dev/blog/jira-api-key"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://community.atlassian.com/forums/discussion/2955396/use-rest-api-with-jira-instance-on-free-plan"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://github.com/atlassian/atlassian-mcp-server"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.atlassian.com/blog/confluence/remote-mcp-server"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.reddit.com/r/jira/comments/1vx78ak/do_you_use_the_jira_mcp_server_as_part_of_the"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://medium.com/@reddyfull/building-ai-powered-jira-integration-with-mcp-streamlining-project-management-through-natural-c172cd831065"
+   }
+  ],
+  "pages_read": [
+   "https://developer.atlassian.com",
+   "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+   "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 11.5
+ }
+}

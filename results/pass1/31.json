@@ -1,0 +1,143 @@
+{
+ "record": {
+  "id": 31,
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "primary_auth": "oauth2",
+  "access": "approval_required",
+  "access_note": "Developers obtain credentials via self-serve sign-up and developer tokens, subject to access level reviews.",
+  "api_styles": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "broad",
+  "api_note": "The Google Ads API provides comprehensive programmatic access to campaigns, reporting, budgets, and ad management.",
+  "mcp": "official",
+  "mcp_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "verdict": "yes_with_caveats",
+  "main_blocker": "approval_or_app_review",
+  "blocker_note": "Production usage requires moving beyond test account access through Google's API access review process.",
+  "evidence": [
+   {
+    "field": "auth",
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "quote": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization"
+   },
+   {
+    "field": "access",
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing",
+    "quote": "What LOOKS like a plan ladder is an approval ladder: the developer token's access level gates"
+   },
+   {
+    "field": "api",
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Build an application to interact directly with the Google Ads platform or write programmatic scripts."
+   },
+   {
+    "field": "mcp",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "quote": "Configure the MCP client"
+   }
+  ],
+  "confidence": "high",
+  "unknowns": ""
+ },
+ "meta": {
+  "pass": "pass1",
+  "model": "gemini-3.5-flash-lite",
+  "queries": {
+   "auth": "Google Ads (developers.google.com/google-ads) API authentication developer documentation",
+   "access": "Google Ads (developers.google.com/google-ads) API access pricing plan get API key developer account",
+   "mcp": "Google Ads (developers.google.com/google-ads) MCP server Model Context Protocol"
+  },
+  "sources": [
+   {
+    "label": "P1",
+    "kind": "full page",
+    "url": "https://developers.google.com/google-ads"
+   },
+   {
+    "label": "P2",
+    "kind": "full page",
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview"
+   },
+   {
+    "label": "P3",
+    "kind": "full page",
+    "url": "https://developers.google.com/google-ads/api"
+   },
+   {
+    "label": "S1",
+    "kind": "search snippet, auth query",
+    "url": "https://apis.io/apis/google-ads/google-ads-ads-api"
+   },
+   {
+    "label": "S2",
+    "kind": "search snippet, auth query",
+    "url": "https://www.youtube.com/watch?v=EGXilq5i42M"
+   },
+   {
+    "label": "S3",
+    "kind": "search snippet, auth query",
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview"
+   },
+   {
+    "label": "S4",
+    "kind": "search snippet, auth query",
+    "url": "https://ppc.land/google-drops-developer-tokens-from-ads-api-access-decisions"
+   },
+   {
+    "label": "S5",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing"
+   },
+   {
+    "label": "S6",
+    "kind": "search snippet, access query",
+    "url": "https://unified.to/blog/how_to_get_your_google_ads_api_key"
+   },
+   {
+    "label": "S7",
+    "kind": "search snippet, access query",
+    "url": "https://apis.io/apis/google-ads/google-ads-customers-customeruseraccesses-api"
+   },
+   {
+    "label": "S8",
+    "kind": "search snippet, access query",
+    "url": "https://stackoverflow.com/questions/78456589/google-ads-api-trying-to-access-from-service-account?lastactivity="
+   },
+   {
+    "label": "S9",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.scalekit.com/blog/google-ads-mcp-vs-api"
+   },
+   {
+    "label": "S10",
+    "kind": "search snippet, mcp query",
+    "url": "https://www.usecarly.com/blog/google-ads-mcp"
+   },
+   {
+    "label": "S11",
+    "kind": "search snippet, mcp query",
+    "url": "https://mcpmarket.com/server/google-ads-3"
+   },
+   {
+    "label": "S12",
+    "kind": "search snippet, mcp query",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+   }
+  ],
+  "pages_read": [
+   "https://developers.google.com/google-ads",
+   "https://developers.google.com/google-ads/api/docs/oauth/overview",
+   "https://developers.google.com/google-ads/api"
+  ],
+  "pages_unreadable": [],
+  "model_attempts": 1,
+  "seconds": 12.2
+ }
+}
